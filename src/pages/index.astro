@@ -6,9 +6,9 @@ import DecodeLogoCenter from '../images/decode-logo-center.png';
 ---
 
 <BaseLayout>
-  <div class="grid place-items-center h-screen max-w-7xl mx-auto relative px-8">
+  <div class="grid place-items-center h-screen max-w-7xl mx-auto relative px-8 overflow-hidden">
 
-    <div class="text-center flex flex-col items-center z-20 max-w-xl">
+    <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="500" class="text-center flex flex-col items-center z-20 max-w-xl">
       <Image class="w-auto h-10" src={DecodeLogoCenter} alt="Decode Travel Logo"/>
       <h1 class="text-white font-bold text-4xl md:text-6xl my-6 uppercase tracking-tight">
         The hackathon for travel tech innovation
@@ -18,7 +18,7 @@ import DecodeLogoCenter from '../images/decode-logo-center.png';
 
     <div class="absolute z-10 bg-gray-950 blur-2xl inset-x-0 md:inset-x-32 lg:inset-x-60 h-screen"></div>
 
-    <Image class="w-[240px] md:w-[560px] lg:w-[640px] absolute left-0 md:left-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
-    <Image class="w-[240px] md:w-[560px] lg:w-[640px] absolute right-0 md:right-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
+    <Image data-sal="slide-right" data-sal-delay="500" data-sal-duration="500" class="w-[240px] md:w-[560px] lg:w-[640px] absolute left-0 md:left-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
+    <Image data-sal="slide-left" data-sal-delay="500" data-sal-duration="500" class="w-[240px] md:w-[560px] lg:w-[640px] absolute right-0 md:right-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
   </div>
 </BaseLayout>
