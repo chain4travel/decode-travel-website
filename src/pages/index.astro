@@ -2,20 +2,23 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from 'astro:assets';
 import DecodeAsciiZero from '../images/decode-logo-ascii-zero.png';
+import DecodeLogoCenter from '../images/decode-logo-center.png';
 ---
 
 <BaseLayout>
-  <div class="bg-gray-950 grid place-items-center h-screen w-screen relative">
-    <div class="text-center z-20 p-8">
-      <h1 class="text-white font-bold text-6xl mb-6 uppercase tracking-tight">
-        The hackathon for <br> travel tech innovation
+  <div class="grid place-items-center h-screen max-w-7xl mx-auto relative px-8">
+
+    <div class="text-center flex flex-col items-center z-20 max-w-xl">
+      <Image class="w-auto h-10" src={DecodeLogoCenter} alt="Decode Travel Logo"/>
+      <h1 class="text-white font-bold text-4xl md:text-6xl my-6 uppercase tracking-tight">
+        The hackathon for travel tech innovation
       </h1>
       <h2 class="text-teal-400 text-2xl uppercase tracking-wider">Coming soon</h2>
     </div>
 
-    <div class="fixed z-10 bg-gray-950 blur-3xl w-4/5 h-screen"></div>
+    <div class="absolute z-10 bg-gray-950 blur-2xl inset-x-0 md:inset-x-32 lg:inset-x-60 h-screen"></div>
 
-    <Image class="max-w-screen-sm fixed left-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
-    <Image class="max-w-screen-sm fixed right-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
+    <Image class="w-[240px] md:w-[560px] lg:w-[640px] absolute left-0 md:left-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
+    <Image class="w-[240px] md:w-[560px] lg:w-[640px] absolute right-0 md:right-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
   </div>
 </BaseLayout>
