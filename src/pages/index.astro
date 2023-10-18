@@ -1,14 +1,21 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from 'astro:assets';
+import DecodeAsciiZero from '../images/decode-logo-ascii-zero.png';
 ---
 
 <BaseLayout>
-  <div class="bg-gray-950 grid place-items-center h-screen w-screen">
-    <div class="text-center">
-      <h1 class="text-white font-bold text-7xl mb-6 uppercase tracking-tight">
+  <div class="bg-gray-950 grid place-items-center h-screen w-screen relative">
+    <div class="text-center z-20 p-8">
+      <h1 class="text-white font-bold text-6xl mb-6 uppercase tracking-tight">
         The hackathon for <br> travel tech innovation
       </h1>
       <h2 class="text-teal-400 text-2xl uppercase tracking-wider">Coming soon</h2>
     </div>
+
+    <div class="fixed z-10 bg-gray-950 blur-3xl w-4/5 h-screen"></div>
+
+    <Image class="max-w-screen-sm fixed left-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
+    <Image class="max-w-screen-sm fixed right-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
   </div>
 </BaseLayout>
