@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+import DecodeLogoCenter from '../images/decode-logo-center.png';
+---
+
+<header class="py-6 border-b border-gray-800">
+    <div class="container flex justify-between items-center">
+        <a href="/">
+            <Image class="w-auto h-8" src={DecodeLogoCenter} alt="Decode Travel Logo"/>
+        </a>
+        <nav class="uppercase text-sm">
+            <a class="px-3 py-2 hover:text-teal-400 rounded" href="#">About</a>
+            <a class="px-3 py-2 hover:text-teal-400 rounded" href="#">Agenda</a>
+            <a class="px-3 py-2 hover:text-teal-400 rounded" href="#">Challenges</a>
+            <a class="px-3 py-2 hover:text-teal-400 rounded" href="#">Partners</a>
+            <a class="px-3 py-2 bg-teal-400 text-gray-950 rounded ml-2" href="#">Join now</a>
+        </nav>
+    </div>
+</header>

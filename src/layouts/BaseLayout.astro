@@ -1,12 +1,14 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro"
 ---
 
 <html lang="en" class="selection:bg-teal-500 selection:text-gray-950#">
     <head>
         <BaseHead />
     </head>
-    <body class="bg-gray-950">
+    <body class="bg-gray-950 text-white">
+        <Header />
         <slot />
         <script>
             sal();
