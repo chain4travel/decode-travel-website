@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import LogoWindow from '../images/logo-window.png';
 ---
 
 <section class="py-8 md:py-16 xl:py-24">
@@ -16,44 +18,46 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-6 grid-rows-6 gap-6 mt-8">
-            <div data-sal="fade-in" data-sal-duration="500" data-sal-delay="100" class="bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-2 lg:row-span-4 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
+        <div class="grid grid-cols-6 grid-rows-6 gap-6 mt-8 text-center">
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="100" class="overflow-hidden bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-2 lg:row-span-4 bg-gray-900 rounded-xl p-12 flex flex-col items-center">
+                <Image class="relative -mt-[50%] mb-6 drop-shadow-xl" src={LogoWindow} alt="Decode Travel Logo"/>
+                <div class="font-bold text-2xl mb-4 mt-auto">Loyalty</div>
+                <p class="text-sm text-gray-400 mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos fuga, fugiat obcaecati quaerat dolore hic voluptatibus modi asperiores debitis tempore provident minima ratione ea aliquid, nostrum consectetur.</p>
+            </div>
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="200" class="overflow-hidden bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-2 lg:row-span-2 bg-gray-900 rounded-xl p-12 flex flex-col items-center">
+                <Image class="relative w-48 -mt-36 mb-6 drop-shadow-xl" src={LogoWindow} alt="Decode Travel Logo"/>
+                <div class="font-bold mb-1">Loyalty</div>
+                <p class="text-sm text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolorum aliquam quis.</p>
+            </div>
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="300" class="bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-2 lg:row-span-4 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
                 <div>
                     <div class="font-bold mb-1">Loyalty</div>
                     <p class="text-sm text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolorum aliquam quis.</p>
                 </div>
             </div>
-            <div data-sal="fade-in" data-sal-duration="500" data-sal-delay="200" class="bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-2 lg:row-span-2 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="200" class="overflow-hidden bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-2 lg:row-span-2 bg-gray-900 rounded-xl p-12 flex flex-col items-center">
+                <Image class="relative w-48 -mt-36 mb-6 drop-shadow-xl" src={LogoWindow} alt="Decode Travel Logo"/>
+                <div class="font-bold mb-1">Loyalty</div>
+                <p class="text-sm text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolorum aliquam quis.</p>
+            </div>
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="500" class="bg-gradient-primary col-span-6 md:col-span-6 lg:col-span-4 lg:row-span-3 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
                 <div>
                     <div class="font-bold mb-1">Loyalty</div>
                     <p class="text-sm text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolorum aliquam quis.</p>
                 </div>
             </div>
-            <div data-sal="fade-in" data-sal-duration="500" data-sal-delay="300" class="bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-2 lg:row-span-4 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="600" class="bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-1 lg:row-span-3 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
                 <div>
                     <div class="font-bold mb-1">Loyalty</div>
                     <p class="text-sm text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolorum aliquam quis.</p>
                 </div>
             </div>
-            <div data-sal="fade-in" data-sal-duration="500" data-sal-delay="400" class="bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-2 lg:row-span-2 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
-                <div>
-                    <div class="font-bold mb-1">Loyalty</div>
-                    <p class="text-sm text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolorum aliquam quis.</p>
-                </div>
-            </div>
-            <div data-sal="fade-in" data-sal-duration="500" data-sal-delay="500" class="bg-gradient-primary col-span-6 md:col-span-6 lg:col-span-4 lg:row-span-3 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
-                <div>
-                    <div class="font-bold mb-1">Loyalty</div>
-                    <p class="text-sm text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolorum aliquam quis.</p>
-                </div>
-            </div>
-            <div data-sal="fade-in" data-sal-duration="500" data-sal-delay="600" class="bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-1 lg:row-span-3 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
-                <div>
-                    <div class="font-bold mb-1">Loyalty</div>
-                    <p class="text-sm text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolorum aliquam quis.</p>
-                </div>
-            </div>
-            <div data-sal="fade-in" data-sal-duration="500" data-sal-delay="700" class="bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-1 lg:row-span-3 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="700" class="bg-gradient-primary col-span-6 md:col-span-3 lg:col-span-1 lg:row-span-3 bg-gray-900 rounded-xl pt-32 lg:pt-20 p-6 flex items-end">
                 <div>
                     <div class="font-bold mb-1">Loyalty</div>
                     <p class="text-sm text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolorum aliquam quis.</p>
