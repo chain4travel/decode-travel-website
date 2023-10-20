@@ -3,17 +3,22 @@ import { Image } from 'astro:assets';
 import DecodeAsciiZero from '../images/decode-logo-ascii-zero.png';
 ---
 
-<div class="grid place-items-center container relative overflow-hidden h-[75vh]">
+<div class="grid place-items-center container overflow-hidden relative h-[90vh]">
 
-    <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="500" class="text-center flex flex-col items-center z-20 max-w-xl">
-        <h1 class="text-white font-bold text-4xl md:text-6xl my-6 uppercase tracking-tight">
-            The hackathon for travel tech innovation
+    <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="500" class="text-center flex flex-col items-center z-20">
+        <div class="font-bold uppercase text-teal-400 mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
+            &lt; Call for applications /&gt;
+        </div>
+        <h1 class="text-white font-bold text-4xl md:text-6xl 2xl:text-8xl my-6 uppercase tracking-tighter">
+            The hackathon for <br> travel tech innovation
         </h1>
-        <h2 class="text-teal-400 text-2xl uppercase tracking-wider">Coming soon</h2>
+        <h2 class="text-gray-300 text-2xl tracking-tight max-w-lg">
+            Take part in the open hackathon where developers meet leading travel companies.
+        </h2>
     </div>
 
-    <div class="absolute z-10 bg-gray-950 blur-2xl inset-x-0 md:inset-x-32 lg:inset-x-60 h-screen"></div>
+    <div class="absolute z-10 bg-gray-950 blur-2xl inset-x-0 md:inset-x-32 lg:inset-x-60 -top-1/2 -bottom-1/2"></div>
 
-    <Image data-sal="slide-right" data-sal-delay="500" data-sal-duration="500" class="w-[240px] md:w-[560px] lg:w-[640px] absolute left-0 md:left-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
-    <Image data-sal="slide-left" data-sal-delay="500" data-sal-duration="500" class="w-[240px] md:w-[560px] lg:w-[640px] absolute right-0 md:right-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
+    <Image data-sal="slide-right" data-sal-delay="500" data-sal-duration="500" class="w-[240px] md:w-[560px] lg:w-[720px] absolute left-0 md:left-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
+    <Image data-sal="slide-left" data-sal-delay="500" data-sal-duration="500" class="w-[240px] md:w-[560px] lg:w-[720px] absolute right-0 md:right-8 z-0" src={DecodeAsciiZero} alt="A bird sitting on a nest of eggs."/>
 </div>

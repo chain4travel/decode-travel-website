@@ -1,0 +1,41 @@
+---
+---
+
+<div class="text-center h-[400px] border-y border-gray-800 flex flex-col items-center justify-center mb-24" style="background: url(/images/bg-logo-down.png) center bottom no-repeat;">
+    <div class="font-bold uppercase text-teal-400 mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
+        &lt;Countdown&gt;
+    </div>
+    <div id="demo" class="font-mono text-6xl tracking-normal font-bold my-6 bg-gray-950 pt-4 py-3 px-4"></div>
+    <div class="font-bold uppercase text-teal-400 mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
+        &lt;/Countdown&gt;
+    </div>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Oct 22, 2023 19:30:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+        
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
+        
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+    </script>
+</div>
