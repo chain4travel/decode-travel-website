@@ -1,13 +1,22 @@
 ---
+import { Image } from 'astro:assets';
+import Chain4Travel from '../images/logo-chain4travel.png'
+import CompanionD from '../images/logo-companion.png'
+import YourInsight from '../images/logo-yourinsight.png'
 ---
 
-<div class="text-center py-40 border-y border-gray-800 flex flex-col items-center justify-center mb-24" style="background: url(/images/bg-logo-center.png) center no-repeat;">
+<div class="text-center py-40 flex flex-col items-center justify-center mb-24 bg-gradient-to-b from-gray-950 to-primary/25">
     <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="500" class="text-center flex flex-col items-center z-20">
         <div class="font-bold uppercase  mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
-            dt.Partners + dt.Sponsors
+            //Partners & Sponsors
         </div>
-        <div class="text-white font-bold text-4xl md:text-6xl my-6 uppercase tracking-tighter">
+        <div class="text-white font-bold text-4xl md:text-6xl mt-6 mb-12 uppercase tracking-tighter">
             Join the hackathon for <br> travel Tech innovation
+        </div>
+        <div class="flex items-center gap-8">
+            <Image class="h-10 w-auto" src={Chain4Travel} alt="Decode Travel Logo"/>
+            <Image class="h-10 w-auto" src={CompanionD} alt="Decode Travel Logo"/>
+            <Image class="h-12 w-auto" src={YourInsight} alt="Decode Travel Logo"/>
         </div>
     </div>
 </div>
