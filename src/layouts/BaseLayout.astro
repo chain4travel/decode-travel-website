@@ -1,15 +1,17 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
 ---
 
-<html lang="en" class="selection:bg-primary selection:text-gray-950">
+<html lang="en" class="selection:bg-primary selection:text-gray-950 scroll-smooth">
     <head>
         <BaseHead />
     </head>
     <body class="bg-gray-950 text-white overflow-x-hidden">
         <Header />
         <slot />
+        <Footer />
         <script>
             sal();
         </script>
