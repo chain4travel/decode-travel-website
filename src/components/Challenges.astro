@@ -1,0 +1,87 @@
+---
+import { Image } from 'astro:assets';
+import Loyalty from '../images/challenges/loyalty.png'
+import Ux from '../images/challenges/customerexperience.png'
+import Id from '../images/challenges/customeridentity.png'
+import Retail from '../images/challenges/retail.png'
+import Revenue from '../images/challenges/revenue.png'
+import Backup from '../images/challenges/backup.png'
+import Climate from '../images/challenges/climate.png'
+---
+
+<section class="py-8 md:py-16 xl:py-24" id="challenges">
+    <div class="container">
+
+        <div>
+            <div class="font-bold uppercase  mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
+                //Challenges
+            </div>
+            <div class="font-bold uppercase text-4xl md:text-5xl lg:text-7xl tracking-tighter mb-4">
+                Playground for <br> Innovation
+            </div>
+            <p class="lg:text-xltext-gray-300">
+                Tackle travel’s pain points without boundaries of legacy systems. Foster digital innovation with web3 technologies.
+            </p>
+        </div>
+
+        <div class="lg:grid grid-cols-12 grid-rows-6 gap-4 xl:gap-6 2xl:gap-8 mt-8 text-center relative">
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="100" class="mb-4 lg:mb-0 z-10 overflow-hidden bg-gradient-hackerz-b border border-gray-800 col-span-6 md:col-span-3 lg:col-span-4 row-span-4 bg-gray-900 flex lg:flex-col rounded-xl">
+                <Image class="lg:w-full lg:h-80 order-last lg:order-none w-32 object-cover" src={Loyalty} alt="Decode Travel Logo"/>
+                <div class="p-6 lg:grid place-content-center text-left w-full">
+                    <div class="font-bold text-xl uppercase mb-4">Loyalty</div>
+                    <p class="text-gray-400">Unlock the next generation of loyalty programs with web3 technologies.</p>
+                </div>
+            </div>
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="200" class="mb-4 lg:mb-0 z-10 overflow-hidden bg-gradient-hackerz-b border border-gray-800 col-span-6 md:col-span-3 lg:col-span-4 row-span-2 bg-gray-900 rounded-xl flex">
+                <div class="p-6 lg:grid place-content-center text-left w-full">
+                    <div class="font-bold text-xl uppercase mb-4 w-full">CUSTOMER IDENTITY</div>
+                    <p class="text-gray-400">Digital identities are coming. Is your organization ready?</p>
+                </div>
+                <Image class="lg:h-full lg:w-1/3 flex-shrink-0 order-last lg:order-none w-32 object-cover" src={Id} alt="Decode Travel Logo"/>
+            </div>
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="100" class="mb-4 lg:mb-0 z-10 overflow-hidden bg-gradient-hackerz-b border border-gray-800 col-span-6 md:col-span-3 lg:col-span-4 row-span-3 bg-gray-900 rounded-xl flex">
+                <div class="p-6 lg:grid place-content-center h-full text-left w-full">
+                    <div class="font-bold text-xl uppercase mb-4">CLIMATE COMPENSATION</div>
+                    <p class="text-gray-400">Build the next green decentralized application or tap into web3 offsetting possibilities. </p>
+                </div>
+                <Image class="lg:h-full lg:w-1/2 flex-shrink-0 order-last lg:order-none w-32 object-cover" src={Climate} alt="Decode Travel Logo"/>
+            </div>
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="200" class="mb-4 lg:mb-0 z-10 overflow-hidden bg-gradient-hackerz-b border border-gray-800 col-span-6 md:col-span-3 lg:col-span-4 row-span-2 bg-gray-900 rounded-xl flex">
+                <Image class="lg:h-full lg:w-1/3 flex-shrink-0 order-last lg:order-none w-32 object-cover" src={Retail} alt="Decode Travel Logo"/>
+                <div class="p-6 lg:grid place-content-center text-left w-full">
+                    <div class="font-bold text-xl uppercase mb-4">Distribution</div>
+                    <p class="text-gray-400">Leverage P2P technology and connect seamlessly with partners across travel verticals.</p>
+                </div>
+            </div>
+            
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="200" class="mb-4 lg:mb-0 z-10 overflow-hidden bg-gradient-hackerz-b border border-gray-800 col-span-6 md:col-span-6 lg:col-span-2 row-span-5 bg-gray-900 rounded-xl flex lg:flex-col">
+                <Image class="lg:w-full lg:h-auto aspect-square order-last lg:order-none w-32 object-cover" src={Ux} alt="Decode Travel Logo"/>
+                <div class="p-6 lg:grid place-content-center text-left w-full">
+                    <div class="font-bold text-xl uppercase mb-4">CUSTOMER EXPERIENCE</div>
+                    <p class="text-gray-400">Offer new ways to incentivize travelers.</p>
+                </div>
+            </div>
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="200" class="mb-4 lg:mb-0 z-10 overflow-hidden bg-gradient-hackerz-b border border-gray-800 col-span-6 md:col-span-6 lg:col-span-2 row-span-5 bg-gray-900 rounded-xl flex lg:flex-col">
+                <Image class="lg:w-full aspect-square order-last lg:order-none w-32 object-cover" src={Backup} alt="Decode Travel Logo"/>
+                <div class="p-6 lg:grid place-content-center text-left w-full">
+                    <div class="font-bold text-xl uppercase mb-4">WILD CARD INNOVATION</div>
+                    <p class="text-gray-400">Rethink travel and create an innovative application.</p>
+                </div>
+            </div>
+
+            <div data-sal="zoom-in" data-sal-duration="250" data-sal-delay="200" class="mb-4 lg:mb-0 z-10 overflow-hidden bg-gradient-hackerz-b border border-gray-800 col-span-6 md:col-span-3 lg:col-span-8 row-span-4 bg-gray-900 rounded-xl flex">
+                <div class="p-6 lg:grid place-content-center text-left w-full">
+                    <div class="font-bold text-xl uppercase mb-4 w-full">Automation & Efficiency</div>
+                    <p class="text-gray-400">Web3 technologies help automate, streamline and increase flexibility in today's rigid travel supply chain. Save resources and increase revenue through digital innovation.</p>
+                </div>
+                <Image class="lg:h-full lg:w-1/2 order-last lg:order-none w-32 object-cover flex-shrink-0 aspect-video" src={Revenue} alt="Decode Travel Logo"/>
+            </div>
+            
+        </div>
+    </div>
+</section>

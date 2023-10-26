@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+import DecodeLogo from '../images/decode-logo-center.png';
+---
+
+<footer class="w-full bg-gradient-to-b from-gray-950 to-primary/25" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="py-16 lg:py-24 container sm:px-6 lg:px-16">
+      <div class="flex flex-col items-baseline space-y-6">
+        <div class="mx-auto">
+            <a href="/">
+                <Image class="w-auto h-16" src={DecodeLogo} alt="Decode Travel Logo"/>
+            </a>
+        </div>
+        <div class="mx-auto">
+          <span class="mx-auto mt-2 text-sm text-white/50">
+            Copyright © 2023
+            <a href="/imprint" class="mx-2 text-white hover:text-gray-500" rel="noopener noreferrer">Imprint</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
