@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import CaminoLogo from '../images/Camino-Logo.png'
+import CaminoMessenger from '../images/Camino-Messenger.png'
+---
+
+<section class="py-8 md:py-16 xl:py-24" id="technology">
+    <div class="container">
+
+        <div>
+            <div class="font-bold uppercase  mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
+                //Technology
+            </div>
+            <div class="font-bold uppercase text-4xl md:text-5xl lg:text-7xl tracking-tighter mb-4">
+                Use cutting-edge <br> web3 technology
+            </div>
+        </div>
+
+        <div class="lg:grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+            <div class="bg-gradient-to-br from-[#0085FF]/20 to-[#B440FC]/20 border border-gray-800 bg-gray-900 rounded-xl p8 md:p-12">
+                <Image class="h-12 w-auto mb-8" src={CaminoLogo} alt="Camino Network Logo"/>
+                <p class="text-2xl font-normal mt-4">Leverage Camino Network, the L1 blockchain designed for the travel industry.</p>
+            </div>
+            <div class="bg-gradient-to-br from-[#0085FF]/20 to-[#B440FC]/20 border border-gray-800 bg-gray-900 rounded-xl p8 md:p-12">
+                <Image class="h-12 w-auto mb-8" src={CaminoMessenger} alt="Camino Messenger Logo"/>
+                <p class="text-2xl font-normal mt-4">Use Camino Messenger as a powerful messaging tool for travel distribution.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
