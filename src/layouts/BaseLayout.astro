@@ -2,16 +2,18 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
+import CookieBanner from "../components/CookieBanner.astro";
 ---
 
 <html lang="en" class="selection:bg-primary selection:text-gray-950 scroll-smooth">
     <head>
         <BaseHead />
     </head>
-    <body class="bg-gray-950 text-white overflow-x-hidden">
+    <body class="overflow-x-hidden text-white bg-gray-950">
         <Header />
         <slot />
         <Footer />
         <script>sal();</script>
     </body>
+    <CookieBanner
 </html>
