@@ -3,31 +3,31 @@ import { Image } from 'astro:assets';
 import BackgroundHero from '../images/bg-hero.png';
 ---
 
-<div class="py-16 md:py-0 relative bg-gradient-hackerz-b">
+<div class="py-24 md:py-0 relative bg-gradient-hackerz-b">
     <div class="container relative overflow-hidden grid place-items-center md:h-[75vh] px-8 md:px-0">
 
         <div class="text-center flex flex-col items-center z-20">
-            <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="400" class="font-bold text-xs md:text-base uppercase mb-4 bg-secondary inline-block text-gray-950 px-3 py-2">
+            <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="400" class="font-semibold text-xs md:text-base uppercase mb-4 bg-secondary inline-block text-gray-950 px-3 py-2">
                 &lt; Call for applications /&gt;
             </div>
-            <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration="400" class="text-white font-bold text-4xl md:text-6xl 2xl:text-7xl my-3 md:my-6 uppercase tracking-tighter">
+            <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration="400" class="text-white font-bold text-4xl md:text-6xl 2xl:text-7xl my-4 md:my-6 uppercase tracking-tight md:tracking-tighter">
                 The hackathon for <br class="hidden md:block"> travel tech innovation
             </h1>
             <div data-sal="slide-up" data-sal-delay="300" data-sal-duration="400" class="md:flex items-center gap-6">
-                <div><span class="font-bold text-secondary">//DATE:</span> April 23-26, 2024</div>
-                <div><span class="font-bold text-secondary">//LOCATION:</span> w3.hub Berlin, Germany</div>
+                <div><span class="font-semibold text-secondary">//DATE:</span> April 23-26, 2024</div>
+                <div><span class="font-semibold text-secondary">//LOCATION:</span> w3.hub Berlin, Germany</div>
             </div>
-            <div data-sal="slide-up" data-sal-delay="400" data-sal-duration="400" class="text-gray-300 text-base md:text-xl max-w-lg my-6">
+            <div data-sal="slide-up" data-sal-delay="400" data-sal-duration="400" class="text-gray-400 text-base md:text-xl max-w-lg my-4 md:my-6">
                 Take part in the open hackathon where developers meet leading travel companies.
             </div>
             <div data-sal="slide-up" data-sal-delay="500" data-sal-duration="400">
-                <a class="font-bold px-4 py-3 rounded bg-primary text-gray-950 inline-block" href="/#apply">
+                <a class="font-semibold px-5 py-3 rounded-lg bg-primary text-gray-950 inline-block" href="/#apply">
                     Join now
                 </a>
             </div>
         </div>
 
-        <Image class="absolute object-contain top-0 left-0 right-0 bottom-0 w-full h-full opacity-25 md:opacity-50 2xl:opacity-75" src={BackgroundHero} alt="Background Decode Travel Logo" />
+        <Image class="absolute object-contain inset-0 w-full h-full opacity-50 2xl:opacity-75" src={BackgroundHero} alt="Background Decode Travel Logo" />
 
     </div>
 </div>
