@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import BackgroundHero from '../images/bg-hero.png';
+---
+
+<div class="py-24 md:py-0 relative bg-gradient-hackerz-b">
+    <div class="container relative overflow-hidden grid place-items-center md:h-[75vh] px-8 md:px-0">
+
+        <div class="text-center flex flex-col items-center z-20">
+            <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="400" class="font-semibold text-xs md:text-base uppercase mb-4 bg-secondary inline-block text-gray-950 px-3 py-2">
+                &lt; Start hacking /&gt;
+            </div>
+            <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration="400" class="text-white font-bold text-4xl md:text-6xl 2xl:text-7xl my-4 md:my-6 uppercase tracking-tight md:tracking-tighter">
+                Ready, Set, Develop!
+              </h1>
+              <div data-sal="slide-up" data-sal-delay="400" data-sal-duration="400" class="text-gray-400 text-base md:text-xl max-w-lg my-4 md:my-6">
+                Get started with building on Camino Network to DecodeTravel.
+            </div>
+        </div>
+
+        <Image class="absolute object-contain inset-0 w-full h-full opacity-50 2xl:opacity-75" src={BackgroundHero} alt="Background Decode Travel Logo" />
+
+    </div>
+</div>

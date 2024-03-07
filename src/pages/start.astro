@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroSimple from "../components/HeroSimple.astro";
+---
+
+<BaseLayout>
+  <HeroSimple />
+
+  <section class="py-8 md:py-16">
+    <div class="container">
+        <div class="lg:grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
+              <div class="text-white font-bold text-2xl uppercase tracking-tight">
+                Deadline: <span class="text-secondary">Team Name</span>
+              </div>
+                <p class="text-lg text-white font-bold my-4">Wednesday: noon</p>
+                <p class="text-lg text-gray-300 font-normal">Each team must enter their team name and announce a team leader.</p>
+                <a class="underline text-primary mt-4 inline-block" href="#">Submit via Typeform</a>
+            </div>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+                <div class="text-white font-bold text-2xl uppercase tracking-tight">
+                  Deadline: <span class="text-secondary">Presentation</span>
+                </div>
+                <p class="text-lg text-white font-bold my-4">Friday: 9 am</p>
+                <p class="text-lg text-gray-300 font-normal">When the deadline ends, all teams must have submitted their pitch as Powerpoint-File (sorry!).</p>
+                <a class="underline text-primary mt-4 inline-block" href="mailto:events@decode.travel">Submit via E-Mail</a>
+              </div>
+        </div>
+    </div>
+  </section>
+</BaseLayout>
