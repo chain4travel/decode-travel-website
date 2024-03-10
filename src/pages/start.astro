@@ -1,6 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroSimple from "../components/HeroSimple.astro";
+
+import { Image } from 'astro:assets';
+import BugBountyImage from '../images/bug-bounty-chip.png'
 ---
 
 <BaseLayout>
@@ -46,6 +49,37 @@ import HeroSimple from "../components/HeroSimple.astro";
             </div>
         </div>
     </div>
+  </section>
+  
+  <section class="py-8 md:py-16 xl:py-24" id="tech-partner">
+      <div class="max-w-screen-lg mx-auto px-4">
+  
+          <div class="md:grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-16 items-center">
+              <div class="order-first md:order-last mb-6 md:mb-0">
+                  <Image class="h-32 md:h-auto object-cover" src={BugBountyImage} alt="Hexens Abstract Background"/>
+              </div>
+              <div>
+                  <div class="font-bold uppercase text-sm mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
+                      //Camino Network
+                  </div>
+                  <div class="font-bold uppercase text-2xl md:text-3xl lg:text-5xl tracking-tight">
+                      Infrastructure for next-gen dApps
+                  </div>
+                  <p class="lg:text-lg text-gray-300 font-normal my-6">
+                    Camino Network is the L1 blockchain developed for the travel industry.
+                  </p>
+                  <p class="lg:text-lg text-gray-300 font-normal my-6">
+                    Camino Network unites businesses, developers, and travelers to make the industry more efficient. Blockchain keeps the ecosystem safe, fair, and fast.
+                  </p>
+                  <a class="font-semibold px-5 py-3 rounded-lg bg-primary text-gray-950 inline-block" href="https://camino.network/static/docs/Camino_Network_Whitepaper.pdf#view=fit" target="_blank" rel="noopener noreferrer">Camino Network Whitepaper</a> <br><br>
+                  <a class="font-semibold px-5 py-3 rounded-lg bg-primary text-gray-950 inline-block" href="https://github.com/chain4travel/camino-builder" target="_blank" rel="noopener noreferrer">Camino Builder</a>
+              </div>
+          </div>
+          <div>
+  
+          </div>
+  
+      </div>
   </section>
 
 </BaseLayout>
