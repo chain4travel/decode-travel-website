@@ -6,26 +6,46 @@ import HeroSimple from "../components/HeroSimple.astro";
 <BaseLayout>
   <HeroSimple />
 
-  <section class="py-8 md:py-16">
+  <section class="pb-8 md:pb-16 border-b border-gray-800">
     <div class="container">
         <div class="lg:grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
-            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
-              <div class="text-white font-bold text-2xl uppercase tracking-tight">
-                Deadline: <span class="text-secondary">Team Name</span>
-              </div>
-                <p class="text-lg text-white font-bold my-4">Wednesday: noon</p>
-                <p class="text-lg text-gray-300 font-normal">Each team must enter their team name and announce a team leader.</p>
-                <a class="underline text-primary mt-4 inline-block" href="#">Submit via Typeform</a>
+            <div class="bg-gradient-decoder bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
+              <div class="text-white font-bold text-2xl uppercase tracking-tight"><span class="text-decoder">Deadline:</span> Team Name</div>
+              <p class="font-mono text-lg text-white font-bold my-4">Wednesday: Noon</p>
+              <p class="text-lg text-gray-300 font-normal">Each team must enter their team name and announce a team leader. <a class="underline text-primary" href="#">Submit via Typeform</a></p>
             </div>
-            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-                <div class="text-white font-bold text-2xl uppercase tracking-tight">
-                  Deadline: <span class="text-secondary">Presentation</span>
-                </div>
-                <p class="text-lg text-white font-bold my-4">Friday: 9 am</p>
-                <p class="text-lg text-gray-300 font-normal">When the deadline ends, all teams must have submitted their pitch as Powerpoint-File (sorry!).</p>
-                <a class="underline text-primary mt-4 inline-block" href="mailto:events@decode.travel">Submit via E-Mail</a>
-              </div>
+            <div class="bg-gradient-company bg-gray-900 rounded-xl p-4 md:p-8">
+              <div class="text-white font-bold text-2xl uppercase tracking-tight"><span class="text-company brightness-150">Deadline:</span> Presentation</div>
+              <p class="font-mono text-lg text-white font-bold my-4">Friday: 9AM</p>
+              <p class="text-lg text-gray-300 font-normal">When the deadline ends, all teams must have submitted their pitch as Powerpoint-File (sorry!). <a class="underline text-primary" href="mailto:events@decode.travel">Submit via E-Mail</a></p>
+            </div>
         </div>
     </div>
   </section>
+
+  <section class="py-8 md:py-16">
+    <div class="container">
+        <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
+          Before you start
+        </div>
+        <div class="lg:grid grid-cols-3 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
+              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Step #1</div>
+              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Create Camino Wallet</div>
+              <p class="text-gray-300">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nemo asperiores quasi error expedita, consequuntur deleniti, facilis quo accusantium sed aut mollitia vel commodi rerum veniam itaque ratione sunt fugit libero laboriosam harum atque repellat quos.</p>
+            </div>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Step #2</div>
+              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Join Discord Channel</div>
+              <p class="text-gray-300">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nemo asperiores quasi error expedita, consequuntur deleniti, facilis quo accusantium sed aut mollitia vel commodi rerum veniam itaque ratione sunt fugit libero laboriosam harum atque repellat quos.</p>
+            </div>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Step #3</div>
+              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Watch Prep Session</div>
+              <p class="text-gray-300">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nemo asperiores quasi error expedita, consequuntur deleniti, facilis quo accusantium sed aut mollitia vel commodi rerum veniam itaque ratione sunt fugit libero laboriosam harum atque repellat quos.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
 </BaseLayout>
