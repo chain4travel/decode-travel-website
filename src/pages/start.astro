@@ -86,7 +86,7 @@ import RemedyLogo from '../images/remedy-logo.png'
         <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
           Available tech stacks <br class="hidden md:block"> for your web3 journey
         </div>
-        <div class="lg:grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
             <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
               <Image src={MessengerLogo} class="h-9 w-auto" alt="Messenger Logo" />
               <p class="text-gray-300 my-4 md:my-6"><strong>Camino Messenger</strong> – Camino Messenger is a comprehensive W2W (wallet-to-wallet) communication system for the travel industry with seamless travel data management and exchanges through a unified and encrypted infrastructure based on the Camino Messenger Protocol.</p>
@@ -116,35 +116,67 @@ import RemedyLogo from '../images/remedy-logo.png'
         <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
           Tools
         </div>
-        <div class="flex items-center p-3 hover:rounded-xl border-b border-gray-800 gap-12 hover:bg-gray-900">
-          <strong class="w-32">Miro</strong>
-          <div class="text-gray-400 w-32">Whiteboard</div>
-          <div class="flex-1 text-gray-400 leading-snug">Miro is a visual workspace for innovation where teams manage projects, design products, and build the future together. Join 60M+ users from around the world.</div>
-          <a class="bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="#">Go to tool</a>
+        <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
+          <strong class="text-xl md:w-32">Miro</strong>
+          <div class="text-gray-400 md:w-32">Whiteboard</div>
+          <div class="hidden md:block flex-1 text-gray-400 leading-snug">Miro is a visual workspace for innovation where teams manage projects, design products, and build the future together. Join 60M+ users from around the world.</div>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="#">Go to tool</a>
         </div>
-        <div class="flex items-center p-3 hover:rounded-xl border-b border-gray-800 gap-12 hover:bg-gray-900">
-          <strong class="w-32">Slidesgo</strong>
-          <div class="text-gray-400 w-32">PPT Templates</div>
-          <div class="flex-1 text-gray-400 leading-snug">Discover the best Google Slides themes and PowerPoint templates you can use in your presentations - 100% Free for any use.</div>
-          <a class="bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://slidesgo.com/">Go to tool</a>
+        <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
+          <strong class="text-xl md:w-32">Slidesgo</strong>
+          <div class="text-gray-400 md:w-32">PPT Templates</div>
+          <div class="hidden md:block flex-1 text-gray-400 leading-snug">Discover the best Google Slides themes and PowerPoint templates you can use in your presentations - 100% Free for any use.</div>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://slidesgo.com/">Go to tool</a>
         </div>
-        <div class="flex items-center p-3 hover:rounded-xl border-b border-gray-800 gap-12 hover:bg-gray-900">
-          <strong class="w-32">You Exec</strong>
-          <div class="text-gray-400 w-32">PPT Templates</div>
-          <div class="flex-1 text-gray-400 leading-snug">Business templates done right, download 500+ business presentations, spreadsheet models, and business book summaries.</div>
-          <a class="bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://youexec.com/">Go to tool</a>
+        <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
+          <strong class="text-xl md:w-32">You Exec</strong>
+          <div class="text-gray-400 md:w-32">PPT Templates</div>
+          <div class="hidden md:block flex-1 text-gray-400 leading-snug">Business templates done right, download 500+ business presentations, spreadsheet models, and business book summaries.</div>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://youexec.com/">Go to tool</a>
         </div>
-        <div class="flex items-center p-3 hover:rounded-xl border-b border-gray-800 gap-12 hover:bg-gray-900">
-          <strong class="w-32">Pixabay</strong>
-          <div class="text-gray-400 w-32">Stock images</div>
-          <div class="flex-1 text-gray-400 leading-snug">Over 4.4 million+ high quality stock images, videos and music shared by our talented community.</div>
-          <a class="bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://youexec.com/">Go to tool</a>
+        <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
+          <strong class="text-xl md:w-32">Pixabay</strong>
+          <div class="text-gray-400 md:w-32">Stock images</div>
+          <div class="hidden md:block flex-1 text-gray-400 leading-snug">Over 4.4 million+ high quality stock images, videos and music shared by our talented community.</div>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://youexec.com/">Go to tool</a>
         </div>
-        <div class="flex items-center p-3 hover:rounded-xl border-b border-gray-800 gap-12 hover:bg-gray-900">
-          <strong class="w-32">Pexels</strong>
-          <div class="text-gray-400 w-32">Stock images</div>
-          <div class="flex-1 text-gray-400 leading-snug">The best free stock photos, royalty free images & videos shared by creators.</div>
-          <a class="bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://pexels.com/">Go to tool</a>
+        <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
+          <strong class="text-xl md:w-32">Pexels</strong>
+          <div class="text-gray-400 md:w-32">Stock images</div>
+          <div class="hidden md:block flex-1 text-gray-400 leading-snug">The best free stock photos, royalty free images & videos shared by creators.</div>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://pexels.com/">Go to tool</a>
+        </div>
+    </div>
+  </section>
+
+  <section class="py-8 md:py-16">
+    <div class="container">
+        <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
+          The final presentation
+        </div>
+        <div class="lg:grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
+              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Requirements</div>
+              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Presentation requirements</div>
+              <ul class="list-disc list-inside text-gray-300">
+                <li>Max. 10 minute presentation, so keep it short and concise</li>
+                <li>The format should be PowerPoint</li>
+                <li>You can show live-demo</li>
+                <li>Something else</li>
+                <li>Something else</li>
+              </ul>
+            </div>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Criteria</div>
+              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Judging criteria</div>
+              <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Innovation:</strong> Creativity and originality of the project.</li>
+                <li><strong>Impact:</strong> Potential impact on the target audience or market.</li>
+                <li><strong>Technical Complexity:</strong> The technical difficulty and the use of blockchain technology.</li>
+                <li><strong>Design and Usability:</strong> Overall user experience and design.</li>
+                <li><strong>Pitch:</strong> Effectiveness in presenting the project.</li>
+              </ol>
+            </div>
         </div>
     </div>
   </section>
