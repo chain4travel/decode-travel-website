@@ -3,6 +3,7 @@ import { Icon } from 'astro-icon'
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroSimple from "../components/HeroSimple.astro";
+import Countdown from "../components/CountdownPitch.astro"
 
 import { Image } from 'astro:assets';
 import BugBountyImage from '../images/bug-bounty-chip.png'
@@ -21,11 +22,11 @@ import LogoDevest from '../images/logo-devest.png'
 
   <section class="pb-8 md:pb-16 border-b border-gray-800 bg-gradient-hackerz-b">
     <div class="container">
-        <div class="lg:grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+        <div class="lg:grid grid-cols-3 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
             
             <div class="bg-gradient-primary bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
               <div class="text-white font-bold text-2xl uppercase tracking-tight">Before you start</div>
-              <div class="flex flex-col gap-3 mt-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <div class="flex items-center gap-2">
                   <Icon name="tabler:wallet" class="w-6" />
                   Wallet:
@@ -55,16 +56,9 @@ import LogoDevest from '../images/logo-devest.png'
               </a>
             </div>
 
-            <div class="bg-gradient-primary bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
-              <div class="text-white font-bold text-2xl uppercase tracking-tight">Each team must enter their team name and announce a team leader.</div>
-              <div class="mt-4">
-                <a class="underline text-primary hover:text-white" href="#">Submit via Typeform</a>
-              </div>
-            </div>
-
-            <div class="bg-gradient-primary bg-gray-900 rounded-xl p-4 md:p-8">
-              <div class="text-white font-bold text-2xl uppercase tracking-tight"><span class="text-primary">Deadline:</span> Presentation</div>
-              <p class="font-mono text-lg text-white font-bold my-3">Thursday: 19:00</p>
+            <div class="bg-gradient-primary bg-gray-900 rounded-xl p-4 md:p-8 border border-primary">
+              <div class="text-white font-bold text-2xl uppercase tracking-tight"><span class="text-primary">Deadline:</span> Pitch submission</div>
+              <Countdown />
               <p class="text-lg text-gray-300 font-normal">
                 <a class="underline text-primary hover:text-white" href="mailto:events@decode.travel">Submit your Pitch via E-Mail</a> and include your team name.
               </p>
@@ -128,7 +122,7 @@ import LogoDevest from '../images/logo-devest.png'
         <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
           Available tech stacks <br class="hidden md:block"> for your web3 journey
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
             <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
               <Image src={MessengerLogo} class="h-9 w-auto" alt="Messenger Logo" />
               <p class="text-gray-300 my-4 md:my-6"><strong>Camino Messenger</strong> – Camino Messenger is a comprehensive W2W (wallet-to-wallet) communication system for the travel industry with seamless travel data management and exchanges through a unified and encrypted infrastructure based on the Camino Messenger Protocol.</p>
@@ -178,6 +172,41 @@ import LogoDevest from '../images/logo-devest.png'
   <section class="py-8 md:py-16">
     <div class="container">
         <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
+          The final presentation
+        </div>
+        <div class="lg:grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
+              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Requirements</div>
+              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Presentation requirements</div>
+              <ul class="list-disc list-inside text-gray-300">
+                <li>Max. 10 minute presentation, so keep it short and concise</li>
+                <li>Leveraging Web3 / Blockchain unique aspects</li>
+                <li>Utilizing Camino Network and Polygon ID</li>
+                <li>Innovative idea</li>
+                <li>Technical feasibility</li>
+                <li>Market feasibility</li>
+                <li>Quality of the presentation and implementation</li>
+                <li>Open-source code</li>
+              </ul>
+            </div>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Criteria</div>
+              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Judging criteria</div>
+              <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Innovation:</strong> Creativity and originality of the project.</li>
+                <li><strong>Impact:</strong> Potential impact on the target audience or market.</li>
+                <li><strong>Technical Complexity:</strong> The technical difficulty and the use of blockchain technology.</li>
+                <li><strong>Design and Usability:</strong> Overall user experience and design.</li>
+                <li><strong>Pitch:</strong> Effectiveness in presenting the project.</li>
+              </ol>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="py-8 md:py-16">
+    <div class="container">
+        <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
           Tools
         </div>
         <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
@@ -209,41 +238,6 @@ import LogoDevest from '../images/logo-devest.png'
           <div class="text-gray-400 md:w-32">Stock images</div>
           <div class="hidden md:block flex-1 text-gray-400 leading-snug">The best free stock photos, royalty free images & videos shared by creators.</div>
           <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://pexels.com/">Go to tool</a>
-        </div>
-    </div>
-  </section>
-
-  <section class="py-8 md:py-16">
-    <div class="container">
-        <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
-          The final presentation
-        </div>
-        <div class="lg:grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
-            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
-              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Requirements</div>
-              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Presentation requirements</div>
-              <ul class="list-disc list-inside text-gray-300">
-                <li>Max. 10 minute presentation, so keep it short and concise</li>
-                <li>Leveraging Web3 / Blockchain unique aspects</li>
-                <li>Utilizing Camino Network and Polygon ID</li>
-                <li>Innovative idea</li>
-                <li>Technical feasibility</li>
-                <li>Market feasibility</li>
-                <li>Quality of the presentation and implementation</li>
-                <li>Open-source code</li>
-              </ul>
-            </div>
-            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Criteria</div>
-              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Judging criteria</div>
-              <ol class="list-decimal list-inside text-gray-300">
-                <li><strong>Innovation:</strong> Creativity and originality of the project.</li>
-                <li><strong>Impact:</strong> Potential impact on the target audience or market.</li>
-                <li><strong>Technical Complexity:</strong> The technical difficulty and the use of blockchain technology.</li>
-                <li><strong>Design and Usability:</strong> Overall user experience and design.</li>
-                <li><strong>Pitch:</strong> Effectiveness in presenting the project.</li>
-              </ol>
-            </div>
         </div>
     </div>
   </section>
