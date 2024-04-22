@@ -1,0 +1,249 @@
+---
+import { Icon } from 'astro-icon'
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroSimple from "../components/HeroSimple.astro";
+import ChallengeLinks from '../components/ChallengeLinks.astro';
+import Countdown from "../components/CountdownPitch.astro"
+
+import { Image } from 'astro:assets';
+import BugBountyImage from '../images/bug-bounty-chip.png'
+import MessengerLogo from '../images/camino-messenger-logo.png'
+import PolygonIdLogo from '../images/polygon-id-logo.png'
+import RemedyLogo from '../images/remedy-logo.png'
+
+import LogoAvra from '../images/logo-avra.png'
+import LogoSimpleVisa from '../images/logo-simplevisa.png'
+import LogoVistorApp from '../images/logo-visitorapp.png'
+import LogoDevest from '../images/logo-devest.png'
+---
+
+<BaseLayout>
+
+  <HeroSimple />
+
+  <section class="pb-8 md:pb-16 border-b border-gray-800 bg-gradient-hackerz-b">
+    <div class="container">
+        <div class="lg:grid grid-cols-3 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+            
+            <div class="bg-gradient-primary bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
+              <div class="text-white font-bold text-2xl uppercase tracking-tight">Before you start</div>
+              <div class="flex flex-col gap-3 mt-6">
+                <div class="flex items-center gap-2">
+                  <Icon name="tabler:wallet" class="w-6" />
+                  Wallet:
+                  <a class="underline" href="https://suite.camino.network/wallet/home" target="_blank" rel="noopener noreferrer">Camino Suite</a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <Icon name="tabler:brand-discord" class="w-6" />
+                  Communication:
+                  <a class="underline" href="https://discord.gg/camino" target="_blank" rel="noopener noreferrer">Decode Travel Discord</a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <Icon name="tabler:brand-youtube" class="w-6" />
+                  Preparation:
+                  <a class="underline" href="https://youtu.be/htZMgTVczdw" target="_blank" rel="noopener noreferrer">Prep Session Decode Travel</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-gradient-primary bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
+              <div class="text-white font-bold text-2xl uppercase tracking-tight">Use #DecodeTravel</div>
+              <p class="text-gray-300 font-normal my-3">
+                Access professionally taken photos from the event. Browse through the gallery and see if you can spot yourself or your team in action.
+              </p>
+              <a class="underline text-primary hover:text-white flex items-center gap-1" href="https://photos.app.goo.gl/X6Cv6CsP8tudvPa5A" target="_blank" rel="noopener noreferrer">
+                <Icon name="tabler:photo" class="w-6" />
+                Decode Travel Media
+              </a>
+            </div>
+
+            <div class="bg-gradient-primary bg-gray-900 rounded-xl p-4 md:p-8 border border-primary">
+              <div class="text-white font-bold text-2xl uppercase tracking-tight"><span class="text-primary">Deadline:</span> Pitch submission</div>
+              <Countdown />
+              <p class="text-lg text-gray-300 font-normal">
+                <a class="underline text-primary hover:text-white" href="mailto:events@decode.travel">Submit your Pitch via E-Mail</a> and include your team name.
+              </p>
+            </div>
+
+        </div>
+    </div>
+  </section>
+  
+  <section class="py-8 md:py-16 xl:py-24" id="tech-partner">
+      <div class="container relative">
+          <div class="font-bold uppercase text-sm mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
+              //Camino Network
+          </div>
+          <div class="font-bold uppercase text-2xl md:text-3xl lg:text-5xl tracking-tight max-w-prose">
+              Infrastructure for <br> next-gen dApps
+          </div>
+          <p class="lg:text-lg text-gray-300 font-normal mt-4 max-w-prose">
+            <strong>Camino Network is the L1 blockchain developed for the travel industry.</strong> Camino Network unites businesses, developers, and travelers to make the industry more efficient. Blockchain keeps the ecosystem safe, fair, and fast.
+          </p>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div class="border border-white/20 bg-gray-900/70 backdrop-blur-3xl rounded-xl mt-5 p-4 lg:p-8">
+              <div class="font-bold uppercase text-xl mb-2 lg:mb-4 tracking-tight">EVM-based development:</div>
+              <div class="flex items-center gap-2 mb-2 lg:mb-4">
+                <Icon name="tabler:file" class="w-6 lg:w-8" />
+                <div>
+                  <div>Access all necessary RPC URLs and API endpoints through the detailed docs:</div>
+                  <a class="underline text-primary" href="https://docs.camino.network/guides/metamask-rpc-endpoints" target="_blank" rel="noopener noreferrer">Metamask rpc endpoints</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mb-2 lg:mb-4">
+                <Icon name="tabler:brand-github" class="w-6 lg:w-8" />
+                <div>
+                  <div>Explore the Camino Build rep on GitHub:</div>
+                  <a class="underline text-primary" href="https://github.com/chain4travel/camino-builder" target="_blank" rel="noopener noreferrer">Camino Builder</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mb-2 lg:mb-4">
+                <Icon name="tabler:brand-github" class="w-6 lg:w-8" />
+                <div>
+                  <div>Example of a gRPC server written in Java Spring Boot:</div>
+                  <a class="underline text-primary" href="https://github.com/chain4travel/camino-messenger-plugin-example-spring-boot" target="_blank" rel="noopener noreferrer">Spring boot example</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mb-2 lg:mb-4">
+                <Icon name="tabler:viewfinder" class="w-6 lg:w-8" />
+                <div>
+                  <div>Use CaminoScan Columbus for real-time blockchain exploration:</div>
+                  <a class="underline text-primary" href="https://columbus.caminoscan.com/" target="_blank" rel="noopener noreferrer">Caminoscan.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <Image class="hidden lg:block absolute -z-10 -right-8 -top-8 w-1/3 xl:w-1/2" src={BugBountyImage} alt="Hexens Abstract Background"/>
+      </div>
+  </section>
+
+  <section class="py-8 md:py-16">
+    <div class="container">
+        <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
+          Available tech stacks <br class="hidden md:block"> for your web3 journey
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
+              <Image src={MessengerLogo} class="h-9 w-auto" alt="Messenger Logo" />
+              <p class="text-gray-300 my-4 md:my-6"><strong>Camino Messenger</strong> – Camino Messenger is a comprehensive W2W (wallet-to-wallet) communication system for the travel industry with seamless travel data management and exchanges through a unified and encrypted infrastructure based on the Camino Messenger Protocol.</p>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/DecodeTravel/berlin-2024-resource-hub" target="_blank" rel="noopener noreferrer">Messenger Ressources</a>
+            </div>
+            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <Image src={PolygonIdLogo} class="h-9 w-auto" alt="PolygonID Logo" />
+              <p class="text-gray-300 my-4 md:my-6"><strong>Polygon ID</strong> – Camino Messenger is a comprehensive W2W (wallet-to-wallet) communication system for the travel industry with seamless travel data management and exchanges through a unified and encrypted infrastructure based on the Camino Messenger Protocol.</p>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="#" target="_blank" rel="noopener noreferrer">Documentation</a>
+            </div>
+            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <Image src={RemedyLogo} class="h-9 w-auto mb-4" alt="Remedy Logo" />
+              <p class="text-gray-300 my-4 md:my-6">
+                Security is paramount in both web3 and travel tech. At Decode Travel Hexens will provide Decoders with the new Remedy - 360º cybersecurity platform to leverage the holy trinity of cybersecurity: prevent, detect and respond.
+              </p>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="docs.r.xyz" target="_blank" rel="noopener noreferrer">Documentation</a>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="r.xyz" target="_blank" rel="noopener noreferrer">Remedy</a>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="glide.r.xyz" target="_blank" rel="noopener noreferrer">Glider</a>
+            </div>
+            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <Image src={LogoAvra} class="h-9 w-auto" alt="Avra Logo" />
+              <p class="text-gray-300 my-4 md:my-6">Avra is a Destination Management Company (DMC) in Greece. Use the following credentials to enter the site and access the menu "Hotels" and "Excursions" along with all the other services that AVRA offers.</p>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://xml.avra.travel/en/Account/Login?ReturnUrl=%2Fen%2FWebservices" target="_blank" rel="noopener noreferrer">Web API</a>
+            </div>
+            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <Image src={LogoSimpleVisa} class="h-9 w-auto" alt="Simple Visa Logo" />
+              <p class="text-gray-300 my-4 md:my-6">SimpleVisa helps airlines and travel professionals serving their customers with border crossing information and electronic visas. Use their API at Decode and contact “0xloris” in Discount for support.</p>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://xml.avra.travel/en/Account/Login?ReturnUrl=%2Fen%2FWebservices" target="_blank" rel="noopener noreferrer">Web API</a>
+            </div>
+            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <Image src={LogoVistorApp} class="h-9 w-auto" alt="VisitorApp Logo" />
+              <p class="text-gray-300 my-4 md:my-6">
+                VisitorApp transforms regional ticketing into a seamless, secure, and engaging digital experience both for travelers and travel service providers powered by Camino Blockchain. Access VisitorApps solution and make use of it at Decode.
+              </p>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://documenter.getpostman.com/view/22848834/2s83YVHRd9#intro" target="_blank" rel="noopener noreferrer">Platform API</a>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://documenter.getpostman.com/view/16864209/2s83mXNnAj" target="_blank" rel="noopener noreferrer">Mobile API</a>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://documenter.getpostman.com/view/16864209/UVeAtnyA" target="_blank" rel="noopener noreferrer">Validation API</a>
+            </div>
+            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <Image src={LogoDevest} class="h-9 w-auto" alt="Devest Logo" />
+              <p class="text-gray-300 my-4 md:my-6">DeVest is a decentralized application marketplace for the deployment, management and use of smart contracts. Check out DeVests DvAsset smart contract which can be used in the Decode Hackathon as a base for building contracts for collectibles/NFTs.</p>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/devest-finance/dv-asset.git" target="_blank" rel="noopener noreferrer">DvAsset</a>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://docs.devest.finance/solutions/dvasset" target="_blank" rel="noopener noreferrer">Docs DvAsset</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="py-8 md:py-16">
+    <div class="container">
+        <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
+          The final presentation
+        </div>
+        <div class="lg:grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
+              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Requirements</div>
+              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Presentation requirements</div>
+              <ul class="list-disc list-inside text-gray-300">
+                <li>Max. 10 minute presentation, so keep it short and concise</li>
+                <li>Leveraging Web3 / Blockchain unique aspects</li>
+                <li>Utilizing Camino Network and Polygon ID</li>
+                <li>Innovative idea</li>
+                <li>Technical feasibility</li>
+                <li>Market feasibility</li>
+                <li>Quality of the presentation and implementation</li>
+                <li>Open-source code</li>
+              </ul>
+            </div>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
+              <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Criteria</div>
+              <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Judging criteria</div>
+              <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Innovation:</strong> Creativity and originality of the project.</li>
+                <li><strong>Impact:</strong> Potential impact on the target audience or market.</li>
+                <li><strong>Technical Complexity:</strong> The technical difficulty and the use of blockchain technology.</li>
+                <li><strong>Design and Usability:</strong> Overall user experience and design.</li>
+                <li><strong>Pitch:</strong> Effectiveness in presenting the project.</li>
+              </ol>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="py-8 md:py-16">
+    <div class="container">
+        <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
+          Tools
+        </div>
+        <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
+          <strong class="text-xl md:w-32">Miro</strong>
+          <div class="text-gray-400 md:w-32">Whiteboard</div>
+          <div class="hidden md:block flex-1 text-gray-400 leading-snug">Miro is a visual workspace for innovation where teams manage projects, design products, and build the future together. Join 60M+ users from around the world.</div>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="#">Go to tool</a>
+        </div>
+        <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
+          <strong class="text-xl md:w-32">Slidesgo</strong>
+          <div class="text-gray-400 md:w-32">PPT Templates</div>
+          <div class="hidden md:block flex-1 text-gray-400 leading-snug">Discover the best Google Slides themes and PowerPoint templates you can use in your presentations - 100% Free for any use.</div>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://slidesgo.com/">Go to tool</a>
+        </div>
+        <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
+          <strong class="text-xl md:w-32">You Exec</strong>
+          <div class="text-gray-400 md:w-32">PPT Templates</div>
+          <div class="hidden md:block flex-1 text-gray-400 leading-snug">Business templates done right, download 500+ business presentations, spreadsheet models, and business book summaries.</div>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://youexec.com/">Go to tool</a>
+        </div>
+        <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
+          <strong class="text-xl md:w-32">Pixabay</strong>
+          <div class="text-gray-400 md:w-32">Stock images</div>
+          <div class="hidden md:block flex-1 text-gray-400 leading-snug">Over 4.4 million+ high quality stock images, videos and music shared by our talented community.</div>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://youexec.com/">Go to tool</a>
+        </div>
+        <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
+          <strong class="text-xl md:w-32">Pexels</strong>
+          <div class="text-gray-400 md:w-32">Stock images</div>
+          <div class="hidden md:block flex-1 text-gray-400 leading-snug">The best free stock photos, royalty free images & videos shared by creators.</div>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://pexels.com/">Go to tool</a>
+        </div>
+    </div>
+  </section>
+
+</BaseLayout>

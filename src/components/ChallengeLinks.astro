@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import Alpitour from '../images/logo-alpitour.png'
+import Caminonetworkfoundation from '../images/logo-caminonetworkfoundation.png'
+import Holidaycheck from '../images/logo-holidaycheck.png'
+import Polygonid from '../images/logo-polygonid.png'
+import Universal from '../images/logo-universal.png'
+---
+
+<section class="py-8 md:py-16 xl:py-24" id="tech">
+    <div class="container">
+
+        <div>
+            <div class="font-bold uppercase text-4xl md:text-5xl lg:text-7xl tracking-tighter mb-4">
+                Challenges sponsored <br>
+                by our partners
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 mt-12 gap-8 relative">
+            <div class="lg:col-span-6 border-2 border-gray-800 p-6 rounded-xl">
+                <Image class="h-8 w-auto" src={Polygonid} alt="Polygonid Logo"/>
+                <div class="font-bold uppercase text-2xl lg:text-3xl tracking-tight mt-6 mb-4"><span class="text-gray-400">Decode Challenge</span> Polygon ID</div>
+                <a class="font-semibold px-5 py-2 rounded-lg bg-primary hover:bg-white text-gray-950 inline-block mt-4" href="https://chain4travel.notion.site/Decode-Challenge-Polygon-ID-9c8fcfc347bb4c299e262cc98d8417d5?pvs=4" target="_blank" rel="noopener noreferrer">Details</a>
+            </div>
+            <div class="lg:col-span-6 border-2 border-gray-800 p-6 rounded-xl">
+                <Image class="h-8 w-auto" src={Alpitour} alt="Alpitour Logo"/>
+                <div class="font-bold uppercase text-2xl lg:text-3xl tracking-tight mt-6 mb-4"><span class="text-gray-400">Decode Challenge</span> Alpitour</div>
+                <a class="font-semibold px-5 py-2 rounded-lg bg-primary hover:bg-white text-gray-950 inline-block mt-4" href="https://chain4travel.notion.site/Decode-Challenge-Alpitour-World-589edfc2718f437398aa82961d169b35?pvs=4" target="_blank" rel="noopener noreferrer">Details</a>
+            </div>
+            <div class="lg:col-span-4 border-2 border-gray-800 p-6 rounded-xl">
+                <Image class="h-8 w-auto" src={Caminonetworkfoundation} alt="Caminonetworkfoundation Logo"/>
+                <div class="font-bold uppercase text-2xl lg:text-3xl tracking-tight mt-6 mb-4"><span class="text-gray-400">Decode Challenge</span> Camino Network Foundation</div>
+                <a class="font-semibold px-5 py-2 rounded-lg bg-primary hover:bg-white text-gray-950 inline-block mt-4" href="https://chain4travel.notion.site/Decode-Challenge-Camino-Network-Foundation-5043054ef61840d2b2999008682d44d6?pvs=4" target="_blank" rel="noopener noreferrer">Details</a>
+            </div>
+            <div class="lg:col-span-3 border-2 border-gray-800 p-6 rounded-xl">
+                <Image class="h-8 w-auto" src={Holidaycheck} alt="Holidaycheck Logo"/>
+                <div class="font-bold uppercase text-2xl lg:text-3xl tracking-tight mt-6 mb-4"><span class="text-gray-400">Decode Challenge</span> Holidaycheck</div>
+                <a class="font-semibold px-5 py-2 rounded-lg bg-primary hover:bg-white text-gray-950 inline-block mt-4" href="https://chain4travel.notion.site/Decode-Challenge-HolidayCheck-8c62a341c7494879ada4931c6d8a6e7b?pvs=4" target="_blank" rel="noopener noreferrer">Details</a>
+            </div>
+            <div class="lg:col-span-5 border-2 border-gray-800 p-6 rounded-xl">
+                <Image class="h-8 w-auto" src={Universal} alt="Universal Logo"/>
+                <div class="font-bold uppercase text-2xl lg:text-3xl tracking-tight mt-6 mb-4"><span class="text-gray-400">Decode Challenge</span> Universal</div>
+                <a class="font-semibold px-5 py-2 rounded-lg bg-primary hover:bg-white text-gray-950 inline-block mt-4" href="https://chain4travel.notion.site/Decode-Challenge-Universal-Mallorca-Travel-2887cc10bb504f99a1c758e7f3f51f88?pvs=4" target="_blank" rel="noopener noreferrer">Details</a>
+            </div>
+        </div>
+
+    </div>
+</section>
