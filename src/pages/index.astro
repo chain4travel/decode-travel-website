@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/hero/antalya2024.astro";
 import Tech from "../components/Technology.astro"
+import WhyAttend from "../components/WhyAttend.astro"
 import Apply from "../components/Apply.astro"
 import { Image } from 'astro:assets';
 import Berlin from '../images/DecodeTravel-2.jpg';
@@ -10,15 +11,22 @@ import Berlin from '../images/DecodeTravel-2.jpg';
 <BaseLayout>
   <Hero />
 
+
+  <div class="text-center py-24 lg:py-40 flex flex-col items-center justify-center">
+    <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="500" class="container text-center flex flex-col items-center z-20">
+        <div class="font-bold uppercase  mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
+            //What is decode travel
+        </div>
+        <div class="text-white font-bold text-4xl md:text-6xl mt-6 mb-12 uppercase tracking-tighter">
+          From concept to reality in 48 hours
+        </div>
+    </div>
+</div>
+
   <div class="container my-8">
     <div class="grid grid-cols-2">
       <div class="col-span-2 md:col-span-1 flex items-center justify-center overflow-hidden md:rounded-l-3xl">
-          <Image
-              src={Berlin}
-              alt="Pile of Assorted-color Boats"
-              class="w-full h-full object-cover inline-block"
-              data-sal="fade"
-          />
+          <Image src={Berlin} alt="Pile of Assorted-color Boats" class="w-full h-full object-cover inline-block" />
       </div>
         <div class="col-span-2 md:col-span-1 flex flex-col justify-center p-8 md:p-16 bg-gradient-to-r from-primary/30 to-primary/10 rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none">
             <h1 class="text-white font-bold text-4xl md:text-5xl uppercase tracking-tight">
@@ -38,8 +46,9 @@ import Berlin from '../images/DecodeTravel-2.jpg';
             </div>
         </div>
     </div>
-</div>
+  </div>
 
-<Tech />
-<Apply />
+  <WhyAttend />
+  <Tech />
+  <Apply />
 </BaseLayout>
