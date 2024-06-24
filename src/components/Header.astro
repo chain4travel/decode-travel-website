@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import DecodeLogo from '../images/decode-logo-left.png';
 ---
 
-<header class="py-5 border-primary backdrop-blur-lg z-50 sticky top-0" x-data="{ menuOpen: false }">
+<header class="py-5 bg-gray-950/90 backdrop-blur-lg z-50 sticky top-0" x-data="{ menuOpen: false }">
     <div class="container flex justify-between items-center" data-sal="slide-up">
 
         <a href="/">
@@ -32,11 +32,8 @@ import DecodeLogo from '../images/decode-logo-left.png';
 
         <nav class="hidden lg:block text-sm">
             <a class="inline-block py-1 px-2 hover:underline" href="/berlin2024">Berlin2024</a>
-            <a class="inline-block py-1 px-2 hover:underline" href="#agenda">Agenda</a>
-            <a class="inline-block py-1 px-2 hover:underline" href="#partners">Partners</a>
-            <a class="inline-block py-1 px-2 hover:underline" href="#challenges">Challenges</a>
             <a class="inline-block py-1 px-2 hover:underline" href="#tech">Tech</a>
-            <a class="inline-block py-1 px-2 hover:underline" href="#why">Why</a>
+            <a class="inline-block py-1 px-2 hover:underline text-primary font-bold" href="/#apply">Apply</a>
         </nav>
 
     </div>

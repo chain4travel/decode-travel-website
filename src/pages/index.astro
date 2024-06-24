@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/hero/antalya2024.astro";
+import Tech from "../components/Technology.astro"
+import Apply from "../components/Apply.astro"
 import { Image } from 'astro:assets';
-import BackgroundHero from '../images/antalya-harbor.jpg';
-import Berlin from '../images/berlin.jpg';
+import Berlin from '../images/DecodeTravel-2.jpg';
 ---
 
 <BaseLayout>
@@ -19,8 +20,8 @@ import Berlin from '../images/berlin.jpg';
               data-sal="fade"
           />
       </div>
-        <div class="col-span-2 md:col-span-1 flex flex-col justify-center p-8 md:p-16 bg-primary/10 md:rounded-r-3xl">
-            <h1 class="text-white font-bold text-5xl uppercase tracking-tight">
+        <div class="col-span-2 md:col-span-1 flex flex-col justify-center p-8 md:p-16 bg-gradient-to-r from-primary/30 to-primary/10 rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none">
+            <h1 class="text-white font-bold text-4xl md:text-5xl uppercase tracking-tight">
                 Decode Travel Berlin is over, for this year.
             </h1>
             <div class="text-lg my-4">
@@ -38,4 +39,7 @@ import Berlin from '../images/berlin.jpg';
         </div>
     </div>
 </div>
+
+<Tech />
+<Apply />
 </BaseLayout>
