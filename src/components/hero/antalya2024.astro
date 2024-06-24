@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import BackgroundHero from '../../images/antalya-harbor.jpg';
+---
+
+<div class="container">
+    <div class="grid grid-cols-2">
+        <div class="col-span-2 md:col-span-1 flex flex-col justify-center p-8 md:p-16 bg-primary/10 md:rounded-l-3xl">
+            <h1 class="text-white font-bold text-4xl uppercase tracking-tight md:tracking-tighter">
+                The hackathon for <br class="hidden md:block"> travel tech innovation
+            </h1>
+            <div class="text-lg my-4">
+                Take part in the open-source hackathon where developers meet leading travel companies.
+            </div>
+            <div class="md:flex items-center gap-6">
+                <div><span class="font-semibold text-secondary font-mono">//DATE:</span> November, 2024</div>
+                <div><span class="font-semibold text-secondary font-mono">//LOCATION:</span> Antalya, Turkiye</div>
+            </div>
+        </div>
+        <div class="col-span-2 md:col-span-1 flex items-center justify-center overflow-hidden md:rounded-r-3xl">
+            <Image
+                src={BackgroundHero}
+                alt="Pile of Assorted-color Boats"
+                class="w-full h-full object-cover inline-block"
+                data-sal="fade"
+            />
+        </div>
+    </div>
+</div>
