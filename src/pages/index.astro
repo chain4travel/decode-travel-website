@@ -1,20 +1,41 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/hero/antalya2024.astro";
-import WhyAttend from "../components/WhyAttend.astro"
-import Challenges from "../components/Challenges.astro"
-import Partners from "../components/Partners.astro"
-import Agenda from "../components/Agenda.astro"
-import Tech from "../components/Technology.astro"
-import Hexens from "../components/Hexens.astro"
+import { Image } from 'astro:assets';
+import BackgroundHero from '../images/antalya-harbor.jpg';
+import Berlin from '../images/berlin.jpg';
 ---
 
 <BaseLayout>
   <Hero />
-  <Agenda />
-  <Partners />
-  <Tech />
-  <Hexens />
-  <Challenges />
-  <WhyAttend />
+
+  <div class="container my-8">
+    <div class="grid grid-cols-2">
+      <div class="col-span-2 md:col-span-1 flex items-center justify-center overflow-hidden md:rounded-l-3xl">
+          <Image
+              src={Berlin}
+              alt="Pile of Assorted-color Boats"
+              class="w-full h-full object-cover inline-block"
+              data-sal="fade"
+          />
+      </div>
+        <div class="col-span-2 md:col-span-1 flex flex-col justify-center p-8 md:p-16 bg-primary/10 md:rounded-r-3xl">
+            <h1 class="text-white font-bold text-5xl uppercase tracking-tight">
+                Decode Travel Berlin is over, for this year.
+            </h1>
+            <div class="text-lg my-4">
+               The open-source hackathon where developers meet leading travel companies.
+            </div>
+            <div class="md:flex items-center gap-6">
+              <div><div class="font-semibold text-secondary font-mono">//DATE:</div> April 23-26, 2024</div>
+              <div><div class="font-semibold text-secondary font-mono">//LOCATION:</div> w3.hub Berlin, 🇩🇪 Germany</div>
+            </div>
+            <div class="mt-4">
+              <a class="font-semibold px-5 py-3 rounded-lg bg-primary hover:bg-white text-gray-950 inline-block" href="/berlin2024">
+                Recap #DTBerlin24
+              </a>
+            </div>
+        </div>
+    </div>
+</div>
 </BaseLayout>
