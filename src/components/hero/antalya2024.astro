@@ -3,8 +3,8 @@ import { Image } from 'astro:assets';
 import BackgroundHero from '../../images/decode-berlin-2024/240426120607_munirwerner_03014.jpg';
 ---
 
-<div class="container my-8">
-    <div class="grid grid-cols-2">
+<div class="container mt-12">
+    <div class="grid grid-cols-2" data-sal="slide-up" data-sal-delay="100">
         <div class="col-span-2 md:col-span-1 flex flex-col justify-center p-8 md:p-16 bg-gradient-to-r from-primary/10 to-primary/30 rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none">
             <h1 class="text-white font-bold text-4xl md:text-5xl uppercase tracking-tight">
                 The hackathon for <br class="hidden md:block"> travel tech innovation
@@ -20,14 +20,13 @@ import BackgroundHero from '../../images/decode-berlin-2024/240426120607_munirwe
                 <a class="font-semibold px-5 py-3 rounded-lg bg-primary hover:bg-white text-gray-950 inline-block" href="https://9gp400vrnwo.typeform.com/to/SaL4AImx" target="_blank">
                     Sign up for updates
                 </a>
-              </div>
+            </div>
         </div>
         <div class="col-span-2 md:col-span-1 flex items-center justify-center overflow-hidden md:rounded-r-3xl">
             <Image
                 src={BackgroundHero}
-                alt="Pile of Assorted-color Boats"
+                alt="Decode Travel Berlin Kickoff"
                 class="w-full h-full object-cover inline-block"
-                data-sal="fade"
             />
         </div>
     </div>
