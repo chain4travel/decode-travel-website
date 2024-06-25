@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets';
+
+import Alpitour from '../images/logo-alpitour.png'
+import Caminonetworkfoundation from '../images/logo-caminonetworkfoundation.png'
+import Holidaycheck from '../images/logo-holidaycheck.png'
+import Polygonid from '../images/logo-polygonid.png'
+import Universal from '../images/logo-universal.png'
+---
+
+<section class="py-8 md:py-16 xl:py-24">
+    <div class="container">
+
+        <div class="">
+            <div class="font-bold uppercase  mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
+                //Challengers
+            </div>
+            <div class="font-bold uppercase text-4xl md:text-5xl lg:text-7xl tracking-tighter mb-4">
+                Tackle real pain points from travel companies.
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 lg:gap-8 mt-8 relative">
+            <div class="bg-gradient-primary border border-gray-700 bg-gray-900 rounded-xl p-4 md:p-6">
+                <Image class="h-4 lg:h-6 w-auto" src={Alpitour} alt="Alpitour Logo"/>
+                <div class="font-bold uppercase text-2xl tracking-tighter mt-6">Payment</div>
+            </div>
+            <div class="bg-gradient-primary border border-gray-700 bg-gray-900 rounded-xl p-4 md:p-6">
+                <Image class="h-4 lg:h-6 w-auto" src={Polygonid} alt="Polygonid Logo"/>
+                <div class="font-bold uppercase text-2xl tracking-tighter mt-6">Digital identity</div>
+            </div>
+            <div class="bg-gradient-primary border border-gray-700 bg-gray-900 rounded-xl p-4 md:p-6">
+                <Image class="h-4 lg:h-6 w-auto" src={Universal} alt="Universal Logo"/>
+                <div class="font-bold uppercase text-2xl tracking-tighter mt-6">Climate compensation</div>
+            </div>
+            <div class="bg-gradient-primary border border-gray-700 bg-gray-900 rounded-xl p-4 md:p-6">
+                <Image class="h-4 lg:h-6 w-auto" src={Holidaycheck} alt="Holidaycheck Logo"/>
+                <div class="font-bold uppercase text-2xl tracking-tighter mt-6">Verified reviews</div>
+            </div>
+        </div>
+</section>

@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+import FVWARTICLE from '../images/berlinlinksarticle.jpeg'
+import CAMINOARTICLE from '../images/berlinlinkscamino.webp'
+---
+
+<section class="py-8 md:py-16" id="agenda">
+    <div class="container">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8 mt-8 relative">
+
+            <a target="_blank" href="https://www.fvw.de/touristik/technologie/camino-blockchain-innovationen-beim-decode-travel-hackathon-242766" data-sal="fade-in" data-sal-duration="250" class="bg-gradient-primary border border-gray-700 hover:border-gray-200 bg-gray-900 rounded-xl p-4 md:p-6 z-10 flex gap-4">
+                <Image class="size-32 object-cover rounded-xl" src={FVWARTICLE} alt="CaminoScan Logo"/>
+                <div>
+                    <div class="uppercase font-bold font-mono mb-2 text-primary">//FVW Article</div>
+                    <div class="uppercase font-bold text-lg md:text-xl my-3">Innovationen beim "Decode Travel"-Hackathon</div>
+                    <p class="line-clamp-3 text-gray-300">Mehr als 50 Tech-, Reise- und Web3-Experten tüftelten beim "Decode Travel"-Hackathon des Blockchain-Start-ups Chain4Travel an insgesamt vier Challenges. Darum ging es bei den Aufgaben, die von Alpitour World, Holidaycheck, Universal Mallorca Travel und Polygon ID kamen.</p>
+                </div>
+            </a>
+
+            <a target="_blank" href="https://camino.network/decode-travel-recap/" data-sal="fade-in" data-sal-duration="250" class="bg-gradient-primary border border-gray-700 hover:border-gray-200 bg-gray-900 rounded-xl p-4 md:p-6 z-10 flex gap-4">
+                <Image class="size-32 object-cover" src={CAMINOARTICLE} alt="CaminoScan Logo"/>
+                <div>
+                    <div class="uppercase font-bold font-mono mb-2 text-primary">//RECAP</div>
+                    <div class="uppercase font-bold text-lg md:text-xl my-3">Camino Network Article - Decode Travel Hackathon</div>
+                    <p class="line-clamp-3 text-gray-300">Decode Travel hackathon organized by Chain4Travel in April 2024 became the opening for a series of events to be held around the globe. The event was well-aligned with the mission of the Camino Network Foundation, which is to encourage a collaborative environment that helps traditional travel businesses smoothly join the web3 travel ecosystem.</p>
+                </div>
+            </a>
+    </div>
+</section>
