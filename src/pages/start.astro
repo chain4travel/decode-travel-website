@@ -8,14 +8,8 @@ import ChallengeLinks from '../components/ChallengeLinks.astro';
 import { Image } from 'astro:assets';
 import BugBountyImage from '../images/bug-bounty-chip.png'
 import MessengerLogo from '../images/camino-messenger-logo.png'
-import PolygonIdLogo from '../images/polygon-id-logo.png'
-import RemedyLogo from '../images/remedy-logo.png'
-
-import LogoAvra from '../images/logo-avra.png'
-import LogoSimpleVisa from '../images/logo-simplevisa.png'
-import LogoVistorApp from '../images/logo-visitorapp.png'
-import LogoDevest from '../images/logo-devest.png'
-import LogoHotelplan from '../images/logo-hotelplan.png'
+import MtsLogo from '../images/mts-logo.png'
+import A3mLogo from '../images/a3m-logo.png'
 ---
 
 <BaseLayout>
@@ -129,57 +123,18 @@ import LogoHotelplan from '../images/logo-hotelplan.png'
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
             <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
               <Image src={MessengerLogo} class="h-9 w-auto" alt="Messenger Logo" />
-              <p class="text-gray-300 my-4 md:my-6"><strong>Camino Messenger</strong> – Camino Messenger is a comprehensive W2W (wallet-to-wallet) communication system for the travel industry with seamless travel data management and exchanges through a unified and encrypted infrastructure based on the Camino Messenger Protocol.</p>
+              <p class="text-gray-300 my-4 md:my-6"><strong>Camino Messenger</strong> – Camino Messenger is a comprehensive W2W (wallet-to-wallet) communication system for the travel industry with seamless travel data management and exchanges through a unified and encrypted infrastructure based on the Camino Messenger Protocol. Use it to implement search/validate/book funnels on Camino!</p>
               <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/DecodeTravel/berlin-2024-resource-hub" target="_blank" rel="noopener noreferrer">Messenger Ressources</a>
             </div>
             <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <Image src={PolygonIdLogo} class="h-9 w-auto" alt="PolygonID Logo" />
-              <p class="text-gray-300 my-4 md:my-6"><strong>Polygon ID</strong> – Camino Messenger is a comprehensive W2W (wallet-to-wallet) communication system for the travel industry with seamless travel data management and exchanges through a unified and encrypted infrastructure based on the Camino Messenger Protocol.</p>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="#" target="_blank" rel="noopener noreferrer">Documentation</a>
+              <Image src={MtsLogo} class="h-9 w-auto" alt="PolygonID Logo" />
+              <p class="text-gray-300 my-4 md:my-6"><strong>Polygon ID</strong> – MTS Globe is a leading international destination management company (DMC) that specializes in providing comprehensive tourism services across 21 countries, leveraging local expertise to enhance travel experiences for clients and tour operators. Activities by MTS are available as a supplier on the Camino Messenger.</p>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/DecodeTravel/berlin-2024-resource-hub" target="_blank" rel="noopener noreferrer">Documentation</a>
             </div>
             <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <Image src={RemedyLogo} class="h-9 w-auto mb-4" alt="Remedy Logo" />
-              <p class="text-gray-300 my-4 md:my-6">
-                Security is paramount in both web3 and travel tech. At Decode Travel Hexens will provide Decoders with the new Remedy - 360º cybersecurity platform to leverage the holy trinity of cybersecurity: prevent, detect and respond.
-              </p>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://docs.r.xyz" target="_blank" rel="noopener noreferrer">Documentation</a>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://r.xyz" target="_blank" rel="noopener noreferrer">Remedy</a>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://glide.r.xyz" target="_blank" rel="noopener noreferrer">Glider</a>
-            </div>
-            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <Image src={LogoAvra} class="h-9 w-auto" alt="Avra Logo" />
-              <p class="text-gray-300 my-4 md:my-6">Avra is a Destination Management Company (DMC) in Greece. Use the following credentials to enter the site and access the menu "Hotels" and "Excursions" along with all the other services that AVRA offers.</p>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://xml.avra.travel/en/Account/Login?ReturnUrl=%2Fen%2FWebservices" target="_blank" rel="noopener noreferrer">Web API</a>
-            </div>
-            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <Image src={LogoSimpleVisa} class="h-9 w-auto" alt="Simple Visa Logo" />
-              <p class="text-gray-300 my-4 md:my-6">SimpleVisa helps airlines and travel professionals serving their customers with border crossing information and electronic visas. Use their API at Decode and contact “0xloris” in Discount for support.</p>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://xml.avra.travel/en/Account/Login?ReturnUrl=%2Fen%2FWebservices" target="_blank" rel="noopener noreferrer">Web API</a>
-            </div>
-            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <Image src={LogoVistorApp} class="h-9 w-auto" alt="VisitorApp Logo" />
-              <p class="text-gray-300 my-4 md:my-6">
-                VisitorApp transforms regional ticketing into a seamless, secure, and engaging digital experience both for travelers and travel service providers powered by Camino Blockchain. Access VisitorApps solution and make use of it at Decode.
-              </p>
-              <a class="text-sm py-2 px-3 mb-1 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://documenter.getpostman.com/view/22848834/2s83YVHRd9#intro" target="_blank" rel="noopener noreferrer">Platform API</a>
-              <a class="text-sm py-2 px-3 mb-1 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://documenter.getpostman.com/view/16864209/2s83mXNnAj" target="_blank" rel="noopener noreferrer">Mobile API</a>
-              <a class="text-sm py-2 px-3 mb-1 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://documenter.getpostman.com/view/16864209/UVeAtnyA" target="_blank" rel="noopener noreferrer">Validation API</a>
-            </div>
-            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <Image src={LogoDevest} class="h-9 w-auto" alt="Devest Logo" />
-              <p class="text-gray-300 my-4 md:my-6">DeVest is a decentralized application marketplace for the deployment, management and use of smart contracts. Check out DeVests DvAsset smart contract which can be used in the Decode Hackathon as a base for building contracts for collectibles/NFTs.</p>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/devest-finance/dv-asset.git" target="_blank" rel="noopener noreferrer">DvAsset</a>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://docs.devest.finance/solutions/dvasset" target="_blank" rel="noopener noreferrer">Docs DvAsset</a>
-            </div>
-            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <Image src={LogoHotelplan} class="h-10 w-auto" alt="Devest Logo" />
-              <p class="text-gray-300 my-4">Access the API of the brand Interhome to test distribution with real travel content.</p>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://partners.interhome.group/wiki/implementation_guide" target="_blank" rel="noopener noreferrer">Interhome B2B</a>
-            </div>
-            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <div class="font-bold uppercase text-2xl tracking-tighter">And now, code!</div>
-              <p class="text-gray-300 my-4">Gitpod-enable repos, get your cloud-based dev stack at Gitpod</p>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://gitpod.io/" target="_blank" rel="noopener noreferrer">Gitpod</a>
+              <Image src={A3mLogo} class="h-9 w-auto" alt="PolygonID Logo" />
+              <p class="text-gray-300 my-4 md:my-6"><strong>Polygon ID</strong> – A3M Global Monitoring is a leading disruption information service that specializes in providing real-time crisis communication and monitoring solutions, enhancing safety and response strategies for travelers and organizations globally. Event info by A3M is available as a supplier on the Camino Messenger.</p>
+              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/DecodeTravel/berlin-2024-resource-hub" target="_blank" rel="noopener noreferrer">Documentation</a>
             </div>
         </div>
     </div>
@@ -209,9 +164,9 @@ import LogoHotelplan from '../images/logo-hotelplan.png'
             <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
               <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Criteria</div>
               <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Judging criteria</div>
-              <ol class="list-decimal list-inside text-gray-300">
+              <ol class="list-decimal ml-4 text-gray-300">
                 <li>Innovative idea, leveraging Web3 / Blockchain unique aspects</li>
-                <li>Utilizing Camino, Messenger & other available tech stacks</li>
+                <li>Utilizing Camino, Messenger & other available tech stacks. <strong>Proposing extension to existing functionality is even better.</strong></li>
                 <li>Technical feasibility, making use of available APIs </li>
                 <li>Market feasibility</li>
                 <li>Quality of the presentation & implementation</li>

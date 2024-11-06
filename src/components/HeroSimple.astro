@@ -12,9 +12,40 @@ import BackgroundHero from '../images/bg-hero.png';
             <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration="400" class="text-white font-bold text-4xl md:text-6xl 2xl:text-7xl my-4 md:my-6 uppercase tracking-tight md:tracking-tighter">
                 Ready, Set, Develop!
             </h1>
-            <div data-sal="slide-up" data-sal-delay="400" data-sal-duration="400" class="text-gray-400 text-base md:text-xl max-w-lg my-4 md:my-6">
+            <div data-sal="slide-up" data-sal-delay="400" data-sal-duration="400" class="text-gray-400 text-base md:text-xl max-w-xl mb-4 md:mb-8">
                 Get started with building on Camino Network to Decode Travel.
             </div>
+            <div id="demo" class="flex items-center min-h-20 gap-7 md:gap-12 text-white justify-center text-3xl md:text-5xl tracking-normal font-bold"></div>
         </div>
     </div>
 </div>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 13, 2024 09:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+        
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = "<div>" + days + " <div class='text-base mt-2 uppercase font-normal text-gray-400'>Days</div></div> " + "<div>" + hours + " <div class='text-base mt-2 uppercase font-normal text-gray-400'>Hours</div></div> " + "<div>" + minutes + " <div class='text-base mt-2 uppercase font-normal text-gray-400'>Minutes</div></div> " + "<div>" + seconds + " <div class='text-base mt-2 uppercase font-normal text-gray-400'>Seconds</div></div> ";
+        
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "";
+    }
+    }, 1000);
+</script>
