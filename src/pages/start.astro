@@ -35,8 +35,13 @@ import A3mLogo from '../images/a3m-logo.png'
                 </div>
                 <div class="flex items-center gap-2">
                   <Icon name="tabler:brand-youtube" class="w-6" />
+                  Q&A Turkey:
+                  <a class="underline" href="https://youtu.be/FpNZlHZ93Ps" target="_blank" rel="noopener noreferrer">Antalya - Prep Session</a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <Icon name="tabler:brand-youtube" class="w-6" />
                   Preparation:
-                  <a class="underline" href="https://youtu.be/htZMgTVczdw" target="_blank" rel="noopener noreferrer">Prep Session Decode Travel</a>
+                  <a class="underline" href="https://youtu.be/htZMgTVczdw" target="_blank" rel="noopener noreferrer">Berlin - Prep Session</a>
                 </div>
               </div>
             </div>
@@ -82,28 +87,21 @@ import A3mLogo from '../images/a3m-logo.png'
             <div class="border border-white/20 bg-gray-900/70 backdrop-blur-3xl rounded-xl mt-5 p-4 lg:p-8">
               <div class="font-bold uppercase text-xl mb-2 lg:mb-4 tracking-tight">EVM-based development:</div>
               <div class="flex items-center gap-2 mb-2 lg:mb-4">
-                <Icon name="tabler:file" class="w-6 lg:w-8" />
+                <Icon name="tabler:file" class="size-6 md:size-8" />
                 <div>
                   <div>Access all necessary RPC URLs and API endpoints through the detailed docs:</div>
                   <a class="underline text-primary" href="https://docs.camino.network/guides/metamask-rpc-endpoints" target="_blank" rel="noopener noreferrer">Metamask rpc endpoints</a>
                 </div>
               </div>
               <div class="flex items-center gap-2 mb-2 lg:mb-4">
-                <Icon name="tabler:brand-github" class="w-6 lg:w-8" />
+                <Icon name="tabler:brand-github" class="size-6 md:size-8" />
                 <div>
                   <div>Explore the Camino Build rep on GitHub:</div>
                   <a class="underline text-primary" href="https://github.com/chain4travel/camino-builder" target="_blank" rel="noopener noreferrer">Camino Builder</a>
                 </div>
               </div>
               <div class="flex items-center gap-2 mb-2 lg:mb-4">
-                <Icon name="tabler:brand-github" class="w-6 lg:w-8" />
-                <div>
-                  <div>Example of a gRPC server written in Java Spring Boot:</div>
-                  <a class="underline text-primary" href="https://github.com/chain4travel/camino-messenger-plugin-example-spring-boot" target="_blank" rel="noopener noreferrer">Spring boot example</a>
-                </div>
-              </div>
-              <div class="flex items-center gap-2 mb-2 lg:mb-4">
-                <Icon name="tabler:viewfinder" class="w-6 lg:w-8" />
+                <Icon name="tabler:viewfinder" class="size-6 md:size-8" />
                 <div>
                   <div>Use CaminoScan Columbus for real-time blockchain exploration:</div>
                   <a class="underline text-primary" href="https://columbus.caminoscan.com/" target="_blank" rel="noopener noreferrer">Caminoscan.com</a>
@@ -117,24 +115,36 @@ import A3mLogo from '../images/a3m-logo.png'
 
   <section class="py-8 md:py-16">
     <div class="container">
-        <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter mb-4">
-          Available tech stacks <br class="hidden md:block"> for your web3 journey
+        <Image src={MessengerLogo} class="h-9 w-auto" alt="Messenger Logo" />
+        <div class="font-bold uppercase text-4xl md:text-5xl tracking-tighter my-4">
+          Travel-to-Web3 Tech Stack
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 2xl:gap-8 mt-8 relative">
-            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
-              <Image src={MessengerLogo} class="h-9 w-auto" alt="Messenger Logo" />
-              <p class="text-gray-300 my-4 md:my-6"><strong>Camino Messenger</strong> – Camino Messenger is a comprehensive W2W (wallet-to-wallet) communication system for the travel industry with seamless travel data management and exchanges through a unified and encrypted infrastructure based on the Camino Messenger Protocol. Use it to implement search/validate/book funnels on Camino!</p>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/DecodeTravel/berlin-2024-resource-hub" target="_blank" rel="noopener noreferrer">Messenger Ressources</a>
+        <p class="lg:text-lg text-gray-300 font-normal mb-4 max-w-prose">Camino Messenger is a comprehensive W2W (wallet-to-wallet) communication system for the travel industry with seamless travel data management and exchanges through a unified and encrypted infrastructure based on the Camino Messenger Protocol. Use it to implement search/validate/book funnels on Camino!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-8 relative">
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-6 flex flex-col">
+              <div class="font-bold md:↗text-xl/6 tracking-tight">Intro to Messenger:</div>
+              <p class="my-3 text-gray-300 text-sm">Get an overview of Camino Messenger, a secure W2W communication solution for travel. Learn how it streamlines data management and exchanges across the industry.</p>
+              <div class="mt-auto"><a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://chain4travel-my.sharepoint.com/:p:/p/sam_jaarsma/EYxLgIWr1vpJrcoXfXPeBecBwjYeblfqLCetKo6lily6cQ?e=yDHxFS" target="_blank" rel="noopener noreferrer">Read more ↗</a></div>
             </div>
-            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <Image src={MtsLogo} class="h-9 w-auto" alt="MTS Logo" />
-              <p class="text-gray-300 my-4 md:my-6"><strong>MTS Globe</strong> is a leading international destination management company (DMC) that specializes in providing comprehensive tourism services across 21 countries, leveraging local expertise to enhance travel experiences for clients and tour operators. Activities by MTS are available as a supplier on the Camino Messenger.</p>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/DecodeTravel/berlin-2024-resource-hub" target="_blank" rel="noopener noreferrer">Documentation</a>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-6 flex flex-col">
+              <div class="font-bold md:↗text-xl/6 tracking-tight">Messenger detailed doc:</div>
+              <p class="my-3 text-gray-300 text-sm">Explore detailed documentation for Camino Messenger, guiding you through its encrypted, unified infrastructure for seamless travel communications.</p>
+              <div class="mt-auto"><a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://docs.camino.network/camino-messenger/introduction" target="_blank" rel="noopener noreferrer">Read more ↗</a></div>
             </div>
-            <div class="bg-gradient-primary border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
-              <Image src={A3mLogo} class="h-9 w-auto" alt="A3M Logo" />
-              <p class="text-gray-300 my-4 md:my-6"><strong>A3M Global Monitoring</strong> is a leading disruption information service that specializes in providing real-time crisis communication and monitoring solutions, enhancing safety and response strategies for travelers and organizations globally. Event info by A3M is available as a supplier on the Camino Messenger.</p>
-              <a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/DecodeTravel/berlin-2024-resource-hub" target="_blank" rel="noopener noreferrer">Documentation</a>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-6 flex flex-col">
+              <div class="font-bold md:↗text-xl/6 tracking-tight">Example of a Partner Plugin written in Java Spring Boot / gRPC:</div>
+              <p class="my-3 text-gray-300 text-sm">Check out a Java Spring Boot plugin example for easy integration with Camino Messenger. See how to use gRPC for smooth messaging.</p>
+              <div class="mt-auto"><a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/chain4travel/camino-messenger-plugin-example-spring-boot" target="_blank" rel="noopener noreferrer">Spring boot example ↗</a></div>
+            </div>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-6 flex flex-col">
+              <div class="font-bold md:↗text-xl/6 tracking-tight">Example of a Partner Plugin written in Go: </div>
+              <p class="my-3 text-gray-300 text-sm">Explore a Go-based partner plugin for Camino Messenger, offering a hands-on example for integrating wallet-to-wallet communications in your app.</p>
+              <div class="mt-auto"><a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/chain4travel/camino-messenger-bot/tree/dev/examples/rpc/partner-plugin" target="_blank" rel="noopener noreferrer">Read more ↗</a></div>
+            </div>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-6 flex flex-col">
+              <div class="font-bold md:↗text-xl/6 tracking-tight">ADD big CTA: Visit the Antalya github repo:</div>
+              <p class="my-3 text-gray-300 text-sm">Visit the Antalya 2024 Resource Hub on GitHub for Camino Messenger tools, guides, and resources for streamlined integration.</p>
+              <div class="mt-auto"><a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/DecodeTravel/antalya-2024-resource-hub" target="_blank" rel="noopener noreferrer">Read more ↗</a></div>
             </div>
         </div>
     </div>
