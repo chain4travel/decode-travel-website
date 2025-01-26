@@ -6,7 +6,7 @@ Last updated 14th of October 2024
 
 ### PLEASE READ THESE TERMS AND CONDITIONS BEFORE PARTICIPATING THE HACKATHON.
 
-These terms and conditions (hereinafter, the “**Terms and Conditions**”) shall govern the participation in the physical hackathon “DECODE TRAVEL” planned for November 2024 (hereinafter, the “**Hackathon**”) as is hosted by the Organiser (as defined below). These Terms and Conditions shall have effect as of their publication of the Hackathon webpage (<https://decode.travel/>) (the “**Website**”).
+These terms and conditions (hereinafter, the “**Terms and Conditions**”) shall govern the participation in the physical hackathon “DECODE TRAVEL” planned for May 2025 (hereinafter, the “**Hackathon**”) as is hosted by the Organiser (as defined below). These Terms and Conditions shall have effect as of their publication of the Hackathon webpage (<https://decode.travel/>) (the “**Website**”).
 
 These Terms and Conditions apply to every person (“**you**” or the “**Participant**”) who registers for and/or attends the Hackathon. If you are registering on behalf of your company or another legal entity, you represent that you have the legal authority to bind that entity to these Terms and Conditions, in which case “you” will mean the entity you represent.
 
@@ -18,7 +18,7 @@ YOUR PARTICIPATION IN THE HACKATHON IS ENTIRELY VOLUNTARY, BUT IF YOU DO PARTICI
 
 - 1. The Hackathon is organised by Chain4Travel AG (hereinafter, the “**Organiser**”).
   2. The Hackathon is designed to develop open-source or source available licenses applicable to new and innovative solutions to be implemented within the Camino Network (i.e., the first layer 1 built by the travel industry for the travel industry) with a focus on travel technology. The Hackathon will provide an opportunity for travel companies to meet external talent and upskill their staff as well as for interested travel and/or tech enthusiasts to tap into web technologies.
-  3. Unless explicitly indicated otherwise on the Website, the physical Hackathon will take place in Antalya (Türkiye) in November 2024. For more details on the timeline of the Hackathon please consult the Website. The Organiser reserves the right to change days, time and location due to technical or organizational needs by announcing such changes on the Website.
+  3. Unless explicitly indicated otherwise on the Website, the physical Hackathon will take place in Crete (Greece) in May 2025. For more details on the timeline of the Hackathon please consult the Website. The Organiser reserves the right to change days, time and location due to technical or organizational needs by announcing such changes on the Website.
 
 **2.- Eligibility**
 
@@ -38,21 +38,21 @@ If you are an employee of the Organiser or any of its subsidiaries or affiliates
 
 3.1. Application to the Hackathon
 
-3.1.1. Participants wishing to participate in the Hackathon must fill out the online application form on the Website before 1st November 2024 at 12:00 am.
+3.1.1. Participants wishing to participate in the Hackathon must fill out the online application form on the Website before 1st May 2025 at 12:00 am.
 
 If you register or apply as an entity or on behalf of a team, you confirm that such entity and each person in the team accepts these Terms and Conditions and you have the right to represent such entity and team for these Terms and Conditions.
 
-3.1.2. Registration does not ensure participation in the Hackathon. All teams and individuals will receive before 4<sup>th</sup> November 2024 at 12:00 am an official confirmation of their acceptance to the Hackathon sent to the e-mail provided in the application form.
+3.1.2. Registration does not ensure participation in the Hackathon. All teams and individuals will receive before 4<sup>th</sup> May 2025 at 12:00 am an official confirmation of their acceptance to the Hackathon sent to the e-mail provided in the application form.
 
 3.2. Competition mechanics
 
-3.2.1. All confirmed Participants will be required to pre-check-in and confirm their participation in the Hackathon by purchasing a free NFT on the link provided by the Organiser by 12:00 am on 7<sup>th</sup> November 2024. This check-in link will be sent to Participants in the confirmation email (see 3.1.2 above). Failure to do so may result in denial of access to the Hackathon facilities and/or disqualification and/or removal from the Hackathon by the Organiser.
+3.2.1. All confirmed Participants will be required to pre-check-in and confirm their participation in the Hackathon by purchasing a free NFT on the link provided by the Organiser by 12:00 am on 7<sup>th</sup> May 2025. This check-in link will be sent to Participants in the confirmation email (see 3.1.2 above). Failure to do so may result in denial of access to the Hackathon facilities and/or disqualification and/or removal from the Hackathon by the Organiser.
 
 By performing the pre-check-in, Participants accept these Terms and Conditions and grant consent for the handling of their personal information by the Organiser.
 
 3.2.3. Participants will manage on their own the Hackathon tasks to be completed, deadlines and time allocation.
 
-3.3. A Participant may unregister from the Hackathon at any time by sending a brief e-mail notification to <events@decode.com> before 6<sup>th</sup> November 2024 at 12:00 am. Termination of the participation shall not affect any rights or obligations incurred before the date of termination.
+3.3. A Participant may unregister from the Hackathon at any time by sending a brief e-mail notification to <events@decode.com> before 6<sup>th</sup> May 2025 at 12:00 am. Termination of the participation shall not affect any rights or obligations incurred before the date of termination.
 
 3.4. Organisers must be informed of any changes made to teams and their respective members. Failure to do so may result in the inability to provide communication and instructions, delayed information, and/or disqualification from the Hackathon.
 
