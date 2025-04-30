@@ -46,11 +46,7 @@ If you register or apply as an entity or on behalf of a team, you confirm that s
 
 3.2. Competition mechanics
 
-3.2.1. All confirmed Participants will be required to pre-check-in and confirm their participation in the Hackathon by purchasing a free NFT on the link provided by the Organiser by 12:00 am on 7<sup>th</sup> May 2025. This check-in link will be sent to Participants in the confirmation email (see 3.1.2 above). Failure to do so may result in denial of access to the Hackathon facilities and/or disqualification and/or removal from the Hackathon by the Organiser.
-
-By performing the pre-check-in, Participants accept these Terms and Conditions and grant consent for the handling of their personal information by the Organiser.
-
-3.2.3. Participants will manage on their own the Hackathon tasks to be completed, deadlines and time allocation.
+3.2.1. Participants will manage on their own the Hackathon tasks to be completed, deadlines and time allocation.
 
 3.3. A Participant may unregister from the Hackathon at any time by sending a brief e-mail notification to <events@decode.com> before 6<sup>th</sup> May 2025 at 12:00 am. Termination of the participation shall not affect any rights or obligations incurred before the date of termination.
 
