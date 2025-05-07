@@ -24,17 +24,17 @@ import A3mLogo from '../images/a3m-logo.png'
               <div class="text-white font-bold text-2xl uppercase tracking-tight">Before you start</div>
               <div class="flex flex-col gap-3 mt-6">
                 <div class="flex items-center gap-2">
-                  <Icon name="tabler:wallet" class="w-6" />
+                  <Icon name="tabler:wallet" class="w-6 h-6 shrink-0" />
                   Wallet:
                   <a class="underline" href="https://suite.camino.network/wallet/home" target="_blank" rel="noopener noreferrer">Camino Suite</a>
                 </div>
                 <div class="flex items-center gap-2">
-                  <Icon name="tabler:brand-discord" class="w-6" />
+                  <Icon name="tabler:brand-discord" class="w-6 h-6 shrink-0" />
                   Communication:
                   <a class="underline" href="https://discord.gg/camino" target="_blank" rel="noopener noreferrer">Decode Travel Discord</a>
                 </div>
                 <div class="flex items-center gap-2">
-                  <Icon name="tabler:brand-youtube" class="w-6" />
+                  <Icon name="tabler:brand-youtube" class="w-6 h-6 shrink-0" />
                   Preparation:
                   <a class="underline" href="https://youtu.be/htZMgTVczdw" target="_blank" rel="noopener noreferrer">Berlin - Prep Session</a>
                 </div>
@@ -42,10 +42,11 @@ import A3mLogo from '../images/a3m-logo.png'
             </div>
 
             <div class="bg-gradient-primary bg-gray-900 rounded-xl p-4 md:p-8 border border-primary">
-              <div class="text-white font-bold text-2xl uppercase tracking-tight"><span class="text-primary">Deadline:</span> Pitch submission</div>
+              <div class="text-white font-bold text-2xl uppercase tracking-tight mb-6"><span class="text-primary">Deadline:</span> Pitch submission</div>
               <p class="text-lg text-gray-300 font-normal">
-                May 9th, 7pm (local time) <br> 
-                <a class="underline text-primary hover:text-white" href="mailto:events@decode.travel">Submit your Pitch via E-Mail</a> and include your team name.
+                <strong>May 8th 6pm local time:</strong> Code submission <i>(send us the github repo with README explaining the architecture and how to run)</i>
+                <br><br> 
+                <strong>May 8th 7pm local time:</strong> PPT, video and other material for the pitch <a class="underline text-primary hover:text-white" href="mailto:events@decode.travel">(send via email)</a>.
               </p>
             </div>
 
@@ -130,6 +131,11 @@ import A3mLogo from '../images/a3m-logo.png'
               <p class="my-3 text-gray-300 text-sm">Visit the Antalya 2024 Resource Hub on GitHub for Camino Messenger tools, guides, and resources for streamlined integration.</p>
               <div class="mt-auto"><a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://github.com/DecodeTravel/antalya-2024-resource-hub" target="_blank" rel="noopener noreferrer">Antalya github repo ↗</a></div>
             </div>
+            <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-6 flex flex-col">
+              <div class="font-bold md:↗text-xl/6 tracking-tight">Monerium sandbox</div>
+              <p class="my-3 text-gray-300 text-sm">Use this to get your EURe stablecoiins on Columbus and simulate SEPA transfers in and out.</p>
+              <div class="mt-auto"><a class="text-sm py-2 px-3 inline-block rounded-lg font-semibold border-2 border-primary/50 text-primary hover:text-white hover:border-primary transition-colors" href="https://sandbox.monerium.dev/" target="_blank" rel="noopener noreferrer">sandbox.monerium.dev ↗</a></div>
+            </div>            
         </div>
     </div>
   </section>
@@ -143,17 +149,18 @@ import A3mLogo from '../images/a3m-logo.png'
             <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8 mb-4 md:mb-0">
               <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Requirements</div>
               <div class="my-4 text-white font-bold text-2xl uppercase tracking-tight">Presentation requirements</div>
+              <strong>A. Max 15 minute presentation, so keep it short and concise</strong>
               <ul class="list-disc list-inside text-gray-300">
-                <li>Max. 10 minute presentation, so keep it short and concise</li>
-                <li>Leveraging Web3 / Blockchain unique aspects</li>
-                <li>Utilizing Camino Network</li>
-                <li>Innovative idea</li>
-                <li>Technical feasibility</li>
-                <li>Market feasibility</li>
-                <li>Quality of the presentation and implementation</li>
-                <li>Open-source code</li>
-
+                <li>Problem statement, solution, USP and why is it innovative</li>
+                <li>How you leveraged Web3 / Blockchain unique aspects</li>
+                <li>How Camino Network, Messenger, other unchain tools was useful</li>
+                <li>Brief on architecture and technical feasibility</li>
+                <li>Brief on hackathon experience</li>
+                <li>Solution to market fit</li>
+                <li>Future developments</li>
+                <li>Demo (live or video)</li>
               </ul>
+              <strong class="mt-8 block">B. Open-source code with README (architecture, how to run), disclose prior work and systems connected</strong>
             </div>
             <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-4 md:p-8">
               <div class="inline-block bg-primary text-gray-950 text-sm font-bold tracking-tighter uppercase py-1 px-2">Criteria</div>
@@ -179,7 +186,7 @@ import A3mLogo from '../images/a3m-logo.png'
           <strong class="text-xl md:w-32">Miro</strong>
           <div class="text-gray-400 md:w-32">Whiteboard</div>
           <div class="hidden md:block flex-1 text-gray-400 leading-snug">Miro is a visual workspace for innovation where teams manage projects, design products, and build the future together. Join 60M+ users from around the world.</div>
-          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="#">Go to tool</a>
+          <a class="text-center bg-primary text-black text-sm font-semibold py-2 px-3 rounded-lg hover:bg-white" href="https://miro.com/app/board/uXjVI5bsSUA=/">Go to tool</a>
         </div>
         <div class="flex items-center justify-between p-3 hover:rounded-xl border-b border-gray-800 gap-3 md:gap-12 hover:bg-gray-900">
           <strong class="text-xl md:w-32">Slidesgo</strong>
