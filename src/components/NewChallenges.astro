@@ -1,0 +1,353 @@
+---
+// NewChallenges.astro - Accordion-style challenges component
+---
+
+<section class="py-8 md:py-16 xl:py-24" id="new-challenges">
+    <div class="container">
+        <div class="mb-8">
+            <div class="font-bold uppercase mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
+                //New Challenges
+            </div>
+            <div class="font-bold uppercase text-4xl md:text-5xl lg:text-7xl tracking-tighter mb-4">
+                Innovation <br> Challenges 2025
+            </div>
+            <p class="lg:text-xl text-gray-300 max-w-3xl">
+                Dive deep into cutting-edge challenges that push the boundaries of travel technology and web3 innovation.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+            <!-- Challenge 1: AI-powered hotel discovery -->
+            <div class="challenge-item border border-transparent rounded-xl overflow-hidden transition-all duration-300">
+                <button class="challenge-header w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div>
+                        <h3 class="font-bold text-xl uppercase mb-2 text-primary">🤖 AI-powered hotel discovery and booking agent via MCP</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Design an AI-driven agent that discovers and interfaces with hotels through the Model Context Protocol (MCP). 
+                            Handle rich natural language queries and return live availability and rates with contextual itineraries.
+                        </p>
+                    </div>
+                    <div class="challenge-icon ml-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="challenge-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-6 pt-0 border-t border-gray-800/50">
+                        <div class="text-gray-300 space-y-4">
+                            <p>
+                                AI travel agents should be able to discover hotels that expose their metadata, rates, and availability via MCP servers, 
+                                then surface those properties in natural language search results with the AI's ability to compare, summarize, and generate 
+                                contextual itineraries. Find inspiration in AI travel agents like Perplexity's travel agent etc.
+                            </p>
+                            <p>
+                                Design (not build) how agents can process bookings via secure blockchain interactions. Focus on seamless digital identity 
+                                and payment verification through blockchain-based systems. Elaborate on why blockchain enhances AI agent booking capabilities 
+                                (identity verification, payment processing, transaction transparency and traceability).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenge 2: On-chain booking resale -->
+            <div class="challenge-item border border-transparent rounded-xl overflow-hidden transition-all duration-300">
+                <button class="challenge-header w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div>
+                        <h3 class="font-bold text-xl uppercase mb-2 text-primary">🔄 On-chain booking resale and buy-back</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Create a web3 protocol enabling hotels to tokenize non-refundable bookings and offer re-tradeable rates. 
+                            Implement secure secondary market reselling with smart contracts for transparency and audit trails.
+                        </p>
+                    </div>
+                    <div class="challenge-icon ml-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="challenge-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-6 pt-0 border-t border-gray-800/50">
+                        <div class="text-gray-300 space-y-4">
+                            <p>
+                                Use the Camino Messenger to create non-refundable hotel bookings so guests can resell, transfer, or sell them back to the hotel 
+                                on a transparent secondary market, managed by smart contracts. Build a simple web interface where users can "transfer," and "sell back" 
+                                hotel stays, showing state changes in real time.
+                            </p>
+                            <p>
+                                See TripResale and other suppliers for the hotel benefits for this challenge (<a href="https://tripresale.com/" class="text-primary hover:underline">TripResale</a>), 
+                                <a href="https://takyon.io/" class="text-primary hover:underline">Takyon | Not for Tourist - Direct Bookings. Best Rates. No Commissions.</a> and 
+                                <a href="https://www.fairlyne.com/" class="text-primary hover:underline">Fairlyne resale platform - Fairlyne</a>, for example.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenge 3: Blockchain channel manager -->
+            <div class="challenge-item border border-transparent rounded-xl overflow-hidden transition-all duration-300">
+                <button class="challenge-header w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div>
+                        <h3 class="font-bold text-xl uppercase mb-2 text-primary">⛓️ Blockchain-powered channel manager reconciliation</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Build a decentralized application leveraging blockchain for automating settlement and reconciliation between hotels and tour operators/OTAs. 
+                            Provide fraud-resistant handling with traceable, tamper-proof reporting.
+                        </p>
+                    </div>
+                    <div class="challenge-icon ml-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="challenge-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-6 pt-0 border-t border-gray-800/50">
+                        <div class="text-gray-300 space-y-4">
+                            <p>
+                                The system should provide fraud-resistant handling of bookings, cancellations, and importantly, modifications (as additional blockchain transactions). 
+                                The dApp must ensure traceable, tamper-proof reporting, minimizing manual reconciliation efforts. Facilitate transparent reconciliation with 
+                                guaranteed audit trails accessible to all stakeholders.
+                            </p>
+                            <p>
+                                Since bookings on chain are immutable, handle modifications as additional transactions that update the booking state. Use "stacked NFTs" or 
+                                linked tokens to represent modifications and the current state of the booking. Propose a Camino Messenger Format for Modification.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenge 4: AI-powered personalized upselling -->
+            <div class="challenge-item border border-transparent rounded-xl overflow-hidden transition-all duration-300">
+                <button class="challenge-header w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div>
+                        <h3 class="font-bold text-xl uppercase mb-2 text-primary">💎 AI-powered personalized upselling for wallet-linked hotel guests</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Build a solution for hotels that intelligently proposes personalized upsell offers matching guest preferences and profiles. 
+                            Use AI-driven insights combined with CRM data to ensure timely, valuable, and welcome offers.
+                        </p>
+                    </div>
+                    <div class="challenge-icon ml-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="challenge-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-6 pt-0 border-t border-gray-800/50">
+                        <div class="text-gray-300 space-y-4">
+                            <p>
+                                Upon receiving a confirmed booking with a known end-consumer's digital wallet address, the system should intelligently propose 
+                                personalized upsell offers that match the guest's preferences and profile, avoiding irrelevant or annoying push offers.
+                            </p>
+                            <p>
+                                Use the blockchain wallet address associated with the guest to securely create/link to their historical CRM or loyalty profile data 
+                                (preferences, past stays, spend patterns). Use AI to analyse (mocked) CRM data, past booking context, and guest behaviour to generate 
+                                upsell offers (room upgrades, dining, spa, experiences) with high relevance and likelihood of acceptance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenge 5: Decentralized loyalty wallet -->
+            <div class="challenge-item border border-transparent rounded-xl overflow-hidden transition-all duration-300">
+                <button class="challenge-header w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div>
+                        <h3 class="font-bold text-xl uppercase mb-2 text-primary">🎯 Decentralized AI-driven loyalty wallet within channel manager accounts</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Create an invisible decentralized loyalty wallet embedded within hotel guest profiles managed by channel managers. 
+                            Use blockchain technology for earning, redeeming, transferring, and trading loyalty points as tokens or NFTs.
+                        </p>
+                    </div>
+                    <div class="challenge-icon ml-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="challenge-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-6 pt-0 border-t border-gray-800/50">
+                        <div class="text-gray-300 space-y-4">
+                            <p>
+                                It is branded with the hotel brand where the guest booked their stay but is interoperable and portable across multiple hotel brands 
+                                connected to the same channel manager ecosystem. It should be a guest-centric rewards ecosystem that significantly improves engagement 
+                                and value perception for hotel guests.
+                            </p>
+                            <p>
+                                The system should modernize and solve common loyalty program pain points by offering instant usability, protecting point value, 
+                                preventing expiry or devaluation, and using AI to personalize rewards and offers based on guest preferences and history. Guests can use, 
+                                transfer, or trade tokens across hotel brands on the same channel manager, with all transactions recorded transparently and auditable on-chain. 
+                                Points do not expire or degrade in value, immediate redemption options for a wide variety of services and incentives for trading or gifting points.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenge 6: Decentralized identity integration -->
+            <div class="challenge-item border border-transparent rounded-xl overflow-hidden transition-all duration-300">
+                <button class="challenge-header w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div>
+                        <h3 class="font-bold text-xl uppercase mb-2 text-primary">🔐 Decentralized identity integration for travel booking authorization</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Develop a solution for integrating decentralized identity frameworks with travel booking systems, with European Digital Identity Wallet compatibility. 
+                            Focus on specific travel booking scenarios with credential verification systems.
+                        </p>
+                    </div>
+                    <div class="challenge-icon ml-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="challenge-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-6 pt-0 border-t border-gray-800/50">
+                        <div class="text-gray-300 space-y-4">
+                            <p>
+                                Following the Architecture and Reference Framework (ARF) specifications available at 
+                                <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" class="text-primary hover:underline">
+                                GitHub - eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework: The European Digital Identity Wallet
+                                </a>. Choose one specific travel booking scenario from: agents booking on behalf of clients, parents booking for minors, 
+                                corporate travel managers booking for employees, or AI agents operating with user delegation.
+                            </p>
+                            <p>
+                                For your chosen use case, create a credential verification system that can validate identity claims, delegation permissions, and booking authority. 
+                                Implement secure credential presentation flows that preserve privacy while ensuring compliance with travel industry regulations. The solution should 
+                                demonstrate seamless integration with existing travel booking workflows while providing tamper-proof audit trails of authorization decisions for your specific scenario.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenge 7: Intelligent travel itinerary booking -->
+            <div class="challenge-item border border-transparent rounded-xl overflow-hidden transition-all duration-300">
+                <button class="challenge-header w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div>
+                        <h3 class="font-bold text-xl uppercase mb-2 text-primary">🧠 Intelligent travel itinerary booking platform</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Develop a system where travel agents, AI agents, or authorized parties can intelligently compose and book travel services across multiple suppliers. 
+                            Function as an intelligent intermediary that aggregates capabilities and routes requests based on preferences and business rules.
+                        </p>
+                    </div>
+                    <div class="challenge-icon ml-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="challenge-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-6 pt-0 border-t border-gray-800/50">
+                        <div class="text-gray-300 space-y-4">
+                            <p>
+                                Create logic to analyse booking requests and intelligently match them with suitable travel suppliers based on destination, service type, 
+                                price range, and quality metrics. Implement a supplier discovery mechanism that maintains an updated catalogue of available services and their capabilities.
+                            </p>
+                            <p>
+                                Enable instant payments using on-chain currency USDC or Monerium's EURe currency through blockchain infrastructure. The system should optimize 
+                                for both speed and cost-effectiveness while maintaining transparency in supplier selection and pricing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Accordion functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const challengeItems = document.querySelectorAll('.challenge-item');
+        
+        challengeItems.forEach(item => {
+            const header = item.querySelector('.challenge-header') as HTMLElement;
+            const content = item.querySelector('.challenge-content') as HTMLElement;
+            const icon = item.querySelector('.challenge-icon svg') as HTMLElement;
+            
+            if (header && content && icon) {
+                header.addEventListener('click', () => {
+                    const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+                    
+                // Close all other items
+                challengeItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        const otherContent = otherItem.querySelector('.challenge-content') as HTMLElement;
+                        if (otherContent) {
+                            otherContent.style.maxHeight = '0px';
+                            otherItem.classList.remove('open');
+                        }
+                    }
+                });
+                
+                // Toggle current item
+                if (isOpen) {
+                    content.style.maxHeight = '0px';
+                    item.classList.remove('open');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    item.classList.add('open');
+                }
+                });
+            }
+        });
+    });
+</script>
+
+<style>
+    .challenge-content {
+        transition: max-height 0.3s ease-in-out;
+    }
+    
+    /* Open state effects */
+    .challenge-item.open {
+        border-color: #00F3B1;
+        box-shadow: 0 10px 15px -3px rgba(0, 243, 177, 0.1), 0 4px 6px -2px rgba(0, 243, 177, 0.05);
+    }
+    
+    .challenge-item.open .challenge-icon svg {
+        color: #00F3B1;
+        transform: rotate(180deg);
+    }
+    
+    .challenge-item.open h3 {
+        color: #00F3B1;
+    }
+    
+    /* Mobile optimizations */
+    @media (max-width: 768px) {
+        .challenge-header {
+            padding: 1rem;
+        }
+        
+        .challenge-header h3 {
+            font-size: 1rem;
+            line-height: 1.3;
+        }
+        
+        .challenge-header p {
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+        
+        .challenge-content .p-6 {
+            padding: 1rem;
+        }
+    }
+    
+    /* Tablet optimizations */
+    @media (min-width: 769px) and (max-width: 1023px) {
+        .challenge-header h3 {
+            font-size: 1.1rem;
+        }
+    }
+    
+    /* Large screen optimizations */
+    @media (min-width: 1024px) {
+        .challenge-item {
+            min-height: 200px;
+        }
+    }
+</style>
