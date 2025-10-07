@@ -4,32 +4,11 @@ import DecodeLogo from '../images/decode-logo-left.png';
 ---
 
 <header class="py-5 bg-gray-950/90 backdrop-blur-lg z-50 sticky top-0" x-data="{ menuOpen: false }">
-    <div class="container flex justify-between items-center" data-sal="slide-up">
+    <div class="container flex justify-center items-center" data-sal="slide-up">
 
         <a href="/">
             <Image class="w-auto h-7" src={DecodeLogo} alt="Decode Travel Logo"/>
         </a>
-
-        <div class="w-12 h-12 p-3 hover:bg-gray-800 rounded flex items-center justify-center hover:text-white relative lg:hidden" @click="menuOpen = !menuOpen" tabindex="0">
-            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
-            </svg>
-
-            <nav
-                class="uppercase text-sm absolute bg-gray-800 right-0 top-14 p-4 rounded-lg"
-                x-cloak
-                x-show="menuOpen"
-                x-transition.duration.250ms
-                @click.away="menuOpen = false"
-            >
-            <a class="inline-block py-1 whitespace-nowrap px-2 hover:underline" href="/berlin2024">Berlin Recap</a>
-            </nav>
-        </div>
-
-        <nav class="hidden lg:block text-sm">
-            <a class="inline-block py-1 px-2 hover:underline" href="/berlin2024">Berlin Recap</a>
-            <a class="inline-block py-1 px-2 hover:underline" target="_blank" href="https://camino.network/decode-travel-antalya-web3-meets-travel-tech/">Antalya Recap ↗</a>
-        </nav>
 
     </div>
 </header>

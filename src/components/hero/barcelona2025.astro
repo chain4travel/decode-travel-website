@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets';
+import BackgroundHero from '../../images/bg-hero.png';
+---
+
+<div class="py-8 md:py-0 relative bg-gradient-hackerz-b">
+    <div class="container relative overflow-hidden grid place-items-center md:h-[75vh] px-8 md:px-0">
+
+        <div class="text-center flex flex-col items-center z-20">
+            <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration="400" class="text-white font-bold text-4xl md:text-6xl 2xl:text-7xl my-4 md:my-6 uppercase tracking-tight md:tracking-tighter">
+                The hackathon for <br class="hidden md:block"> travel tech innovation
+            </h1>
+            <div data-sal="slide-up" data-sal-delay="300" data-sal-duration="400" class="md:flex items-center gap-6">
+                <div><span class="font-semibold text-secondary">//DATE:</span> November 26-28, 2025</div>
+                <div><span class="font-semibold text-secondary">//LOCATION:</span> Team Labs BCN, Barcelona, Spain</div>
+            </div>
+            <div data-sal="slide-up" data-sal-delay="400" data-sal-duration="400" class="text-gray-200 text-base md:text-xl max-w-2xl my-4 md:my-6">
+                Team Labs BCN, Carrer de la Ciutat d'Asuncion, 16, Sant Andreu, 08030 Barcelona
+            </div>
+            <div data-sal="slide-up" data-sal-delay="400" data-sal-duration="400" class="text-gray-200 text-base md:text-xl max-w-lg my-4 md:my-6">
+                Take part in the open-source hackathon where developers meet leading travel companies.
+            </div>
+            <div class="flex items-center gap-3" data-sal="slide-up" data-sal-delay="500" data-sal-duration="400">
+                <a class="font-semibold px-5 py-3 rounded-lg bg-primary hover:bg-white text-gray-950 inline-block" href="/#apply">
+                    Apply now
+                </a>
+            </div>
+        </div>
+
+        <Image class="absolute object-contain inset-0 w-full h-full opacity-30 2xl:opacity-75" src={BackgroundHero} alt="Background Decode Travel Logo" />
+
+    </div>
+</div>
+

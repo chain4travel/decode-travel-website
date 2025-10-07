@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import CreteBeach from '../images/crete-beach.jpg';
+---
+<div class="py-8">
+    <div class="container text-center">
+        <div class="font-bold uppercase bg-primary inline-block text-gray-950 px-3 py-2">
+            //Greece2025 in pictures
+        </div>
+        <div class="text-gray-400 mt-4 mb-8">
+            Photos from the Greece hackathon coming soon!
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mt-10">
+          <Image class="rounded-xl border aspect-video object-cover border-white/25 hover:scale-105 transition-transform" src={CreteBeach} alt="Crete Beach" />
+          <div class="rounded-xl border aspect-video bg-gray-800 border-white/25 flex items-center justify-center">
+            <div class="text-gray-500 text-center p-8">
+              <p class="text-xl font-semibold mb-2">Event Photos</p>
+              <p>Add photos from the Greece hackathon here</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
