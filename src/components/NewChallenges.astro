@@ -1,5 +1,7 @@
 ---
 // NewChallenges.astro - Accordion-style challenges component
+import { Image } from 'astro:assets';
+import VuelingLogo from '../images/vueling-logo.png';
 ---
 
 <section class="py-8 md:py-16 xl:py-24" id="new-challenges">
@@ -20,7 +22,7 @@
             <!-- Challenge 1: Blockchain-based turnaround checklist (Vueling) -->
             <div class="vueling-challenge border rounded-xl overflow-hidden p-6">
                 <div class="flex gap-4 flex-col">
-                    <div class="shrink-0"><img src="/src/images/vueling-logo.png" alt="Vueling" class="h-6 md:h-8 w-auto" /></div>
+                    <div class="shrink-0"><Image src={VuelingLogo} alt="Vueling" class="h-6 md:h-8 w-auto" /></div>
                     <h3 class="font-bold md:text-lg uppercase text-vueling">Blockchain-based turnaround checklist</h3>
                 </div>
             </div>
@@ -28,7 +30,7 @@
             <!-- Challenge 2: Automated supplier payments and real-time fuel settlement (Vueling) -->
             <div class="vueling-challenge border rounded-xl overflow-hidden p-6">
                 <div class="flex gap-4 flex-col">
-                    <div class="shrink-0"><img src="/src/images/vueling-logo.png" alt="Vueling" class="h-6 md:h-8 w-auto" /></div>
+                    <div class="shrink-0"><Image src={VuelingLogo} alt="Vueling" class="h-6 md:h-8 w-auto" /></div>
                     <h3 class="font-bold md:text-lg uppercase text-vueling">Automated supplier payments and real-time fuel settlement</h3>
                 </div>
             </div>
