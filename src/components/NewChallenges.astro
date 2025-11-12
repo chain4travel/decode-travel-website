@@ -20,18 +20,61 @@ import VuelingLogo from '../images/vueling-logo.png';
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
             <!-- Challenge 1: Blockchain-based turnaround checklist (Vueling) -->
-            <div class="vueling-challenge border rounded-xl overflow-hidden p-6">
-                <div class="flex gap-4 flex-col">
-                    <div class="shrink-0"><Image src={VuelingLogo} alt="Vueling" class="h-6 md:h-8 w-auto" /></div>
-                    <h3 class="font-bold md:text-lg uppercase text-vueling">Blockchain-based turnaround checklist</h3>
+            <div class="challenge-item vueling-challenge border border-gray-700 rounded-xl overflow-hidden transition-all duration-300">
+                <button class="challenge-header w-full text-left p-6 flex items-center justify-between">
+                    <div>
+                        <div class="shrink-0 mb-3"><Image src={VuelingLogo} alt="Vueling" class="h-6 md:h-8 w-auto" /></div>
+                        <h3 class="font-bold text-lg mb-2 text-vueling">Blockchain-based turnaround checklist</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Every minute matters in aviation. The turnaround — the process between a flight's arrival and departure — involves dozens of critical tasks: refueling, cleaning, baggage loading, and boarding.</p>
+                        </p>
+                    </div>
+                    <div class="challenge-icon ml-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-vueling transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="challenge-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-6 pt-0 border-t border-gray-800/50">
+                        <div class="text-gray-300 space-y-4">
+                            <p>
+                                Today, most of these operations rely on fragmented systems and manual reports, making coordination complex and performance hard to verify. This challenge invites participants to design a blockchain-powered digital checklist that records every operational step of an aircraft turnaround as an immutable transaction on Camino Network. The goal: real-time traceability, transparent coordination, and verifiable compliance across all ground operations.
+                            </p>
+                            <p>
+                                Participants will build a decentralized application (dApp) that uses smart contracts to record task completions, generate automated turnaround certifications, and offer full on-chain visibility to all stakeholders. The result — faster coordination, fewer delays, and a new level of trust in airline operations.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Challenge 2: Automated supplier payments and real-time fuel settlement (Vueling) -->
-            <div class="vueling-challenge border rounded-xl overflow-hidden p-6">
-                <div class="flex gap-4 flex-col">
-                    <div class="shrink-0"><Image src={VuelingLogo} alt="Vueling" class="h-6 md:h-8 w-auto" /></div>
-                    <h3 class="font-bold md:text-lg uppercase text-vueling">Automated supplier payments and real-time fuel settlement</h3>
+            <div class="challenge-item vueling-challenge border border-gray-700 rounded-xl overflow-hidden transition-all duration-300">
+                <button class="challenge-header w-full text-left p-6 flex items-center justify-between">
+                    <div>
+                        <div class="shrink-0 mb-3"><Image src={VuelingLogo} alt="Vueling" class="h-6 md:h-8 w-auto" /></div>
+                        <h3 class="font-bold text-lg mb-2 text-vueling">Automated supplier payments & real-time fuel settlement</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Supplier payments in aviation are slow, complex, and full of manual steps. From fuel providers to ground handling, processing invoices can take days — locking up liquidity and creating costly administrative delays.
+                        </p>
+                    </div>
+                    <div class="challenge-icon ml-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-vueling transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="challenge-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-6 pt-0 border-t border-gray-800/50">
+                        <div class="text-gray-300 space-y-4">
+                            <p>
+                                This challenge explores how smart contracts on Camino Network can automate the full supplier payment cycle: from service registration to validation and instant payment execution. Using blockchain-based logic, payments are released automatically once pre-set conditions are met — ensuring transparency, trust, and speed.
+                            </p>
+                            <p>
+                                Participants will prototype a dApp that simulates real-time fuel settlement, recording services on-chain and executing payments in CAM tokens on Camino's Columbus testnet. The goal is to show how blockchain can streamline airline finance — reducing disputes, improving liquidity, and strengthening supplier relationships.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -285,6 +328,16 @@ import VuelingLogo from '../images/vueling-logo.png';
         background: linear-gradient(135deg, rgba(249, 199, 0, 0.08) 0%, rgba(249, 199, 0, 0.02) 100%);
         border-color: #f9c700 !important;
         box-shadow: 0 4px 6px -1px rgba(249, 199, 0, 0.1), 0 2px 4px -1px rgba(249, 199, 0, 0.06);
+    }
+    
+    .vueling-challenge.open {
+        border-color: #f9c700 !important;
+        box-shadow: 0 10px 15px -3px rgba(249, 199, 0, 0.2), 0 4px 6px -2px rgba(249, 199, 0, 0.1);
+    }
+    
+    .vueling-challenge.open .challenge-icon svg {
+        color: #f9c700;
+        transform: rotate(180deg);
     }
     
     .text-vueling {
