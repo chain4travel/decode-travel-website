@@ -13,37 +13,48 @@ import ClorianTicket from '../images/clorian-ticketing-logo.png'
 
 <div class="text-center py-24 lg:py-40 flex flex-col items-center justify-center mb-24 bg-gradient-to-b from-gray-950 to-primary/25" id="barcelona-partners">
     <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="500" class="container text-center flex flex-col items-center z-20">
-        <div class="font-bold uppercase mb-4 bg-secondary inline-block text-gray-950 px-3 py-2">
-            //Barcelona 2025 Partners
-        </div>
-        <div class="flex flex-wrap justify-center items-center gap-6 lg:gap-8 mt-8 max-w-4xl">
-            <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.vueling.com/" target="_blank" rel="noopener noreferrer">
-                <Image class="h-8 lg:h-16 w-auto" src={VuelingLogo} alt="Vueling Logo"/>
-            </a>
-            <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.techtourismcluster.org/en" target="_blank" rel="noopener noreferrer">
-                <Image class="h-8 lg:h-28 w-auto" src={TechTourismCluster} alt="Tech Tourism Cluster Logo"/>
-            </a>
-            <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.teamlabs.io/" target="_blank" rel="noopener noreferrer">
-                <Image class="h-8 lg:h-16 w-auto" src={TeamLabs} alt="Team Labs Logo"/>
-            </a>
-            <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.accio.com/" target="_blank" rel="noopener noreferrer">
-                <Image class="h-8 lg:h-16 w-auto" src={Accio} alt="Accio Logo"/>
-            </a>
-            <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.futuretravel.es/" target="_blank" rel="noopener noreferrer">
-                <Image class="h-8 lg:h-16 w-auto" src={FutureTravel} alt="Future Travel Logo"/>
-            </a>
-            <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.hospitalidademprendedora.com/" target="_blank" rel="noopener noreferrer">
-                <Image class="h-8 lg:h-12 w-auto" src={HospitalidadEmprendedora} alt="Hospitalidad Emprendedora Logo"/>
-            </a>
-            <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://barcelonatravelhub.com/en" target="_blank" rel="noopener noreferrer">
-                <Image class="h-8 lg:h-12 w-auto" src={BarcelonaTravelHub} alt="Barcelona Travel Hub Logo"/>
-            </a>
-            <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://nubemsystems.es/" target="_blank" rel="noopener noreferrer">
-                <Image class="h-6 lg:h-10 w-auto" src={Nubemsystems} alt="Nubemsystems Logo"/>
-            </a>
-            <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://clorian.com/en/" target="_blank" rel="noopener noreferrer">
-                <Image class="h-8 lg:h-12 w-auto" src={ClorianTicket} alt="Clorian Ticket Logo"/>
-            </a>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mt-8 max-w-6xl w-full lg:divide-x divide-white/25">
+            <!-- Organizers Section -->
+            <div>
+                <div class="font-bold uppercase mb-8 bg-secondary inline-block text-gray-950 px-3 py-2">//Organizers</div>
+                <div class="flex flex-wrap justify-center items-center gap-6 lg:gap-8">
+                    <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.techtourismcluster.org/en" target="_blank" rel="noopener noreferrer">
+                        <Image class="h-28 lg:h-40 w-auto" src={TechTourismCluster} alt="Tech Tourism Cluster Logo"/>
+                    </a>
+                    <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.accio.com/" target="_blank" rel="noopener noreferrer">
+                        <Image class="h-28 lg:h-32 w-auto" src={Accio} alt="Accio Logo"/>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partners Section -->
+            <div>
+                <div class="font-bold uppercase mb-8 bg-secondary inline-block text-gray-950 px-3 py-2">//Partners</div>
+                <div class="flex flex-wrap justify-center items-center gap-6 lg:gap-8">
+                    <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.vueling.com/" target="_blank" rel="noopener noreferrer">
+                        <Image class="h-8 lg:h-10 w-auto" src={VuelingLogo} alt="Vueling Logo"/>
+                    </a>
+                    <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.teamlabs.io/" target="_blank" rel="noopener noreferrer">
+                        <Image class="h-8 lg:h-10 w-auto" src={TeamLabs} alt="Team Labs Logo"/>
+                    </a>
+                    <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.futuretravel.es/" target="_blank" rel="noopener noreferrer">
+                        <Image class="h-8 lg:h-10 w-auto" src={FutureTravel} alt="Future Travel Logo"/>
+                    </a>
+                    <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://www.hospitalidademprendedora.com/" target="_blank" rel="noopener noreferrer">
+                        <Image class="h-8 lg:h-10 w-auto" src={HospitalidadEmprendedora} alt="Hospitalidad Emprendedora Logo"/>
+                    </a>
+                    <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://barcelonatravelhub.com/en" target="_blank" rel="noopener noreferrer">
+                        <Image class="h-8 lg:h-10 w-auto" src={BarcelonaTravelHub} alt="Barcelona Travel Hub Logo"/>
+                    </a>
+                    <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://nubemsystems.es/" target="_blank" rel="noopener noreferrer">
+                        <Image class="h-6 lg:h-10 w-auto" src={Nubemsystems} alt="Nubemsystems Logo"/>
+                    </a>
+                    <a class="flex-shrink-0 opacity-80 hover:opacity-100" href="https://clorian.com/en/" target="_blank" rel="noopener noreferrer">
+                        <Image class="h-8 lg:h-10 w-auto" src={ClorianTicket} alt="Clorian Ticket Logo"/>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
