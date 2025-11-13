@@ -2,6 +2,7 @@
 // NewChallenges.astro - Accordion-style challenges component
 import { Image } from 'astro:assets';
 import VuelingLogo from '../images/vueling-logo.png';
+import ClorianLogo from '../images/clorian-ticketing-logo.png';
 ---
 
 <section class="py-8 md:py-16 xl:py-24" id="new-challenges">
@@ -23,10 +24,12 @@ import VuelingLogo from '../images/vueling-logo.png';
             <div class="challenge-item vueling-challenge border border-gray-700 rounded-xl overflow-hidden transition-all duration-300">
                 <button class="challenge-header w-full text-left p-6 flex items-center justify-between">
                     <div>
-                        <div class="shrink-0 mb-3"><Image src={VuelingLogo} alt="Vueling" class="h-6 md:h-8 w-auto" /></div>
+                        <div class="shrink-0 mb-3 flex items-center gap-2">
+                            <Image src={VuelingLogo} alt="Vueling" class="h-6 md:h-8 w-auto" />
+                            <span class="text-xs text-gray-500 italic">sponsored by Vueling</span>
+                        </div>
                         <h3 class="font-bold text-lg mb-2 text-vueling">Blockchain-based turnaround checklist</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">Every minute matters in aviation. The turnaround — the process between a flight's arrival and departure — involves dozens of critical tasks: refueling, cleaning, baggage loading, and boarding.</p>
-                        </p>
                     </div>
                     <div class="challenge-icon ml-4 flex-shrink-0">
                         <svg class="w-6 h-6 text-vueling transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,7 +55,10 @@ import VuelingLogo from '../images/vueling-logo.png';
             <div class="challenge-item vueling-challenge border border-gray-700 rounded-xl overflow-hidden transition-all duration-300">
                 <button class="challenge-header w-full text-left p-6 flex items-center justify-between">
                     <div>
-                        <div class="shrink-0 mb-3"><Image src={VuelingLogo} alt="Vueling" class="h-6 md:h-8 w-auto" /></div>
+                        <div class="shrink-0 mb-3 flex items-center gap-2">
+                            <Image src={VuelingLogo} alt="Vueling" class="h-6 md:h-8 w-auto" />
+                            <span class="text-xs text-gray-500 italic">sponsored by Vueling</span>
+                        </div>
                         <h3 class="font-bold text-lg mb-2 text-vueling">Automated supplier payments & real-time fuel settlement</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">
                             Supplier payments in aviation are slow, complex, and full of manual steps. From fuel providers to ground handling, processing invoices can take days — locking up liquidity and creating costly administrative delays.
@@ -72,6 +78,42 @@ import VuelingLogo from '../images/vueling-logo.png';
                             </p>
                             <p>
                                 Participants will prototype a dApp that simulates real-time fuel settlement, recording services on-chain and executing payments in CAM tokens on Camino's Columbus testnet. The goal is to show how blockchain can streamline airline finance — reducing disputes, improving liquidity, and strengthening supplier relationships.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenge: Anti-fraud ticketing system (Clorian) -->
+            <div class="challenge-item clorian-challenge border border-gray-700 rounded-xl overflow-hidden transition-all duration-300">
+                <button class="challenge-header w-full text-left p-6 flex items-center justify-between">
+                    <div>
+                        <div class="shrink-0 mb-3 flex items-center gap-2">
+                            <Image src={ClorianLogo} alt="Clorian" class="h-6 md:h-8 w-auto" />
+                            <span class="text-xs text-gray-500 italic">sponsored by Clorian</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-clorian">Anti-fraud ticketing system on Camino Network</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Build a blockchain-based ticketing solution that prevents fraudulent activities including bulk purchasing by scalpers, B2B partners circumventing allocation limits, resellers buying with stolen cards and reselling through other channels, and sophisticated actors creating multiple identities to bypass purchase limits.
+                        </p>
+                    </div>
+                    <div class="challenge-icon ml-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-clorian transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="challenge-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-6 pt-0 border-t border-gray-800/50">
+                        <div class="text-gray-300 space-y-4">
+                            <p>
+                                The system must ensure authentic user verification and secure the entire journey from legitimate purchase through to access control redemption. Focus on fraud prevention through cross-channel identity verification, detect suspicious purchasing patterns across distribution channels, and implement robust authentication mechanisms.
+                            </p>
+                            <p>
+                                Enable legitimate ticket holders to resell with smart contract-enforced price caps and automated commission distribution to original sellers. Optionally offer buy-back mechanisms for event organizers.
+                            </p>
+                            <p>
+                                Use Camino Network's NFT ticketing infrastructure with optional Camino Messenger integration for off-chain encrypted communication that abstracts blockchain complexity. The solution should optimize for security, transparency in supplier selection and pricing, and seamless user experience from purchase verification through final redemption at access control.
                             </p>
                         </div>
                     </div>
@@ -182,7 +224,7 @@ import VuelingLogo from '../images/vueling-logo.png';
                     <div>
                         <h3 class="font-bold text-xl uppercase mb-2 text-primary">🌍 Taming Overtourism – Smarter Travel, Fairer Footprints</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Overtourism threatens the long-term health of global travel. This challenge explores how open, data-driven technology can make tourism distribution more balanced, responsive, and fair.
+                            Overtourism threatens the long-term health of global travel, creating both environmental and social strain on popular destinations. This challenge invites teams to explore how open, data-driven technologies can make tourism more evenly distributed, sustainable, and connected.
                         </p>
                     </div>
                     <div class="challenge-icon ml-4 flex-shrink-0">
@@ -195,30 +237,10 @@ import VuelingLogo from '../images/vueling-logo.png';
                     <div class="p-6 pt-0 border-t border-gray-800/50">
                         <div class="text-gray-300 space-y-4">
                             <p>
-                                Your goal is to design a solution that combines blockchain, digital identity, and data intelligence to:
+                                The goal is to rethink how travellers interact with destinations so they become genuine fans who care for the places they experience and contribute positively to their ongoing vitality.
                             </p>
-                            <ul class="list-disc list-inside space-y-2 ml-4">
-                                <li>Encourage travelers to discover lesser-visited places and experiences.</li>
-                                <li>Offer rewards for visiting hotspots during off-peak hours or days to ease congestion and enhance traveler experience.</li>
-                                <li>Reward responsible, low-impact travel behaviors across all travel areas.</li>
-                                <li>Provide real-time insight into how busy an attraction is using Bluetooth or NFC-based tags for live crowd data.</li>
-                                <li>Enable fair and transparent value sharing across the local travel ecosystem.</li>
-                            </ul>
-                            <p class="font-bold mt-6">Possible Tracks:</p>
-                            <ul class="list-disc list-inside space-y-3 ml-4">
-                                <li>
-                                    <strong>AI Agents for Travel Flow:</strong> Build a digital assistant that helps travelers plan smarter. Suggest trips to hidden gems or recommend visiting hotspots during off-peak times based on crowd patterns, weather, and local events.
-                                </li>
-                                <li>
-                                    <strong>Tokenized Sustainability and Timing Rewards:</strong> Create a system that issues rewards for sustainable travel or verified visits during quieter hours or days. Proof-of-visit could use Bluetooth or NFC tags that also feed real-time crowd insights back into the network.
-                                </li>
-                                <li>
-                                    <strong>Dynamic Travel Insights via Camino Messenger:</strong> Use Camino's decentralized messaging network to exchange real-time availability, congestion, and sustainability data between travel areas and local operators.
-                                </li>
-                            </ul>
-                            <p class="font-bold mt-6">Why It Matters:</p>
                             <p>
-                                Overtourism isn't just an environmental issue — it's a visibility and data imbalance. With transparent, decentralized tools, we can make travel more evenly distributed, more rewarding, and better for everyone involved.
+                                Participants are encouraged to imagine systems that help travellers discover lesser-known places, reduce congestion at hotspots, or promote low-impact behaviour through data intelligence and transparent technology. Approaches might use digital identity, blockchain, or smart data flows to inspire responsible choices and fair value exchange across the tourism ecosystem. Ideas could range from tools that surface real-time visitor insights, to rewards that encourage off-peak exploration, or platforms that connect travellers, operators, and destinations more meaningfully.
                             </p>
                         </div>
                     </div>
@@ -342,5 +364,30 @@ import VuelingLogo from '../images/vueling-logo.png';
     
     .text-vueling {
         color: #f9c700;
+    }
+    
+    /* Clorian challenge highlighting */
+    .clorian-challenge {
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(59, 130, 246, 0.02) 100%);
+        border-color: #3B82F6 !important;
+        box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1), 0 2px 4px -1px rgba(59, 130, 246, 0.06);
+    }
+    
+    .clorian-challenge.open {
+        border-color: #3B82F6 !important;
+        box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2), 0 4px 6px -2px rgba(59, 130, 246, 0.1);
+    }
+    
+    .clorian-challenge.open .challenge-icon svg {
+        color: #3B82F6;
+        transform: rotate(180deg);
+    }
+    
+    .clorian-challenge.open h3 {
+        color: #3B82F6;
+    }
+    
+    .text-clorian {
+        color: #3B82F6;
     }
 </style>
