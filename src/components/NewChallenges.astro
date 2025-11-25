@@ -46,6 +46,19 @@ import ClorianLogo from '../images/clorian-ticketing-logo.png';
                             <p>
                                 Participants will build a decentralized application (dApp) that uses smart contracts to record task completions, generate automated turnaround certifications, and offer full on-chain visibility to all stakeholders. The result — faster coordination, fewer delays, and a new level of trust in airline operations.
                             </p>
+                            <hr class="border-gray-700">
+                            <p>
+                                The turnaround process involves multiple specialized teams (ground crew, fueling, catering, cleaning, baggage handlers, maintenance) working in parallel with tight time constraints. Each task has dependencies and SLA requirements, but current coordination relies on radio communication, paper checklists, and manual status updates.
+                            </p>
+                            <p>
+                                This challenge proposes using blockchain to create a single source of truth where each team logs task completion as an immutable transaction. Smart contracts can automatically verify that prerequisite tasks are completed before dependent tasks begin, flag SLA violations in real-time, and generate compliance reports without manual reconciliation.
+                            </p>
+                            <p>
+                                The focus should be on how blockchain improves transparency across all stakeholders (airline operations, ground service providers, airport authorities), enables automated dispute resolution when delays occur, and provides auditable proof of service delivery for contractual and regulatory compliance.
+                            </p>
+                            <p>
+                                <a href="https://file.notion.so/f/f/6f4fca42-3117-4ab3-8733-5994af89686b/6bf311f8-68de-47e7-a6fb-a830ac9d3e51/turnaround_checkpoints_definitive.pdf?table=block&id=2b66ba18-4e67-8055-ab88-e5fd0b850ec8&spaceId=6f4fca42-3117-4ab3-8733-5994af89686b&expirationTimestamp=1764108000000&signature=u_zX42wE3CDmdry1Ikp6Vsw08KEtHzuPEpeSV-3qh4E&downloadName=turnaround_checkpoints_definitive.pdf" class="underline text-primary hover:text-white" target="_blank" rel="noopener noreferrer">turnaround_checkpoints_definitive.pdf</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -79,6 +92,11 @@ import ClorianLogo from '../images/clorian-ticketing-logo.png';
                             <p>
                                 Participants will prototype a dApp that simulates real-time fuel settlement, recording services on-chain and executing payments in CAM tokens on Camino's Columbus testnet. The goal is to show how blockchain can streamline airline finance — reducing disputes, improving liquidity, and strengthening supplier relationships.
                             </p>
+                            <hr class="border-gray-700">
+                            <p>Current B2B aviation payment cycles create significant cash flow challenges: suppliers deliver services immediately but wait 30-90 days for payment, while airlines manage credit risk and complex reconciliation processes. The manual verification required for each invoice (did the fuel quantity match the order? was it delivered to the correct aircraft?) adds delays and potential for disputes.</p>
+                            <p>Smart contracts can automate this by linking service delivery events (fuel truck connects to aircraft, delivery quantity confirmed by sensors or manual input) directly to payment release. The blockchain provides an immutable audit trail showing exactly when service was delivered, who authorized it, and when payment executed.</p>
+                            <p>The focus should be on demonstrating how instant settlement benefits both parties: suppliers receive immediate payment improving their working capital, while airlines gain transparent verification reducing reconciliation overhead. The solution should show the vision of continuous innovation: airlines adopting decentralized technologies to strengthen supplier relationships and maintain industry leadership in operational digitalization.</p>
+                            <p><strong class="text-primary">Camino Messenger integration:</strong> Consider how Camino Messenger could be extended with aviation-specific message types for fuel suppliers. The challenge could explore defining new message types for fuel orders, pricing, and delivery confirmation, leveraging Messenger's existing B2B infrastructure for identity and payment automation. This approach could accelerate adoption by applying proven travel distribution protocols to aviation ground services (fuel, catering, ground handling).</p>
                         </div>
                     </div>
                 </div>
@@ -94,8 +112,7 @@ import ClorianLogo from '../images/clorian-ticketing-logo.png';
                         </div>
                         <h3 class="font-bold text-lg mb-2 text-clorian">Anti-fraud ticketing system on Camino Network</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Build a blockchain-based ticketing solution that prevents fraudulent activities including bulk purchasing by scalpers, B2B partners circumventing allocation limits, resellers buying with stolen cards and reselling through other channels, and sophisticated actors creating multiple identities to bypass purchase limits.
-                        </p>
+                            Build a blockchain-based ticketing solution that prevents fraudulent activities including bulk purchasing by scalpers, B2B partners circumventing allocation limits, resellers buying with stolen cards and reselling through other channels, and sophisticated actors creating multiple identities to bypass purchase limits.</p>
                     </div>
                     <div class="challenge-icon ml-4 flex-shrink-0">
                         <svg class="w-6 h-6 text-clorian transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,6 +132,26 @@ import ClorianLogo from '../images/clorian-ticketing-logo.png';
                             <p>
                                 Use Camino Network's NFT ticketing infrastructure with optional Camino Messenger integration for off-chain encrypted communication that abstracts blockchain complexity. The solution should optimize for security, transparency in supplier selection and pricing, and seamless user experience from purchase verification through final redemption at access control.
                             </p>
+                            <hr class="border-gray-700">
+                            <p>
+                                The system must ensure authentic user verification and secure the entire journey from legitimate purchase through to access control redemption, providing complete data of the whole customer journey for enhanced fraud detection and prevention.
+                            </p>
+
+                            <p>
+                                Capturing the complete customer journey—from initial browsing through purchase, transfer, and final redemption—enables pattern detection that single-transaction analysis cannot achieve. For example: rapid purchasing across multiple accounts from the same IP address, or accounts that buy tickets but never attend events. This longitudinal data helps distinguish legitimate bulk purchases (corporate clients, tour operators) from scalper operations.
+                            </p>
+                            
+                            <p>
+                                The system must address multiple fraud vectors: reselling with stolen credit cards or fake identities, resellers using multiple channels and profiles to circumvent purchase limits, and sophisticated actors creating coordinated fraud schemes across distribution channels. Cross-channel identity validation becomes critical to detect when the same fraudulent actor operates through different platforms or uses fabricated credentials.
+                            </p>
+                            
+                            <p>
+                                The challenge should explore how blockchain's immutable audit trail combined with privacy-preserving identity verification can detect suspicious patterns across distribution channels without creating centralized surveillance systems. Consider how NFT-based tickets with on-chain transfer history provide transparency while smart contract rules enforce legitimate resale conditions (price caps, authorized marketplaces, commission distribution).
+                            </p>
+                            
+                            <p>
+                                The solution should provide transparency in suppliers, pricing, and access control throughout the entire ticketing value chain. Enable legitimate ticket holders to resell with smart contract-enforced price caps and automated commission distribution to original sellers. Optionally offer buy-back mechanisms for event organizers. The solution should leverage Camino Network's NFT ticketing infrastructure with optional Camino Messenger integration for off-chain encrypted communication that abstracts blockchain complexity from end users.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -126,8 +163,7 @@ import ClorianLogo from '../images/clorian-ticketing-logo.png';
                     <div>
                         <h3 class="font-bold text-xl uppercase mb-2 text-primary">⛓️ Blockchain-powered channel manager reconciliation</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Build a decentralized application leveraging blockchain for automating settlement and reconciliation between hotels and tour operators/OTAs. 
-                            Provide fraud-resistant handling with traceable, tamper-proof reporting.
+                            Build a decentralized application leveraging blockchain for automating settlement and reconciliation between hotels and tour operators/OTAs. Provide fraud-resistant handling with traceable, tamper-proof reporting.
                         </p>
                     </div>
                     <div class="challenge-icon ml-4 flex-shrink-0">
@@ -147,6 +183,27 @@ import ClorianLogo from '../images/clorian-ticketing-logo.png';
                             <p>
                                 Since bookings on chain are immutable, handle modifications as additional transactions that update the booking state. Use "stacked NFTs" or 
                                 linked tokens to represent modifications and the current state of the booking. Propose a Camino Messenger Format for Modification.
+                            </p>
+                            <p>
+                                Build a decentralized application (dApp) leveraging blockchain for automating settlement and reconciliation between hotels and tour operators/OTAs. The system should provide fraud-resistant handling of bookings, cancellations, and importantly, modifications (as additional blockchain transactions).
+                            </p>
+                            <p>
+                                The dApp must ensure traceable, tamper-proof reporting, minimizing manual reconciliation efforts. Facilitate transparent reconciliation with guaranteed audit trails accessible to all stakeholders.
+                            </p>
+                            <p>
+                                Since bookings on chain are immutable, handle modifications as additional transactions that update the booking state. Use "stacked NFTs" or linked tokens to represent modifications and the current state of the booking. Each modification creates a new transaction linked to the original booking, maintaining a complete audit trail while updating the current booking status.
+                            </p>
+                            <p>
+                                Propose a Camino Messenger Format for Modification that standardizes how booking changes are communicated and recorded on-chain, ensuring interoperability across different hotel systems and OTA platforms.
+                            </p>
+                            <p>
+                                <strong>Camino Messenger as the B2B coordination layer:</strong>
+                            </p>
+                            <p>
+                                This challenge addresses B2B communication between hotels and distributors (OTAs, tour operators, channel managers). <strong>Camino Messenger</strong> provides existing infrastructure for accommodation bookings with standardized message types (search, book, cancel). The core challenge is designing a new <code>ModifyBooking</code> message type that extends this protocol, defining how modifications are structured, validated, and recorded on-chain using "stacked NFTs" or linked tokens.
+                            </p>
+                            <p>
+                                Participants should explore how to extend Messenger's accommodation protocol with modification semantics while ensuring compatibility with existing hotel PMS and OTA systems, enabling real-time reconciliation where all parties see the same booking state simultaneously.
                             </p>
                         </div>
                     </div>
@@ -181,6 +238,30 @@ import ClorianLogo from '../images/clorian-ticketing-logo.png';
                                 (preferences, past stays, spend patterns). Use AI to analyse (mocked) CRM data, past booking context, and guest behaviour to generate 
                                 upsell offers (room upgrades, dining, spa, experiences) with high relevance and likelihood of acceptance.
                             </p>
+                            <p>
+                                Build a solution for hotels that, upon receiving a confirmed booking with a known end-consumer's digital wallet address, intelligently proposes personalized upsell offers that match the guest's preferences and profile.
+                            </p>
+                            <p>
+                                The system should use AI-driven insights combined with hotel chain or channel manager CRM data to avoid irrelevant or annoying push offers, ensuring upsells feel timely, valuable, and welcome. By leveraging the blockchain wallet address associated with the guest, the system can securely create or link to their historical CRM or loyalty profile data, including preferences, past stays, and spend patterns.
+                            </p>
+                            <p>
+                                Use AI to analyse (mocked) CRM data, past booking context, and guest behaviour to generate highly targeted upsell offers such as:
+                                <ul class="list-disc list-inside mt-2">
+                                    <li>Room upgrades tailored to guest preferences</li>
+                                    <li>Dining experiences based on culinary history</li>
+                                    <li>Spa treatments aligned with wellness interests</li>
+                                    <li>Local experiences matching past activity patterns</li>
+                                </ul>
+                            </p>
+                            <p>
+                                The solution should demonstrate high relevance and likelihood of acceptance by ensuring offers are contextually appropriate and genuinely valuable to the guest, improving both guest satisfaction and hotel revenue.
+                            </p>
+                            <p>
+                                <strong>Model Context Protocol (MCP) for enhanced personalization:</strong> Consider how AI agents could discover and access hotel amenity inventories, local experience offerings, and real-time availability through standardized protocols. The solution could explore MCP-based interfaces that allow AI systems to query available upsell options dynamically, enabling more sophisticated recommendation engines that combine hotel data with external context (weather, local events, guest travel patterns).
+                            </p>
+                            <p>
+                                <strong>EUDI Wallet integration:</strong> As an advanced extension, explore how verified credentials from a European Digital Identity Wallet could enhance personalization while preserving privacy. Guest preferences, loyalty status, and verified attributes (age for spa access, dietary restrictions for restaurant recommendations) could be selectively disclosed from the wallet to generate highly personalized offers without requiring hotels to store sensitive personal data. This approach could demonstrate privacy-preserving personalization using selective disclosure and zero-knowledge proofs.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -213,6 +294,44 @@ import ClorianLogo from '../images/clorian-ticketing-logo.png';
                                 Enable instant payments using on-chain currency USDC or Monerium's EURe currency through blockchain infrastructure. The system should optimize 
                                 for both speed and cost-effectiveness while maintaining transparency in supplier selection and pricing.
                             </p>
+                            <p>
+                                Develop a system where travel agents, AI agents, or other authorized parties can intelligently compose and book travel services across multiple suppliers. The platform should function as an intelligent intermediary that aggregates supplier capabilities, compares offerings, and routes requests to appropriate providers based on user preferences, availability, and business rules.
+                            </p>
+                            <p>
+                                Create logic to analyse booking requests and intelligently match them with suitable travel suppliers based on:
+                                <ul class="list-disc list-inside mt-2">
+                                    <li>Destination and service type</li>
+                                    <li>Price range and quality metrics</li>
+                                    <li>Availability and capacity</li>
+                                    <li>Supplier reputation and reliability</li>
+                                </ul>
+                            </p>
+                            <p>
+                                Implement a supplier discovery mechanism that maintains an updated catalogue of available services and their capabilities. This should include real-time synchronization of supplier offerings, pricing, and availability status.
+                            </p>
+                            <p>
+                                Design mechanisms for routing travel service requests based on real-time availability, quality scoring, regulatory compliance, commercial rules, and multi-supplier package assembly.
+                            </p>
+                            <p>
+                                Enable instant payments using on-chain currency USDC or Monerium's EURe currency through blockchain infrastructure. The system should optimize for both speed and cost-effectiveness while maintaining full transparency in supplier selection and pricing decisions.
+                            </p>
+                            <p>
+                                The platform should demonstrate how blockchain enables trustless intermediation, ensuring fair supplier selection, instant settlement, and complete auditability of the booking and payment process.
+                            </p>
+                            <p>
+                                <strong>Camino Messenger</strong> provides proven B2B patterns for multi-supplier coordination and can be used directly where the booking involves business entities (tour operators sourcing from suppliers). However, when building intelligent discovery and B2C booking capabilities, consider:
+                                <ul class="list-disc list-inside mt-2">
+                                    <li>How should supplier cataloging and availability caching work when serving AI agents or consumers rather than business partners?</li>
+                                    <li>How do authentication, payment, and settlement patterns need to adapt from B2B (verified business entities) to B2C contexts (AI agents, consumers, delegated authorities)?</li>
+                                    <li>Should the platform build entirely new B2C protocols, leverage B2B Messenger where applicable, or create a hybrid architecture?</li>
+                                </ul>
+                            </p>
+                            <p>
+                                <strong>Model Context Protocol (MCP) for supplier discovery:</strong> Explore how AI agents can discover and interact with travel suppliers through standardized protocols. Consider designing a discovery system that exposes supplier capabilities in machine-readable formats, and how natural language queries can be translated into specific supplier searches.
+                            </p>
+                            <p>
+                                <strong>EUDI Wallet for authorization:</strong> Consider how verified credentials could enable delegated booking scenarios for corporate travel managers, parents booking for minors, or AI agents operating with user delegation.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -241,6 +360,46 @@ import ClorianLogo from '../images/clorian-ticketing-logo.png';
                             </p>
                             <p>
                                 Participants are encouraged to imagine systems that help travellers discover lesser-known places, reduce congestion at hotspots, or promote low-impact behaviour through data intelligence and transparent technology. Approaches might use digital identity, blockchain, or smart data flows to inspire responsible choices and fair value exchange across the tourism ecosystem. Ideas could range from tools that surface real-time visitor insights, to rewards that encourage off-peak exploration, or platforms that connect travellers, operators, and destinations more meaningfully.
+                            </p>
+
+                            <p>
+                                <strong>Taming overtourism – smarter travel, fairer footprints.</strong> This challenge addresses the dual challenge of reducing overtourism's negative impacts while transforming tourists into loyal destination advocates. The problem stems from a visibility and data imbalance: popular hotspots become overcrowded while nearby hidden gems remain underutilized, and tourists are treated as one-time visitors rather than potential recurring fans.
+                            </p>
+                            <p>
+                                Current tourism models lack mechanisms to incentivize off-peak visits, reward sustainable behaviors, or create long-term engagement between travelers and destinations. There's a detected gap in the tourism sector: destinations need solutions that distribute visitor flows more evenly while building lasting relationships that encourage travelers to become advocates and repeat visitors.
+                            </p>
+                            <p>
+                                The challenge invites solutions that use blockchain, digital identity, and data intelligence to make travel more evenly distributed, more rewarding, and better for all stakeholders. The technology foundation draws from successful fan engagement models in sports and music that demonstrate strong correlations with tourism, suggesting these approaches can be adapted to destination loyalty.
+                            </p>
+                            <p>
+                                <strong>Solutions should explore how to:</strong>
+                            </p>
+                            <ul class="list-disc list-inside ml-4 mb-4">
+                                <li>Encourage travelers to discover lesser-visited places and experiences</li>
+                                <li>Offer rewards for visiting hotspots during off-peak hours or days to ease congestion</li>
+                                <li>Reward responsible, low-impact travel behaviors across all travel areas</li>
+                                <li>Provide real-time insight into attraction capacity using technologies like Bluetooth or NFC-based tags</li>
+                                <li>Enable fair and transparent value sharing across the local travel ecosystem</li>
+                                <li>Transform tourists into loyal fans through recurrence-based engagement and tokenized loyalty</li>
+                                <li>Create sustainable fan communities around destinations that incentivize return visits and advocacy</li>
+                            </ul>
+                            <p>
+                                By treating tourists as fans and fostering long-term relationships with destinations, solutions can create sustainable tourism models that benefit local communities, preserve cultural heritage, and enhance visitor experiences through meaningful, recurring engagement.
+                            </p>
+                            <p>
+                                <strong>Possible tracks:</strong>
+                            </p>
+                            <ul class="list-disc list-inside ml-4 mb-4">
+                                <li><strong>AI Agents for Travel Flow:</strong> Build a digital assistant that helps travelers plan smarter. Suggest trips to hidden gems or recommend visiting hotspots during off-peak times based on crowd patterns, weather, and local events.</li>
+                                <li><strong>Tokenized Sustainability and Timing Rewards:</strong> Create a system that issues rewards for sustainable travel or verified visits during quieter hours or days. Proof-of-visit could use Bluetooth or NFC tags that also feed real-time crowd insights back into the network.</li>
+                                <li><strong>Dynamic Travel Insights via Camino Messenger:</strong> Use Camino Messenger's decentralized B2B messaging network to exchange real-time availability, congestion, and sustainability data between travel areas and local operators. Destinations, hotels, activity providers, and transportation services could publish capacity information, crowd levels, and sustainability metrics through Camino Messenger, enabling AI agents and travel platforms to route travelers to less-congested alternatives. This track could explore how Messenger's existing infrastructure (real-time data exchange, blockchain-based incentives) can be leveraged to coordinate overtourism solutions across multiple stakeholders in a destination ecosystem.</li>
+                                <li><strong>Destination Fan Loyalty Platform:</strong> Build a blockchain-based solution that treats tourists as fans, creating engagement systems that encourage recurrence, reward loyalty, and turn visitors into destination advocates.</li>
+                            </ul>
+                            <p>
+                                <strong>Why it matters:</strong>
+                            </p>
+                            <p>
+                                Overtourism isn't just an environmental issue — it's a visibility and data imbalance. With transparent, decentralized tools, we can make travel more evenly distributed, more rewarding, and better for everyone involved. By treating tourists as fans and fostering long-term relationships with destinations, we can create sustainable tourism models that benefit local communities, preserve cultural heritage, and enhance visitor experiences through meaningful, recurring engagement.
                             </p>
                         </div>
                     </div>
