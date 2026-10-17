@@ -6,7 +6,7 @@ Last updated 14th of October 2024
 
 ### PLEASE READ THESE TERMS AND CONDITIONS BEFORE PARTICIPATING THE HACKATHON.
 
-These terms and conditions (hereinafter, the “**Terms and Conditions**”) shall govern the participation in the physical hackathon “DECODE TRAVEL” planned for May 2025 (hereinafter, the “**Hackathon**”) as is hosted by the Organiser (as defined below). These Terms and Conditions shall have effect as of their publication of the Hackathon webpage (<https://decode.travel/>) (the “**Website**”).
+These terms and conditions (hereinafter, the “**Terms and Conditions**”) shall govern the participation in the physical hackathon “DECODE TRAVEL” planned for May 2025 (hereinafter, the “**Hackathon**”) as is hosted by the Organiser (as defined below). These Terms and Conditions shall have effect as of their publication of the Hackathon webpage (`decode.travel`) (the “**Website**”).
 
 These Terms and Conditions apply to every person (“**you**” or the “**Participant**”) who registers for and/or attends the Hackathon. If you are registering on behalf of your company or another legal entity, you represent that you have the legal authority to bind that entity to these Terms and Conditions, in which case “you” will mean the entity you represent.
 
@@ -48,7 +48,7 @@ If you register or apply as an entity or on behalf of a team, you confirm that s
 
 3.2.1. Participants will manage on their own the Hackathon tasks to be completed, deadlines and time allocation.
 
-3.3. A Participant may unregister from the Hackathon at any time by sending a brief e-mail notification to <events@decode.com> before 6<sup>th</sup> May 2025 at 12:00 am. Termination of the participation shall not affect any rights or obligations incurred before the date of termination.
+3.3. A Participant may unregister from the Hackathon at any time by sending a brief e-mail notification to `events@decode.com` before 6<sup>th</sup> May 2025 at 12:00 am. Termination of the participation shall not affect any rights or obligations incurred before the date of termination.
 
 3.4. Organisers must be informed of any changes made to teams and their respective members. Failure to do so may result in the inability to provide communication and instructions, delayed information, and/or disqualification from the Hackathon.
 

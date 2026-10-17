@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import type { PartnerGroup } from '../../data/types';
+interface Props { groups: PartnerGroup[]; title?: string; }
+const { groups, title = 'Thank you to our partners & sponsors' } = Astro.props;
+---
+<section class="text-center py-16 lg:py-28 bg-gradient-to-b from-gray-950 to-primary/25" id="partners">
+    <div class="container flex flex-col items-center">
+        <div class="font-bold uppercase mb-4 bg-primary inline-block text-gray-950 px-3 py-2">//Partners & Sponsors</div>
+        {title && <h2 class="text-white font-bold text-3xl md:text-5xl mt-4 uppercase tracking-tighter">{title}</h2>}
+        <div class="w-full max-w-6xl space-y-10 mt-10">
+            {groups.map((g) => (
+                <div>
+                    <div class="font-bold uppercase mb-5 bg-secondary inline-block text-gray-950 px-3 py-1.5 text-sm">//{g.group}</div>
+                    <ul class="flex flex-wrap justify-center items-center gap-x-8 gap-y-5">
+                        {g.items.map((p) => {
+                            const inner = p.logo && p.withName
+                                ? <span class="inline-flex items-center gap-2"><Image class={p.logoClass ?? 'h-6 lg:h-9 w-auto'} src={p.logo} alt="" /><span class="font-bold text-lg text-white">{p.name}</span></span>
+                                : p.logo
+                                ? <Image class={p.logoClass ?? 'h-6 lg:h-9 w-auto'} src={p.logo} alt={`${p.name} logo`} />
+                                : <span class="font-bold text-lg text-white/90 border border-white/25 rounded-lg px-3 py-1.5">{p.name}</span>;
+                            return (
+                                <li class="opacity-85 hover:opacity-100">
+                                    {p.url ? <a href={p.url} target="_blank" rel="noopener noreferrer" title={p.name}>{inner}</a> : inner}
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>

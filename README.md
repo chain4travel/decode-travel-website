@@ -1,2 +1,1 @@
-# decode-travel-website
-Source code for the website https://decode.travel
+Branch `archive`: archived version after decode.travel domain was retired

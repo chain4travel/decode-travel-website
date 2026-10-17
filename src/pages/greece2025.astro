@@ -1,19 +1,19 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/hero/greece2025.astro";
-import GreeceAgenda from "../components/GreeceAgenda.astro"
-import GreeceChallenges from "../components/GreeceChallenges.astro"
-import Partners from "../components/Partners.astro"
-import Tech from "../components/Technology.astro"
-import Hexens from "../components/Hexens.astro"
+// The Crete edition used to live at /greece2025. Keep old links working with
+// a static redirect (no server-side rules are needed on the host).
+import { url, SITE_URL } from "../lib/url";
+const target = url("crete2025/");
 ---
-
-<BaseLayout>
-  <Hero />
-  <GreeceAgenda />
-  <GreeceChallenges />
-  <Partners />
-  <Tech />
-  <Hexens />
-</BaseLayout>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Decode Travel Crete 2025 (moved)</title>
+    <meta http-equiv="refresh" content={`0; url=${target}`}>
+    <link rel="canonical" href={SITE_URL + target}>
+    <meta name="robots" content="noindex">
+  </head>
+  <body style="background:#000;color:#fff;font-family:system-ui,sans-serif;padding:2rem">
+    <p>This page has moved to <a href={target} style="color:#00F3B1">Decode Travel Crete 2025</a>.</p>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { Edition } from '../../data/types';
+import RecapHero from './RecapHero.astro';
+import RecapIntro from './RecapIntro.astro';
+import RecapLinks from './RecapLinks.astro';
+import RecapGallery from './RecapGallery.astro';
+import RecapAgenda from './RecapAgenda.astro';
+import RecapChallenges from './RecapChallenges.astro';
+import RecapJury from './RecapJury.astro';
+import RecapWinners from './RecapWinners.astro';
+import RecapQuotes from './RecapQuotes.astro';
+import RecapPartners from './RecapPartners.astro';
+import EditionNav from './EditionNav.astro';
+
+interface Props { edition: Edition; }
+const { edition: e } = Astro.props;
+const title = `Decode Travel ${e.name} · Recap`;
+const description = `Decode Travel ${e.name}: ${e.dates}, ${e.venue}, ${e.country}.`;
+---
+<BaseLayout title={title} description={description}>
+    <RecapHero edition={e} />
+    <RecapIntro edition={e} />
+    <RecapWinners awards={e.awards} teams={e.teams} awardsIntro={e.awardsIntro} teamsTitle={e.teamsTitle} />
+    <RecapChallenges challenges={e.challenges} intro={e.challengesIntro} title={e.challengesTitle} other={e.challengesOther} />
+    <RecapJury jury={e.jury} note={e.juryNote} />
+    <RecapQuotes quotes={e.quotes} />
+    <RecapGallery images={e.gallery} label={e.name.replace(' ', '')} />
+    {e.agenda && <RecapAgenda days={e.agenda} title={e.agendaTitle ?? `Decode Travel ${e.city} in ${e.agenda.length} days`} />}
+    <RecapLinks links={e.links} />
+    <slot />
+    <RecapPartners groups={e.partners} title={e.partnersTitle} />
+    <EditionNav current={e.slug} />
+</BaseLayout>

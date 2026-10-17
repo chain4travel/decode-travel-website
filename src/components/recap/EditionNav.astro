@@ -1,0 +1,32 @@
+---
+import { editions } from '../../data/editions';
+import { url } from '../../lib/url';
+interface Props { current: string; }
+const { current } = Astro.props;
+const i = editions.findIndex((e) => e.slug === current);
+const prev = editions[i - 1];
+const next = editions[i + 1];
+---
+<nav aria-label="Other editions" class="container py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 items-stretch">
+        <div>
+            {prev && (
+                <a href={url(`${prev.slug}/`)} class="block h-full border border-gray-700 hover:border-primary rounded-xl p-4 bg-gray-900">
+                    <div class="text-xs font-mono text-secondary uppercase">← Previous edition</div>
+                    <div class="font-bold text-lg">{prev.name}</div>
+                </a>
+            )}
+        </div>
+        <a href={url()} class="flex items-center justify-center border border-gray-700 hover:border-primary rounded-xl p-4 bg-gray-900 text-center">
+            <div class="font-bold text-lg">All editions</div>
+        </a>
+        <div>
+            {next && (
+                <a href={url(`${next.slug}/`)} class="block h-full border border-gray-700 hover:border-primary rounded-xl p-4 bg-gray-900 text-right">
+                    <div class="text-xs font-mono text-secondary uppercase">Next edition →</div>
+                    <div class="font-bold text-lg">{next.name}</div>
+                </a>
+            )}
+        </div>
+    </div>
+</nav>

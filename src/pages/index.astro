@@ -1,66 +1,193 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/hero/antalya2024.astro";
-import Tech from "../components/Technology.astro"
-import WhyAttend from "../components/WhyAttend.astro"
-import NewChallenges from "../components/NewChallenges.astro";
 import { Image } from 'astro:assets';
-import Berlin from '../images/DecodeTravel-2.jpg';
+import type { ImageMetadata } from 'astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import EditionCard from "../components/EditionCard.astro";
+import { editions } from "../data/editions";
+import BackgroundHero from '../images/bg-hero-half.png';
+import CaminoLogo from '../images/Camino-Logo.png';
+import CaminoMessenger from '../images/Camino-Messenger.png';
 
 import decodeimage01 from '../images/decode-berlin-2024/240426120607_munirwerner_03014.jpg';
 import decodeimage02 from '../images/decode-berlin-2024/240425190234_munirwerner_02713.jpg';
 import decodeimage03 from '../images/decode-berlin-2024/240426120623_munirwerner_03017.jpg';
 import decodeimage04 from '../images/decode-berlin-2024/240423185359_munirwerner_02410.jpg';
-import Apply from "../components/Apply.astro";
+
+import A3M from '../images/logo-a3m.png';
+import Agentic from '../images/logo-agentic.png';
+import Alpitour from '../images/logo-alpitour.png';
+import Avra from '../images/logo-avra.png';
+import Bytepitch from '../images/logo-bytepitch.png';
+import CaminoScan from '../images/logo-camino-scan.png';
+import Christie from '../images/logo-christie.png';
+import Clorian from '../images/clorian-ticketing-logo.png';
+import CompanionD from '../images/logo-companion.png';
+import Cortex from '../images/logo-cortex.png';
+import Cyberlogic from '../images/logo-cyberlogic.png';
+import Dfns from '../images/logo-dfns.png';
+import FutureTravel from '../images/future-travel-logo.png';
+import Gpsolutions from '../images/logo-gpsolutions.png';
+import Hacken from '../images/logo-hacken.png';
+import Hexens from '../images/logo-hexens.png';
+import Holidaycheck from '../images/logo-holidaycheck.png';
+import Iso from '../images/logo-iso.png';
+import ITKompass from '../images/logo-it-kompass.png';
+import Juice from '../images/logo-juice.png';
+import Nubem from '../images/nubemsystems-logo.svg';
+import Paximum from '../images/logo-paximum.png';
+import Polygonid from '../images/logo-polygonid.png';
+import SanTSG from '../images/logo-santsg.png';
+import SHDigital from '../images/logo-shdigital.png';
+import Sleap from '../images/logo-sleap.png';
+import SunExpress from '../images/logo-sunexpress.png';
+import Triend from '../images/logo-triend.png';
+import Universal from '../images/logo-universal.png';
+import Utravel from '../images/logo-utravel.png';
+import Vir from '../images/logo-vir.png';
+import Vueling from '../images/vueling-logo.png';
+import YourInsight from '../images/logo-yourinsight.png';
+
+const homeUrl = 'https://chain4travel.com/decode-travel/';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${homeUrl}#website`,
+      url: homeUrl,
+      name: 'Decode Travel',
+      alternateName: 'decode.travel',
+      publisher: { '@id': `${homeUrl}#organization` },
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${homeUrl}#organization`,
+      url: homeUrl,
+      name: 'Decode Travel',
+      alternateName: 'decode.travel',
+      sameAs: ['https://x.com/decodetravel', 'https://github.com/DecodeTravel'],
+      parentOrganization: { '@type': 'Organization', '@id': 'https://chain4travel.com/#org', name: 'Chain4Travel', legalName: 'Chain4Travel AG', url: 'https://chain4travel.com/' },
+    },
+  ],
+};
+
+const totals = [
+  { value: '4', label: 'editions' },
+  { value: '4', label: 'host countries' },
+  { value: '130+', label: 'participants' },
+  { value: '24', label: 'teams' },
+];
+
+// Companies that brought a challenge or sponsored at least one edition (alphabetical).
+const highlights: { name: string; logo: ImageMetadata; withName?: boolean; extra?: string }[] = [
+  { name: 'A3M Global Monitoring', logo: A3M },
+  { name: 'Agentic Systems', logo: Agentic, withName: true },
+  { name: 'Alpitour World', logo: Alpitour },
+  { name: 'Avra', logo: Avra, extra: 'grayscale' },
+  { name: 'Bytepitch', logo: Bytepitch },
+  { name: 'CaminoScan', logo: CaminoScan },
+  { name: 'Christie & Co', logo: Christie },
+  { name: 'Clorian Ticketing', logo: Clorian },
+  { name: 'Companion D', logo: CompanionD },
+  { name: 'Cortex', logo: Cortex },
+  { name: 'Cyberlogic', logo: Cyberlogic },
+  { name: 'Dfns', logo: Dfns },
+  { name: 'Future Travel', logo: FutureTravel },
+  { name: 'GP Solutions', logo: Gpsolutions },
+  { name: 'Hacken', logo: Hacken, extra: '!max-h-11 md:!max-h-14' },
+  { name: 'Hexens', logo: Hexens },
+  { name: 'HolidayCheck', logo: Holidaycheck },
+  { name: 'ISO Travel Solutions', logo: Iso },
+  { name: 'IT-Kompass', logo: ITKompass },
+  { name: 'Juice', logo: Juice },
+  { name: 'Nubem Systems', logo: Nubem },
+  { name: 'Paximum', logo: Paximum },
+  { name: 'Polygon ID', logo: Polygonid },
+  { name: 'SAN TSG', logo: SanTSG },
+  { name: 'SH Financials', logo: SHDigital },
+  { name: 'Sleap', logo: Sleap },
+  { name: 'SunExpress', logo: SunExpress },
+  { name: 'Triend', logo: Triend },
+  { name: 'Universal Mallorca Travel', logo: Universal },
+  { name: 'Utravel', logo: Utravel },
+  { name: 'VIR', logo: Vir },
+  { name: 'Vueling', logo: Vueling },
+  { name: 'YourInsight', logo: YourInsight },
+];
 ---
 
-<BaseLayout>
-  <Hero />
-
-  <WhyAttend />
-  <Tech />
-  <NewChallenges />
-  <Apply />
-
-  <div class="text-center py-12 md:py-24 flex flex-col items-center justify-center">
-    <div data-sal="slide-up" class="container text-center flex flex-col items-center z-20">
-        <div class="font-bold uppercase  mb-4 bg-primary inline-block text-gray-950 px-3 py-2">
-            //Decode travel
-        </div>
-        <div class="text-white font-bold text-4xl md:text-6xl mt-6 mb-12 uppercase tracking-tighter">
-          From concept to reality in 48 hours
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <Image class="rounded-xl border border-white/25 hover:scale-110 hover:rotate-0 transition-transform rotate-3" src={decodeimage01} alt="Decode Travel 2024 in Berlin" />
-          <Image class="rounded-xl border border-white/25 hover:scale-110 hover:rotate-0 transition-transform -rotate-3" src={decodeimage02} alt="Decode Travel 2024 in Berlin" />
-          <Image class="rounded-xl border border-white/25 hover:scale-110 hover:rotate-0 transition-transform rotate-3" src={decodeimage03} alt="Decode Travel 2024 in Berlin" />
-          <Image class="rounded-xl border border-white/25 hover:scale-110 hover:rotate-0 transition-transform -rotate-3" src={decodeimage04} alt="Decode Travel 2024 in Berlin" />
-        </div>
+<BaseLayout jsonLd={jsonLd}>
+  <section class="relative overflow-hidden">
+    <div class="max-w-screen-xl mx-auto px-4 py-16 md:py-24 relative z-10 text-center flex flex-col items-center">
+      <h1 class="text-white font-bold text-4xl md:text-5xl lg:text-7xl uppercase tracking-tight">
+        Travel Tech <span class="text-primary italic">Supercharged</span>
+      </h1>
+      <p class="md:text-xl my-6 max-w-3xl text-gray-200">
+        Four editions of the open-source hackathon where developers meet leading travel companies. Thank you to everyone who joined us in Berlin, Antalya, Crete and Barcelona!
+      </p>
+      <dl class="grid grid-cols-2 md:grid-cols-4 gap-3 w-full max-w-3xl mt-2">
+        {totals.map((t) => (
+          <div class="bg-gradient-primary border border-gray-700 bg-gray-900/80 rounded-xl p-4">
+            <dt class="sr-only">{t.label}</dt>
+            <dd><div class="text-3xl md:text-4xl font-bold text-primary">{t.value}</div><div class="text-gray-300 text-sm">{t.label}</div></dd>
+          </div>
+        ))}
+      </dl>
     </div>
-  </div>
+    <Image class="absolute object-contain inset-0 w-full h-full opacity-20 2xl:opacity-50" src={BackgroundHero} alt="" />
+  </section>
 
-  <div class="container my-8">
-    <div class="grid grid-cols-2">
-      <div class="col-span-2 md:col-span-1 flex items-center justify-center overflow-hidden md:rounded-l-3xl">
-          <Image src={Berlin} alt="Decode Travel 2024 in Berlin" class="w-full h-full object-cover inline-block" />
+  <section class="py-8 md:py-12" id="editions">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+        {editions.map((e, i) => <EditionCard edition={e} tilt={i % 2 ? 'right' : 'left'} />)}
       </div>
-        <div class="col-span-2 md:col-span-1 flex flex-col justify-center p-8 md:p-16 bg-gradient-to-r from-primary/30 to-primary/10 rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none">
-            <h1 class="text-white font-bold text-4xl md:text-5xl uppercase tracking-tight">
-              8 teams, 4 challenges: Decode Travel in Berlin
-            </h1>
-            <div class="text-lg my-4">
-              The first web3 travel hackathon was a success, bringing together international Decoders from product managers to backend and blockchain developers to work on challenges posed by major travel companies.
-            </div>
-            <div class="md:flex items-center gap-6">
-              <div><div class="font-semibold text-secondary font-mono">//DATE:</div> April 23-26, 2024</div>
-              <div><div class="font-semibold text-secondary font-mono">//LOCATION:</div> w3.hub Berlin, 🇩🇪 Germany</div>
-            </div>
-            <div class="mt-4">
-              <a class="font-semibold px-5 py-3 rounded-lg bg-primary hover:bg-white text-gray-950 inline-block" href="/berlin2024">
-                Recap #DTBerlin24
-              </a>
-            </div>
-        </div>
     </div>
-  </div>
+  </section>
+
+  <section class="text-center py-12 md:py-24">
+    <div class="container flex flex-col items-center">
+      <div class="font-bold uppercase mb-4 bg-primary inline-block text-gray-950 px-3 py-2">//Decode travel</div>
+      <h2 class="text-white font-bold text-4xl md:text-6xl mt-6 mb-12 uppercase tracking-tighter">From concept to reality in 48 hours</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <Image class="rounded-xl border border-white/25 hover:scale-110 hover:rotate-0 transition-transform rotate-3" src={decodeimage01} width={800} widths={[400, 800]} sizes="(min-width: 768px) 25vw, 50vw" alt="Decode Travel 2024 in Berlin" />
+        <Image class="rounded-xl border border-white/25 hover:scale-110 hover:rotate-0 transition-transform -rotate-3" src={decodeimage02} width={800} widths={[400, 800]} sizes="(min-width: 768px) 25vw, 50vw" alt="Decode Travel 2024 in Berlin" />
+        <Image class="rounded-xl border border-white/25 hover:scale-110 hover:rotate-0 transition-transform rotate-3" src={decodeimage03} width={800} widths={[400, 800]} sizes="(min-width: 768px) 25vw, 50vw" alt="Decode Travel 2024 in Berlin" />
+        <Image class="rounded-xl border border-white/25 hover:scale-110 hover:rotate-0 transition-transform -rotate-3" src={decodeimage04} width={800} widths={[400, 800]} sizes="(min-width: 768px) 25vw, 50vw" alt="Decode Travel 2024 in Berlin" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-8 md:py-16" id="tech">
+    <div class="container">
+      <div class="font-bold uppercase mb-4 bg-primary inline-block text-gray-950 px-3 py-2">//Technology</div>
+      <h2 class="font-bold uppercase text-4xl md:text-5xl lg:text-7xl tracking-tighter mb-4">Cutting-edge <br> web3 technology</h2>
+      <div class="lg:grid grid-cols-2 xl:gap-6 2xl:gap-8 mt-8">
+        <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-8 md:p-12 mb-8 lg:mb-0">
+          <Image class="h-12 w-auto mb-8" src={CaminoLogo} alt="Camino Network Logo" />
+          <p class="text-lg text-gray-300">Camino Network, the L1 blockchain designed for the travel industry.</p>
+        </div>
+        <div class="bg-gradient-hackerz-b border border-gray-800 bg-gray-900 rounded-xl p-8 md:p-12">
+          <Image class="h-12 w-auto mb-8" src={CaminoMessenger} alt="Camino Messenger Logo" />
+          <p class="text-lg text-gray-300">Camino Messenger, a powerful messaging tool for travel distribution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center py-16 lg:py-24 bg-gradient-to-b from-gray-950 to-primary/20" id="partners">
+    <div class="container flex flex-col items-center">
+      <div class="font-bold uppercase mb-4 bg-primary inline-block text-gray-950 px-3 py-2">//Partners & Sponsors</div>
+      <h2 class="text-white font-bold text-3xl md:text-5xl mt-4 mb-10 uppercase tracking-tighter">Thank you to our partners & sponsors</h2>
+      <ul class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 md:gap-4 w-full max-w-6xl">
+        {highlights.map((p) => (
+          <li class="flex items-center justify-center h-16 md:h-20 px-3 rounded-xl border border-white/10 bg-white/[0.03]" title={p.name}>
+            {p.withName
+              ? <span class="inline-flex items-center gap-1.5"><Image class="h-5 md:h-6 w-auto" src={p.logo} alt="" /><span class="font-bold text-xs md:text-sm text-white">{p.name}</span></span>
+              : <Image class={`max-h-7 md:max-h-9 max-w-full w-auto object-contain opacity-90 ${p.extra ?? ''}`} src={p.logo} alt={`${p.name} logo`} />}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
 </BaseLayout>

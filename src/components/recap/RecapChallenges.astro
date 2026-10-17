@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets';
+import type { Challenge, SourcedText } from '../../data/types';
+import SectionTitle from './SectionTitle.astro';
+import SourcedP from './SourcedP.astro';
+interface Props { challenges: Challenge[]; intro?: SourcedText; title?: string; other?: { title: string; summary: string }[]; }
+const { challenges, intro, title = 'Real pain points from travel companies', other = [] } = Astro.props;
+---
+<section class="py-8 md:py-16" id="challenges">
+    <div class="container">
+        <SectionTitle label="Challenges" title={title} />
+        {intro && <SourcedP item={intro} class="text-lg text-gray-300 max-w-3xl" />}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mt-8">
+            {challenges.map((c) => (
+                <article class="bg-gradient-primary border border-gray-700 bg-gray-900 rounded-xl p-5 md:p-6 flex flex-col">
+                    {(c.logo || c.sponsor) && (
+                        <div class="flex items-center gap-3 min-h-10 mb-4">
+                            {c.logo
+                                ? <Image class="h-6 lg:h-8 w-auto max-w-[60%] object-contain object-left" src={c.logo} alt={`${c.sponsor} logo`} />
+                                : <span class="font-bold text-gray-200">{c.sponsor}</span>}
+                            {c.logo && c.sponsor && <span class="text-xs text-gray-500 italic">sponsored by {c.sponsor}</span>}
+                        </div>
+                    )}
+                    {c.theme && <div class="font-bold uppercase text-2xl tracking-tighter">{c.theme}</div>}
+                    {c.title && <h3 class="font-bold uppercase text-xl md:text-2xl tracking-tight mt-1">{c.title}</h3>}
+                    {c.summary?.map((p) => <p class="text-gray-300 mt-3">{p}</p>)}
+                    {c.takenBy && <p class="text-xs font-mono text-secondary mt-3">Taken up by {c.takenBy}</p>}
+                    {c.body && c.body.length > 0 && (
+                        <details class="mt-4">
+                            <summary class="cursor-pointer select-none font-semibold text-primary hover:text-white">Details</summary>
+                            <div class="mt-3 space-y-3 text-gray-300">
+                                {c.body.map((b) => Array.isArray(b)
+                                    ? <ul class="list-disc pl-5 space-y-1">{b.map((li) => <li>{li}</li>)}</ul>
+                                    : <p>{b}</p>)}
+                            </div>
+                        </details>
+                    )}
+                </article>
+            ))}
+        </div>
+        {other.length > 0 && (
+            <div class="mt-8">
+                <h3 class="font-bold uppercase text-lg tracking-tight text-gray-300">Also proposed</h3>
+                <ul class="mt-3 grid grid-cols-1 md:grid-cols-3 gap-3">
+                    {other.map((o) => (
+                        <li class="border border-gray-800 rounded-xl p-4 bg-gray-900/60">
+                            <div class="font-bold">{o.title}</div>
+                            <p class="text-gray-400 text-sm mt-1">{o.summary}</p>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        )}
+    </div>
+</section>

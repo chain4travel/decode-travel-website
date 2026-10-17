@@ -1,39 +1,31 @@
 ---
 import { Image } from 'astro:assets';
 import DecodeLogo from '../images/decode-logo-center.png';
+import { url } from '../lib/url';
+import { editions } from '../data/editions';
 ---
 
 <footer class="w-full bg-gradient-to-b from-gray-950 to-primary/25" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="py-16 lg:py-24 container sm:px-6 lg:px-16">
-      <div class="flex flex-col items-baseline space-y-6">
-        <div class="mx-auto">
-            <a href="/">
-                <Image class="w-auto h-8" src={DecodeLogo} alt="Decode Travel Logo"/>
-            </a>
-        </div>
-        <div class="mx-auto">
-        <nav aria-label="Recap Links" class="flex flex-wrap gap-4 justify-center">
-          <a href="/berlin2024" class="text-white hover:underline">
-            Recap:<strong>Berlin 2024</strong>
-          </a>
-          <a href="https://camino.network/decode-travel-antalya-web3-meets-travel-tech/" class="text-white hover:underline">
-            Recap:<strong>Antalya 2025</strong>
-          </a>
-          <a href="/greece2025" class="text-white hover:underline">
-            Recap:<strong>Greece 2025</strong>
-          </a>
+    <div class="py-16 lg:py-20 container sm:px-6 lg:px-16">
+      <div class="flex flex-col items-center space-y-6 text-center">
+        <a href={url()}>
+            <Image class="w-auto h-8" src={DecodeLogo} alt="Decode Travel Logo" />
+        </a>
+        <nav aria-label="Recap Links" class="flex flex-wrap gap-x-6 gap-y-2 justify-center">
+          {editions.map((e) => (
+            <a href={url(`${e.slug}/`)} class="text-white font-bold hover:underline">{e.name}</a>
+          ))}
         </nav>
+        <div class="flex flex-wrap gap-3 justify-center">
+          <a href="https://x.com/decodetravel" class="font-bold px-4 py-3 rounded bg-primary text-gray-950" target="_blank" rel="noopener noreferrer">Follow us on X</a>
+          <a href="https://github.com/DecodeTravel" class="font-bold px-4 py-3 rounded border border-white/40 hover:border-white" target="_blank" rel="noopener noreferrer">Decode Travel Github</a>
         </div>
-        <div class="mx-auto">
-          <div class="mx-auto mt-2 text-sm text-white/80 text-center">
-            <a href="https://x.com/decodetravel" class="font-bold px-4 py-3 rounded bg-primary text-gray-950 inline-block mb-6" target="_blank" rel="noopener noreferrer">Follow us on X</a> <br>
-            <a href="/imprint" class="text-white hover:underline" rel="noopener noreferrer">Imprint</a> - 
-            <a href="#" id="open_preferences_center">Cookie preferences</a> -
-            <a href="/terms">Terms & conditions</a>
-            - Copyright © 2025
-          </div>
+        <div class="text-sm text-white/80">
+          <a href={url("imprint/")} class="hover:underline">Imprint</a> -
+          <a href={url("terms/")} class="hover:underline">Terms & conditions</a>
+          - Copyright © 2025
         </div>
       </div>
     </div>
-  </footer>
+</footer>

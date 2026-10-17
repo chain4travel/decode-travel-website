@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+import type { Edition } from '../../data/types';
+interface Props { edition: Edition; }
+const { edition } = Astro.props;
+---
+<section class="relative overflow-hidden bg-gradient-hackerz-b">
+    <Image src={edition.heroImage} alt="" width={1600} widths={[800, 1600]} sizes="100vw" class="absolute inset-0 w-full h-full object-cover opacity-25" loading="eager" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black"></div>
+    <div class="container relative z-10 py-16 md:py-28 text-center flex flex-col items-center">
+        <div class="font-bold text-gray-300 bg-gray-900/90 border border-white/15 rounded-full px-3 py-2 text-sm mb-6">🎉 FINISHED</div>
+        <h1 class="text-white font-bold text-4xl md:text-6xl 2xl:text-7xl uppercase tracking-tight md:tracking-tighter">{edition.heroTitle}</h1>
+        <div class="md:flex items-center gap-6 mt-6 text-lg">
+            <div><span class="font-semibold text-secondary font-mono">//DATE:</span> {edition.dates}</div>
+            <div><span class="font-semibold text-secondary font-mono">//LOCATION:</span> {edition.venue}, {edition.country}</div>
+        </div>
+        <p class="text-gray-200 text-base md:text-xl max-w-3xl mt-6">{edition.headline}</p>
+    </div>
+</section>

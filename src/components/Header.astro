@@ -1,12 +1,13 @@
 ---
 import { Image } from 'astro:assets';
 import DecodeLogo from '../images/decode-logo-left.png';
+import { url } from '../lib/url';
 ---
 
-<header class="py-5 bg-gray-950/90 backdrop-blur-lg z-50 sticky top-0" x-data="{ menuOpen: false }">
+<header class="py-5 bg-gray-950/90 backdrop-blur-lg z-50 sticky top-0">
     <div class="container flex justify-center items-center" data-sal="slide-up">
 
-        <a href="/">
+        <a href={url()}>
             <Image class="w-auto h-7" src={DecodeLogo} alt="Decode Travel Logo"/>
         </a>
 

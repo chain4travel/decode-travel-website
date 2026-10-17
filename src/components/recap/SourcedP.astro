@@ -1,0 +1,8 @@
+---
+import type { SourcedText } from '../../data/types';
+interface Props { item: SourcedText; class?: string; }
+const { item, class: cls = '' } = Astro.props;
+---
+<div class={cls}>
+    <p lang={item.lang}>{item.text}</p>
+</div>

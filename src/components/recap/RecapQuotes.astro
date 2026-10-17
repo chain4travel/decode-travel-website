@@ -1,0 +1,25 @@
+---
+import type { Quote } from '../../data/types';
+import SectionTitle from './SectionTitle.astro';
+interface Props { quotes: Quote[]; }
+const { quotes } = Astro.props;
+---
+{quotes.length > 0 && (
+<section class="py-8 md:py-16" id="quotes">
+    <div class="container">
+        <SectionTitle label="Quotes" />
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 mt-4">
+            {quotes.map((q) => (
+                <figure class="border-l-4 border-primary bg-gray-900 rounded-r-xl p-5 md:p-6">
+                    <blockquote lang={q.lang} class="text-lg md:text-xl text-gray-100 leading-relaxed">“{q.text}”</blockquote>
+                    <figcaption class="mt-4">
+                        <div class="font-bold">{q.author}</div>
+                        <div class="text-gray-400 text-sm">{q.role}</div>
+                        {q.note && <div class="text-gray-500 text-xs mt-1">{q.note}</div>}
+                    </figcaption>
+                </figure>
+            ))}
+        </div>
+    </div>
+</section>
+)}

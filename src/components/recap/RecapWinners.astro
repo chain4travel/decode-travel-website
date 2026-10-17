@@ -1,0 +1,49 @@
+---
+import { Icon } from 'astro-icon/components';
+import type { Award, Team } from '../../data/types';
+import SectionTitle from './SectionTitle.astro';
+import RepoLinks from './RepoLinks.astro';
+import SourcedP from './SourcedP.astro';
+interface Props { awards: Award[]; teams: Team[]; awardsIntro?: string; teamsTitle?: string; }
+const { awards, teams, awardsIntro, teamsTitle = 'Teams' } = Astro.props;
+---
+<section class="py-8 md:py-16" id="winners">
+    <div class="container">
+        <SectionTitle label="Winners" />
+        {awardsIntro && <p class="text-lg text-gray-300 max-w-3xl">{awardsIntro}</p>}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 mt-4">
+            {awards.map((a) => (
+                <article class="bg-gradient-hackerz bg-gray-900 border-2 border-primary md:shadow-primary/30 shadow-2xl rounded-xl p-5 md:p-6">
+                    <div class="flex items-center gap-2 text-primary font-mono uppercase font-bold text-sm">
+                        <Icon name="tabler:trophy" class="size-5" />{a.award}
+                    </div>
+                    {a.team && (
+                        <h3 class="font-bold uppercase text-2xl tracking-tight mt-3">
+                            {a.team}{a.company && <span class="text-gray-300 normal-case font-semibold text-lg"> · {a.company}</span>}
+                        </h3>
+                    )}
+                    {a.challenge && <div class="text-sm text-secondary font-mono mt-1">Challenge: {a.challenge}</div>}
+                    {a.description && <SourcedP item={a.description} class="text-gray-200 mt-3" />}
+                    <RepoLinks repos={a.repos} video={a.video} />
+                </article>
+            ))}
+        </div>
+
+        {teams.length > 0 && (
+            <div class="mt-12">
+                <h3 class="font-bold uppercase text-2xl md:text-3xl tracking-tight">{teamsTitle}</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                    {teams.map((t) => (
+                        <article class="bg-gradient-primary border border-gray-700 bg-gray-900 rounded-xl p-5">
+                            <h4 class="font-bold text-xl">{t.team}</h4>
+                            {t.company && <div class="text-gray-300 text-sm">{t.company}</div>}
+                            {t.challenge && <div class="text-sm text-secondary font-mono mt-2">Challenge: {t.challenge}</div>}
+                            {t.description && <SourcedP item={t.description} class="text-gray-300 mt-3" />}
+                            <RepoLinks repos={t.repos} video={t.video} />
+                        </article>
+                    ))}
+                </div>
+            </div>
+        )}
+    </div>
+</section>

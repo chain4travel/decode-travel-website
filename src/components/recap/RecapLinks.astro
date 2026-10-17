@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+import type { PressLink } from '../../data/types';
+interface Props { links: PressLink[]; }
+const { links } = Astro.props;
+---
+{links.length > 0 && (
+<section class="py-8 md:py-12" id="press">
+    <div class="container">
+        <div class="font-bold uppercase mb-4 bg-primary inline-block text-gray-950 px-3 py-2">//Press & links</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mt-4">
+            {links.map((l) => (
+                <a target="_blank" rel="noopener noreferrer" href={l.url} class="bg-gradient-primary border border-gray-700 hover:border-gray-200 bg-gray-900 rounded-xl p-4 md:p-6 flex gap-4">
+                    {l.image && <Image class="size-24 md:size-32 object-cover rounded-xl shrink-0" src={l.image} alt="" width={256} />}
+                    <div class="min-w-0">
+                        <div class="uppercase font-bold font-mono mb-2 text-primary text-sm">//{l.kind}</div>
+                        <div class="uppercase font-bold text-lg md:text-xl my-2">{l.title}</div>
+                        {l.excerpt && <p class="line-clamp-3 text-gray-300">{l.excerpt}</p>}
+                    </div>
+                </a>
+            ))}
+        </div>
+    </div>
+</section>
+)}

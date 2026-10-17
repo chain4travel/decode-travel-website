@@ -1,0 +1,17 @@
+---
+import { Icon } from 'astro-icon/components';
+import type { Link } from '../../data/types';
+interface Props { repos?: Link[]; video?: Link; }
+const { repos = [], video } = Astro.props;
+const cls = 'inline-flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-lg border border-gray-600 hover:border-primary hover:text-primary';
+---
+{(repos.length > 0 || video) && (
+    <ul class="flex flex-wrap gap-2 mt-4">
+        {repos.map((r) => (
+            <li><a href={r.url} target="_blank" rel="noopener noreferrer" class={cls}><Icon name="tabler:brand-github" class="size-4" />{r.label}</a></li>
+        ))}
+        {video && (
+            <li><a href={video.url} target="_blank" rel="noopener noreferrer" class={cls}><Icon name="tabler:brand-youtube" class="size-4" />{video.label}</a></li>
+        )}
+    </ul>
+)}

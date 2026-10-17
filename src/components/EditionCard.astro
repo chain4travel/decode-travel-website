@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import type { Edition } from '../data/types';
+import { url } from '../lib/url';
+interface Props { edition: Edition; tilt?: 'left' | 'right'; }
+const { edition: e, tilt = 'left' } = Astro.props;
+const rot = tilt === 'left' ? 'md:-rotate-1' : 'md:rotate-1';
+---
+<a href={url(`${e.slug}/`)} class={`group block border-4 border-white/25 hover:border-primary/70 w-full relative overflow-hidden rounded-2xl h-80 md:h-[380px] ${rot} transition-transform hover:rotate-0 hover:scale-[1.01]`} style="box-shadow:0px 0px 48px rgba(0,243,177,.35);">
+    <Image src={e.cardImage} alt={`Decode Travel ${e.name}`} width={1000} widths={[600, 1000]} sizes="(min-width: 768px) 50vw, 100vw" class="w-full h-full object-cover absolute inset-0 z-0 group-hover:scale-105 transition-transform duration-500" />
+    <div class="font-bold text-gray-200 absolute z-10 top-3 left-3 bg-gray-900/90 rounded-full px-3 py-2 text-sm">🎉 FINISHED</div>
+    <div class="absolute z-10 left-0 bottom-0 w-full bg-[#08382B]/60 backdrop-blur-xl p-4 md:p-5">
+        <div class="flex items-end gap-4">
+            <div class="w-full min-w-0">
+                <h3 class="font-bold text-xl md:text-2xl">{e.cardPlace}</h3>
+                <div class="text-white/85">{e.dates}</div>
+                <ul class="flex flex-wrap gap-2 mt-3">
+                    {e.cardStats.map((s) => <li class="text-xs md:text-sm font-semibold bg-black/40 border border-white/15 rounded-full px-2.5 py-1">{s}</li>)}
+                </ul>
+            </div>
+            <span class="bg-white text-black whitespace-nowrap rounded-full px-4 py-3 group-hover:bg-primary transition-all font-semibold shrink-0">View Recap</span>
+        </div>
+    </div>
+</a>

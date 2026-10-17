@@ -1,0 +1,8 @@
+---
+interface Props { label: string; title?: string; }
+const { label, title } = Astro.props;
+---
+<div>
+    <div class="font-bold uppercase mb-4 bg-primary inline-block text-gray-950 px-3 py-2">//{label}</div>
+    {title && <h2 class="font-bold uppercase text-3xl md:text-5xl lg:text-6xl tracking-tighter mb-4">{title}</h2>}
+</div>

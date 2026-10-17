@@ -1,0 +1,23 @@
+---
+import type { JuryMember, SourcedText } from '../../data/types';
+import SectionTitle from './SectionTitle.astro';
+import SourcedP from './SourcedP.astro';
+interface Props { jury: JuryMember[]; note?: SourcedText; }
+const { jury, note } = Astro.props;
+---
+{jury.length > 0 && (
+<section class="py-8 md:py-16" id="jury">
+    <div class="container">
+        <SectionTitle label="Jury" />
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mt-4">
+            {jury.map((j) => (
+                <li class="border border-gray-700 bg-gray-900 rounded-xl p-4">
+                    <div class="font-bold text-lg">{j.name}</div>
+                    {j.role && <div class="text-gray-300 text-sm mt-1">{j.role}</div>}
+                </li>
+            ))}
+        </ul>
+        {note && <SourcedP item={note} class="text-gray-300 mt-4 max-w-3xl" />}
+    </div>
+</section>
+)}

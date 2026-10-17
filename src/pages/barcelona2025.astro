@@ -1,19 +1,6 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/hero/barcelona2025.astro";
-import BarcelonaPartners from "../components/BarcelonaPartners.astro"
-import BarcelonaAgenda from "../components/BarcelonaAgenda.astro"
-import Tech from "../components/Technology.astro"
-import NewChallenges from "../components/NewChallenges.astro";
-import Apply from "../components/Apply.astro";
+import Recap from "../components/recap/Recap.astro";
+import { barcelona2025 } from "../data/editions/barcelona2025";
 ---
 
-<BaseLayout>
-  <Hero />
-  <BarcelonaAgenda />
-  <NewChallenges />
-  <Tech />
-  <BarcelonaPartners />
-  <Apply />
-</BaseLayout>
-
+<Recap edition={barcelona2025} />

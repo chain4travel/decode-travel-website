@@ -2,20 +2,35 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
-import CookieBanner from "../components/CookieBanner.astro";
+import ArchiveBanner from "../components/ArchiveBanner.astro"
+
+interface Props {
+    title?: string;
+    description?: string;
+    jsonLd?: Record<string, unknown>;
+}
+
+const { title, description, jsonLd } = Astro.props;
 ---
 
 <html lang="en" class="selection:bg-primary selection:text-gray-950 scroll-smooth">
     <head>
-        <BaseHead />
+        <BaseHead title={title} description={description} jsonLd={jsonLd} />
     </head>
     <body class="overflow-x-hidden text-white bg-black">
+        <ArchiveBanner />
         <Header />
         <slot />
         <Footer />
-        <script>sal();</script>
-        <!-- Triend Widget Script -->
-        <script type="text/javascript" src="https://plugin.triend.io/static/js/main.js?v=1.0" triendKey="67890" companyUid="5d93f304-0a0d-4140-b4da-0686cfa6c812"></script>
+        <script is:inline>
+            window.addEventListener('DOMContentLoaded', function () {
+                if (window.sal) { window.sal({ once: true }); }
+                else { document.documentElement.classList.add('no-sal'); }
+            });
+        </script>
+        <style is:global>
+            /* If sal.js fails to load, never leave animated blocks invisible. */
+            .no-sal [data-sal] { opacity: 1 !important; transform: none !important; }
+        </style>
     </body>
-    <CookieBanner />
 </html>

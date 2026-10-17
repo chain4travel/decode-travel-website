@@ -1,36 +1,45 @@
+---
+import { url, SITE_URL } from "../lib/url";
+
+interface Props {
+  title?: string;
+  description?: string;
+  jsonLd?: Record<string, unknown>;
+}
+
+const {
+  jsonLd,
+  title = 'Decode Travel',
+  description = 'Decode Travel, the hackathon for travel tech innovation by Chain4Travel: recaps of Berlin 2024, Antalya 2024, Crete 2025 and Barcelona 2025.',
+} = Astro.props;
+const path = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonical = SITE_URL + path;
+const socialImage = SITE_URL + url('social-image.png');
+---
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Decode Travel</title>
-<meta name="description" content="Take part in the open hackathon where developers meet leading travel companies.">
+<title>{title}</title>
+<meta name="description" content={description}>
+<link rel="canonical" href={canonical}>
 
-<link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+<link rel="icon" href={url('favicon.svg')} type="image/svg+xml">
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://decode.travel/">
+<!-- Open Graph -->
+<meta property="og:url" content={canonical}>
 <meta property="og:type" content="website">
-<meta property="og:title" content="Decode Travel">
-<meta property="og:description" content="The hackathon for travel tech innovation">
-<meta property="og:image" content="https://decode.travel/social-image.png">
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:image" content={socialImage}>
 
-<!-- Twitter Meta Tags -->
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:domain" content="decode.travel">
-<meta property="twitter:url" content="https://decode.travel/">
-<meta name="twitter:title" content="Decode Travel">
-<meta name="twitter:description" content="The hackathon for travel tech innovation">
-<meta name="twitter:image" content="https://decode.travel/social-image.png">
+<meta name="twitter:title" content={title}>
+<meta name="twitter:description" content={description}>
+<meta name="twitter:image" content={socialImage}>
 
-<!-- Inter font -->
-<link rel="preconnect" href="https://rsms.me/" />
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+<!-- Sal.js scroll animations, served locally (no third-party CDN) -->
+<link rel="stylesheet" href={url('vendor/sal/sal.min.css')}>
+<script is:inline defer src={url('vendor/sal/sal.min.js')}></script>
 
-<!-- Alpine.js -->
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-<!-- Sal.js -->
-<script defer src="https://cdn.jsdelivr.net/npm/sal.js@0.8.5/dist/sal.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sal.js@0.8.5/dist/sal.min.css">
-
-<!-- Triend Widget CSS -->
-<link rel="stylesheet" href="https://plugin.triend.io/static/css/main.css?v=1.0">
+{jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}

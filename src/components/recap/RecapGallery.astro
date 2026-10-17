@@ -1,0 +1,22 @@
+---
+import { Image, getImage } from 'astro:assets';
+import type { GalleryImage } from '../../data/types';
+interface Props { images: GalleryImage[]; label: string; }
+const { images, label } = Astro.props;
+// Each thumbnail links to a web-optimized large version (max 1600 px).
+const large = await Promise.all(
+    images.map((i) => getImage({ src: i.src, width: Math.min(1600, i.src.width), format: 'webp' }))
+);
+---
+<section class="py-8 md:py-16" id="gallery">
+    <div class="container text-center">
+        <div class="font-bold uppercase bg-primary inline-block text-gray-950 px-3 py-2">//{label} in pictures</div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 items-center mt-10">
+            {images.map((img, i) => (
+                <a href={large[i].src} target="_blank" rel="noopener" class={`block rounded-xl overflow-hidden border border-white/25 hover:scale-105 hover:rotate-0 transition-transform ${i % 2 ? '-rotate-1' : 'rotate-1'}`}>
+                    <Image class="aspect-video object-cover w-full" src={img.src} alt={img.alt} width={800} widths={[400, 800]} sizes="(min-width: 768px) 33vw, 50vw" />
+                </a>
+            ))}
+        </div>
+    </div>
+</section>
